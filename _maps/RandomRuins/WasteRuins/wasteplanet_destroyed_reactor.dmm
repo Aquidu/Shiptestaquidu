@@ -1,61 +1,131 @@
 "aM" = (/obj/structure/fence,/obj/effect/turf_decal/road/line/transparent/white,/turf/open/floor/concrete/pavement,/area/space)
 "aV" = (/turf/closed/wall/concrete/reinforced,/area/space)
-"bF" = (/turf/open/floor/carpet,/area/space)
+"bG" = (/obj/effect/turf_decal/siding/white{dir = 8},/obj/effect/turf_decal/siding/blue{dir = 1},/turf/open/floor/plasteel/white,/area/space)
+"bV" = (/obj/effect/turf_decal/spline/fancy/opaque/lightgrey{dir = 3},/obj/effect/turf_decal/corner/transparent/lightgrey/diagonal,/turf/open/floor/plasteel/white,/area/space)
+"cg" = (/obj/machinery/vending/cola/random,/obj/effect/turf_decal/spline/fancy/opaque/lightgrey{dir = 9},/obj/effect/turf_decal/corner/transparent/lightgrey/diagonal,/turf/open/floor/plasteel/white,/area/space)
+"cx" = (/obj/effect/turf_decal/siding/blue{dir = null},/turf/open/floor/plasteel/white,/area/space)
+"cB" = (/obj/structure/table/reinforced,/obj/effect/turf_decal/corner/opaque/lightgrey/diagonal,/obj/item/paper_bin{pixel_x = 0; pixel_y = 5},/obj/item/pen{pixel_x = 0; pixel_y = 7},/turf/open/floor/plasteel/white,/area/space)
+"cG" = (/obj/machinery/door/window{dir = 8},/obj/effect/turf_decal/spline/fancy/opaque/lightgrey{dir = 1},/obj/effect/turf_decal/corner/opaque/lightgrey/diagonal,/turf/open/floor/plasteel/white,/area/space)
+"dd" = (/obj/structure/table/reinforced,/turf/open/floor/plasteel/white,/area/space)
+"dp" = (/obj/structure/sign/departments/cargo,/turf/closed/indestructible/reinforced,/area/space)
 "dE" = (/obj/structure/table,/turf/open/floor/plating/rust/wasteplanet,/area/space)
 "eI" = (/obj/structure/fence/corner,/turf/open/floor/plating/asteroid/wasteplanet,/area/space)
 "eN" = (/obj/effect/decal/cleanable/vomit/old,/turf/open/floor/plasteel/showroomfloor,/area/space)
 "eZ" = (/turf/open/floor/concrete/slab_1,/area/space)
 "fu" = (/obj/structure/fence{dir = 8},/obj/structure/sign/warning/radiation/rad_area,/turf/open/floor/plating/asteroid/wasteplanet,/area/space)
+"fL" = (/obj/effect/turf_decal/spline/fancy/opaque/lightgrey{dir = 4},/obj/structure/chair/sofa/red/old/left{dir = 8},/obj/effect/turf_decal/corner/transparent/lightgrey/diagonal,/turf/open/floor/plasteel/white,/area/space)
+"fU" = (/obj/effect/turf_decal/spline/fancy/opaque/lightgrey{dir = 4},/obj/structure/chair/sofa/red/old/right{dir = 4},/obj/effect/turf_decal/corner/transparent/lightgrey/diagonal,/turf/open/floor/plasteel/white,/area/space)
+"gF" = (/obj/machinery/door/airlock/public/glass{name = "Reception"},/obj/effect/turf_decal/corner/transparent/lightgrey/diagonal,/turf/open/floor/plasteel/white,/area/space)
 "hr" = (/obj/structure/fluff/glowshroom,/turf/open/floor/plating/asteroid/wasteplanet,/area/space)
+"hz" = (/obj/structure/sign/poster/retro/lasergun,/turf/closed/indestructible/reinforced,/area/space)
+"hE" = (/obj/effect/turf_decal/spline/fancy/opaque/lightgrey{dir = 1},/obj/effect/turf_decal/corner/transparent/lightgrey/diagonal,/obj/structure/reagent_dispensers/water_cooler,/turf/open/floor/plasteel/white,/area/space)
 "hZ" = (/obj/structure/salvageable/computer{dir = 4},/turf/open/floor/plasteel/patterned/cargo_one,/area/space)
+"iz" = (/obj/structure/window/reinforced/spawner,/obj/effect/turf_decal/spline/fancy/opaque/lightgrey,/obj/effect/turf_decal/corner/transparent/lightgrey/diagonal,/turf/open/floor/plasteel/white,/area/space)
+"iA" = (/obj/effect/turf_decal/spline/fancy/opaque/lightgrey{dir = 8},/obj/structure/chair/sofa/blue/old/right{dir = 8},/obj/effect/turf_decal/corner/transparent/lightgrey/diagonal,/turf/open/floor/plasteel/white,/area/space)
+"iK" = (/obj/effect/turf_decal/siding/brown,/turf/open/floor/plasteel/white,/area/space)
 "iW" = (/obj/structure/closet/crate,/turf/open/floor/concrete/tiles,/area/space)
+"ji" = (/obj/effect/turf_decal/siding/green{dir = 4},/obj/effect/turf_decal/siding/green{dir = 8},/turf/open/floor/plasteel/white,/area/space)
+"kf" = (/obj/structure/sign/departments/engineering,/turf/closed/indestructible/reinforced,/area/space)
+"kp" = (/obj/effect/turf_decal/spline/fancy/opaque/lightgrey{dir = 8},/obj/effect/turf_decal/corner/transparent/lightgrey/diagonal,/obj/structure/table/glass,/turf/open/floor/plasteel/white,/area/space)
+"kw" = (/obj/machinery/door/airlock{dir = 4; name = "Dorm 3"},/turf/open/floor/carpet/green,/area/space)
 "lq" = (/obj/structure/fence{dir = 8},/turf/open/floor/plating/asteroid/wasteplanet,/area/space)
+"ls" = (/turf/open/floor/plating/asteroid/whitesands/grass/dead,/area/space)
 "lC" = (/turf/open/floor/plasteel/patterned/cargo_one,/area/space)
-"mJ" = (/obj/effect/turf_decal/trimline/transparent/white/filled/warning{dir = 5},/turf/open/floor/concrete/pavement,/area/space)
+"mY" = (/turf/open/floor/glass/reinforced,/area/space)
+"nb" = (/obj/effect/turf_decal/spline/fancy/opaque/lightgrey{dir = 1},/obj/effect/turf_decal/corner/opaque/lightgrey/diagonal,/turf/open/floor/plasteel/white,/area/space)
+"nf" = (/obj/effect/turf_decal/siding/yellow{dir = 8},/obj/effect/turf_decal/siding/yellow{dir = 4},/turf/open/floor/plasteel/white,/area/space)
 "ns" = (/obj/structure/fence{dir = 8},/obj/structure/sign/mining/survival{desc = "A high visibility sign designating a condemned area."; name = "CONDEMNED AREA sign"},/turf/open/floor/plating/asteroid/wasteplanet,/area/space)
 "nu" = (/turf/open/floor/plating/wasteplanet,/area/space)
 "nw" = (/obj/effect/turf_decal/borderfloor/corner,/turf/open/floor/concrete/tiles,/area/space)
+"oh" = (/obj/effect/turf_decal/corner/opaque/lightgrey/diagonal,/obj/machinery/modular_computer/console/preset/civilian{dir = 1},/turf/open/floor/plasteel/white,/area/space)
 "ou" = (/obj/effect/turf_decal/corner/opaque/nsorange/border{dir = 5},/turf/open/floor/plasteel/patterned/cargo_one,/area/space)
+"oz" = (/obj/effect/turf_decal/siding/red,/obj/effect/turf_decal/siding/red{dir = 1},/turf/open/floor/plasteel/white,/area/space)
+"oO" = (/obj/effect/turf_decal/spline/fancy/opaque/lightgrey{dir = 8},/obj/effect/turf_decal/corner/transparent/lightgrey/diagonal,/turf/open/floor/plasteel/white,/area/space)
+"pc" = (/obj/effect/turf_decal/spline/fancy/opaque/lightgrey{dir = 1},/obj/effect/turf_decal/corner/transparent/lightgrey/diagonal,/turf/open/floor/plasteel/white,/area/space)
+"pd" = (/obj/structure/sign/departments/security,/turf/closed/indestructible/reinforced,/area/space)
+"pw" = (/obj/structure/table/reinforced,/obj/effect/turf_decal/corner/opaque/lightgrey/diagonal,/turf/open/floor/plasteel/white,/area/space)
+"pR" = (/obj/structure/sign/poster/retro/radio,/turf/closed/indestructible/reinforced,/area/space)
 "qI" = (/obj/structure/closet/crate/radiation,/turf/open/floor/concrete/tiles,/area/space)
 "qY" = (/obj/structure/table,/obj/item/pen/fourcolor{pixel_x = -8; pixel_y = 8},/obj/item/folder/yellow{pixel_x = 7; pixel_y = 6},/obj/effect/turf_decal/corner/opaque/nsorange/border{dir = 7},/turf/open/floor/plasteel/patterned/cargo_one,/area/space)
+"rj" = (/obj/effect/turf_decal/spline/fancy/opaque/lightgrey{dir = 4},/obj/effect/turf_decal/corner/transparent/lightgrey/diagonal,/obj/machinery/vending/coffee,/turf/open/floor/plasteel/white,/area/space)
+"rp" = (/obj/effect/turf_decal/spline/fancy/opaque/lightgrey{dir = 6},/obj/effect/turf_decal/corner/transparent/lightgrey/diagonal,/obj/structure/table/glass,/turf/open/floor/plasteel/white,/area/space)
 "rv" = (/obj/effect/turf_decal/borderfloor{dir = 4},/turf/open/floor/concrete/tiles,/area/space)
 "sz" = (/obj/structure/table,/obj/effect/turf_decal/corner/opaque/nsorange/border{dir = 18},/turf/open/floor/plasteel/patterned/cargo_one,/area/space)
+"tc" = (/obj/effect/turf_decal/corner/transparent/lightgrey/diagonal,/turf/open/floor/plasteel/white,/area/space)
 "te" = (/obj/structure/crate_shelf,/turf/open/floor/concrete/tiles,/area/space)
+"tX" = (/obj/structure/window/reinforced/spawner{dir = 4},/obj/effect/turf_decal/spline/fancy/opaque/lightgrey{dir = 4},/obj/effect/turf_decal/corner/transparent/lightgrey/diagonal,/turf/open/floor/plasteel/white,/area/space)
 "ub" = (/obj/machinery/door/airlock/mining/glass{dir = 4; name = "Cargo"},/turf/open/floor/plasteel/patterned/grid,/area/space)
+"ur" = (/obj/effect/turf_decal/spline/fancy/opaque/lightgrey,/obj/effect/turf_decal/corner/transparent/lightgrey/diagonal,/turf/open/floor/plasteel/white,/area/space)
+"uy" = (/obj/structure/sign/departments/medbay/alt,/turf/closed/indestructible/reinforced,/area/space)
+"uZ" = (/obj/effect/turf_decal/corner/opaque/lightgrey/diagonal,/turf/open/floor/plasteel/white,/area/space)
 "vw" = (/obj/machinery/door/window,/obj/machinery/shower{pixel_x = 0; pixel_y = 22},/turf/open/floor/noslip,/area/space)
+"vW" = (/obj/machinery/vending/snack/random,/obj/effect/turf_decal/spline/fancy/opaque/lightgrey{dir = 1},/obj/effect/turf_decal/corner/transparent/lightgrey/diagonal,/turf/open/floor/plasteel/white,/area/space)
+"xh" = (/obj/effect/turf_decal/siding/brown{dir = 1},/turf/open/floor/plasteel/white,/area/space)
 "xk" = (/obj/effect/turf_decal/borderfloor/corner{dir = 4},/turf/open/floor/concrete/tiles,/area/space)
+"yg" = (/obj/structure/sign/poster/retro/science,/turf/closed/indestructible/reinforced,/area/space)
+"yK" = (/obj/structure/window/reinforced/spawner{dir = 1},/obj/effect/turf_decal/spline/fancy/opaque/lightgrey{dir = 1},/obj/effect/turf_decal/corner/transparent/lightgrey/diagonal,/turf/open/floor/plasteel/white,/area/space)
 "zh" = (/obj/structure/toilet{dir = 4; pixel_x = -4; pixel_y = 1},/turf/open/floor/plasteel/showroomfloor,/area/space)
+"zX" = (/obj/effect/turf_decal/spline/fancy/opaque/lightgrey{dir = 1},/obj/effect/turf_decal/corner/opaque/lightgrey/diagonal,/obj/machinery/computer/card/retro{dir = 8},/turf/open/floor/plasteel/white,/area/space)
 "At" = (/turf/open/floor/plasteel/patterned/grid,/area/space)
-"Bv" = (/turf/open/floor/carpet/cyan,/area/space)
+"BJ" = (/obj/effect/turf_decal/spline/fancy/opaque/lightgrey/corner{dir = 8},/obj/effect/turf_decal/corner/transparent/lightgrey/diagonal,/turf/open/floor/plasteel/white,/area/space)
+"BK" = (/obj/effect/turf_decal/siding/green{dir = 9},/obj/effect/turf_decal/siding/green/corner,/turf/open/floor/plasteel/white,/area/space)
+"Cr" = (/obj/structure/window/reinforced/spawner{dir = 8},/obj/effect/turf_decal/spline/fancy/opaque/lightgrey{dir = 8},/obj/effect/turf_decal/corner/transparent/lightgrey/diagonal,/turf/open/floor/plasteel/white,/area/space)
 "Da" = (/obj/effect/turf_decal/road/line/transparent/white,/turf/open/floor/concrete/pavement,/area/space)
 "Dt" = (/obj/machinery/door/airlock/freezer{id_tag = "reactorbathroombolt"; name = "Bathroom"},/turf/open/floor/plasteel/showroomfloor,/area/space)
 "DG" = (/turf/open/floor/plating/rust/wasteplanet,/area/space)
+"DJ" = (/obj/machinery/door/airlock/glass{dir = 4; name = "Dormitories"},/turf/open/floor/carpet/green,/area/space)
+"DW" = (/obj/machinery/vending/cigarette,/obj/effect/turf_decal/spline/fancy/opaque/lightgrey{dir = 5},/obj/effect/turf_decal/corner/transparent/lightgrey/diagonal,/turf/open/floor/plasteel/white,/area/space)
 "Es" = (/turf/open/floor/plasteel/showroomfloor,/area/space)
+"EB" = (/obj/effect/turf_decal/siding/red{dir = 8},/obj/effect/turf_decal/siding/red{dir = 4},/turf/open/floor/plasteel/white,/area/space)
+"EC" = (/obj/effect/turf_decal/spline/fancy/opaque/lightgrey/corner{dir = 1},/obj/effect/turf_decal/corner/transparent/lightgrey/diagonal,/turf/open/floor/plasteel/white,/area/space)
+"EG" = (/obj/machinery/door/airlock/medical/glass{dir = 4; name = "Medical"},/turf/open/floor/plasteel/white,/area/space)
+"EM" = (/obj/machinery/door/airlock{dir = 4; name = "Dorm 2"},/turf/open/floor/carpet/green,/area/space)
 "EP" = (/obj/effect/turf_decal/borderfloor{dir = 1},/turf/open/floor/concrete/tiles,/area/space)
 "Fj" = (/obj/structure/table,/obj/effect/turf_decal/corner/opaque/nsorange/border{dir = 8},/turf/open/floor/plasteel/patterned/cargo_one,/area/space)
 "Ga" = (/obj/structure/table,/obj/item/megaphone/cargo,/obj/effect/turf_decal/corner/opaque/nsorange/border{dir = 8},/turf/open/floor/plasteel/patterned/cargo_one,/area/space)
 "Hg" = (/turf/closed/mineral/random/wasteplanet,/area/space)
 "In" = (/obj/effect/turf_decal/corner/opaque/nsorange/border{dir = 4},/turf/open/floor/plasteel/patterned/cargo_one,/area/space)
+"Ip" = (/obj/machinery/door/window/brigdoor{dir = 4},/obj/effect/turf_decal/siding/red,/obj/effect/turf_decal/siding/red{dir = 1},/turf/open/floor/plasteel/white,/area/space)
 "IW" = (/obj/effect/turf_decal/borderfloor{dir = 6},/turf/open/floor/concrete/tiles,/area/space)
 "IZ" = (/obj/structure/sink{dir = 4; pixel_x = -12},/turf/open/floor/plasteel/showroomfloor,/area/space)
 "Jv" = (/obj/effect/turf_decal/road/line/transparent/white,/obj/effect/turf_decal/trimline/transparent/white/filled/warning{dir = 4},/turf/open/floor/concrete/pavement,/area/space)
+"JB" = (/obj/machinery/door/airlock/public/glass{name = "Reception"},/turf/open/floor/plasteel/white,/area/space)
 "JF" = (/obj/structure/closet/crate/engineering,/turf/open/floor/concrete/tiles,/area/space)
 "Kf" = (/turf/open/floor/carpet/green,/area/space)
 "Kg" = (/turf/closed/indestructible/reinforced,/area/space)
+"KI" = (/obj/effect/turf_decal/siding/white{dir = 8},/turf/open/floor/plasteel/white,/area/space)
+"Ln" = (/obj/effect/turf_decal/siding/brown{dir = 1},/obj/effect/turf_decal/siding/white{dir = 4},/turf/open/floor/plasteel/white,/area/space)
 "Mg" = (/obj/effect/turf_decal/borderfloor,/turf/open/floor/concrete/tiles,/area/space)
+"Mi" = (/obj/effect/turf_decal/siding/blue{dir = 1},/turf/open/floor/plasteel/white,/area/space)
+"Nl" = (/obj/effect/turf_decal/spline/fancy/opaque/lightgrey/corner{dir = 6},/obj/effect/turf_decal/corner/transparent/lightgrey/diagonal,/turf/open/floor/plasteel/white,/area/space)
+"Oe" = (/obj/effect/turf_decal/siding/red{dir = 5},/obj/effect/turf_decal/siding/red/corner{dir = 8},/turf/open/floor/plasteel/white,/area/space)
 "Oq" = (/obj/structure/fence,/turf/open/floor/concrete/pavement,/area/space)
 "OL" = (/obj/structure/closet/crate/internals,/turf/open/floor/concrete/tiles,/area/space)
 "OS" = (/obj/structure/fence/corner{dir = 1},/turf/open/floor/plating/asteroid/wasteplanet,/area/space)
+"Pz" = (/obj/structure/table/reinforced,/obj/effect/turf_decal/corner/opaque/lightgrey/diagonal,/obj/machinery/fax/nanotrasen,/turf/open/floor/plasteel/white,/area/space)
+"PS" = (/obj/machinery/door/airlock{dir = 4; name = "Dorm 1"},/turf/open/floor/carpet/green,/area/space)
+"Qq" = (/obj/structure/table/reinforced,/obj/effect/turf_decal/corner/opaque/lightgrey/diagonal,/obj/item/toy/plush/snakeplushie,/turf/open/floor/plasteel/white,/area/space)
+"QV" = (/obj/effect/turf_decal/spline/fancy/opaque/lightgrey{dir = 10},/obj/effect/turf_decal/corner/transparent/lightgrey/diagonal,/obj/machinery/computer/arcade/battle{dir = 4},/turf/open/floor/plasteel/white,/area/space)
+"QW" = (/obj/effect/turf_decal/spline/fancy/opaque/lightgrey{dir = 1},/obj/structure/table/reinforced,/obj/effect/turf_decal/corner/opaque/lightgrey/diagonal,/turf/open/floor/plasteel/white,/area/space)
 "Rn" = (/obj/structure/fence,/turf/open/floor/plating/asteroid/wasteplanet,/area/space)
 "SB" = (/turf/open/floor/concrete/pavement,/area/space)
 "Tk" = (/turf/open/floor/plating/asteroid/wasteplanet,/area/space)
+"TI" = (/obj/structure/sign/poster/retro/build,/turf/closed/indestructible/reinforced,/area/space)
+"UG" = (/obj/effect/turf_decal/spline/fancy/opaque/lightgrey{dir = 4},/obj/effect/turf_decal/corner/transparent/lightgrey/diagonal,/obj/structure/table/glass,/turf/open/floor/plasteel/white,/area/space)
+"UV" = (/obj/effect/turf_decal/spline/fancy/opaque/lightgrey{dir = 8},/obj/structure/chair/sofa/blue/old/left{dir = 4},/obj/effect/turf_decal/corner/transparent/lightgrey/diagonal,/turf/open/floor/plasteel/white,/area/space)
 "Vd" = (/obj/effect/turf_decal/corner/opaque/nsorange/border{dir = 4},/obj/structure/chair/office{dir = 8},/turf/open/floor/plasteel/patterned/cargo_one,/area/space)
 "Vo" = (/obj/structure/table,/obj/effect/turf_decal/corner/opaque/nsorange/border{dir = 10},/turf/open/floor/plasteel/patterned/cargo_one,/area/space)
+"VH" = (/obj/effect/turf_decal/spline/fancy/opaque/lightgrey/corner{dir = 4},/obj/effect/turf_decal/corner/transparent/lightgrey/diagonal,/turf/open/floor/plasteel/white,/area/space)
+"VO" = (/obj/effect/turf_decal/siding/white{dir = 4},/turf/open/floor/plasteel/white,/area/space)
+"Wn" = (/obj/effect/turf_decal/spline/fancy/opaque/lightgrey/corner,/obj/effect/turf_decal/corner/transparent/lightgrey/diagonal,/turf/open/floor/plasteel/white,/area/space)
 "WY" = (/obj/machinery/button/door{id = "reactorbathroombolt"; dir = 8; pixel_x = 24; specialfunctions = 4},/turf/open/floor/plasteel/showroomfloor,/area/space)
 "XD" = (/obj/effect/turf_decal/trimline/transparent/white/filled/warning{dir = 4},/turf/open/floor/concrete/pavement,/area/space)
-"Yn" = (/turf/open/floor/carpet/blue,/area/space)
+"XY" = (/obj/structure/table/reinforced,/obj/effect/turf_decal/corner/opaque/lightgrey/diagonal,/obj/item/reagent_containers/food/drinks/mug{pixel_x = 8; pixel_y = 8},/turf/open/floor/plasteel/white,/area/space)
+"Yw" = (/turf/open/space/basic,/area/space)
+"Zl" = (/obj/structure/sign/poster/retro/nanotrasen_logo_70s,/turf/closed/indestructible/reinforced,/area/space)
 "ZB" = (/obj/effect/turf_decal/industrial/stand_clear/white{dir = 4},/turf/open/floor/concrete/slab_1,/area/space)
 "ZI" = (/turf/open/floor/plasteel/white,/area/space)
+"ZJ" = (/obj/structure/sign/poster/retro/smile,/turf/closed/indestructible/reinforced,/area/space)
 "ZM" = (/turf/open/floor/concrete/tiles,/area/space)
 
 (1,1,1) = {"
@@ -75,7 +145,7 @@ TkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkHgHgHgHgHgHgHgHgHgHgHgHgHgHgHgHgHgKgKg
 TkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkHgHgHgHgHgHgHgHgHgHgHgHgHgHgHgHgKgKgKgTkTkKgKgKgKgKgKgKgTkTkKgKgKgHgHgHgHgHgHgHgHgHgHgHgHgHgHgHgTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
 TkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkHgHgHgHgHgHgHgHgHgHgHgHgHgHgHgKgKgTkTkKgKgKgKgKgKgKgKgKgTkTkKgKgHgHgHgHgHgHgHgHgHgHgHgHgHgHgHgTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
 TkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkHgHgHgHgHgHgHgHgHgHgHgHgHgHgHgKgKgTkTkKgKgKgTkTkTkKgKgKgTkTkKgKgHgHgHgHgHgHgHgHgHgHgHgHgHgHgHgHgTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
-TkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkHgHgHgHgHgHgHgHgHgHgHgHgHgHgHgKgKgTkTkKgKgKgTkTkTkKgKgKgTkTkKgKgHgHgHgHgHgHgHgHgHgHgHgHgHgHgHgTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
+TkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkHgHgHgHgHgHgHgHgHgHgHgHgHgHgHgKgKgTkTkYwYwYwTkTkTkKgKgKgTkTkKgKgHgHgHgHgHgHgHgHgHgHgHgHgHgHgHgTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
 TkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkHgHgHgHgHgHgHgHgHgHgHgHgHgHgKgKgTkTkKgKgKgTkTkTkKgKgKgTkTkKgKgHgHgHgHgHgHgHgHgHgHgHgHgHgHgHgHgTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
 TkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkHgHgHgHgHgHgHgHgHgHgHgHgHgHgKgKgTkTkKgKgKgKgKgKgKgKgTkTkTkKgKgHgHgHgHgHgHgHgHgHgHgHgHgHgHgHgHgTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
 TkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkHgHgHgHgHgHgHgHgHgHgHgHgHgHgKgKgTkTkTkKgKgKgKgKgKgKgTkTkTkKgKgHgHgHgHgHgHgHgHgHgHgHgHgHgHgHgHgTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
@@ -105,7 +175,7 @@ TkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkRnTkTkKgTkTkTkTkKgTk
 TkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkRnTkTkKgTkTkTkTkKgTkTkTkTkTkTkTkTkTkTkTkTkTkKgTkTkTkKgHgHgHgHgHgHgHgHgHgTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
 TkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkRnTkTkKgTkTkTkTkKgTkTkTkTkTkTkTkTkTkTkTkTkTkKgTkTkTkKgHgHgHgHgHgHgHgTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
 TkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkRnTkTkKgTkTkTkTkKgTkTkTkTkTkTkTkTkTkTkTkTkTkKgTkTkTkKgHgHgHgHgHgHgTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
-TkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkRnTkTkKgKgKgKgKgKgKgKgKgKgKgKgKgKgKgKgKgKgKgKgKgTkKgKgHgHgHgHgHgTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
+TkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkRnTkTkKgKgYwKgKgKgKgKgYwKgKgKgKgKgKgKgKgKgKgKgKgTkKgKgHgHgHgHgHgTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
 TkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkRnTkTkKgTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkKgHgHgHgHgTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
 TkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkRnTkTkKgTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkKgHgHgHgTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
 TkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkRnTkTkKgTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
@@ -113,36 +183,36 @@ TkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkRnTkTkKgTkTkTkTkTkTk
 TkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkRnTkTkKgTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkKgKgvwKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
 TkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkRnTkTkKgTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkKgKgIZEsKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
 TkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkRnTkTkKgTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkKgzheNWYKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
-TkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkRnTkTkKgKgTkKgKgKgKgKgKgKgKgZIKgZIKgKgKgKgKgKgKgKgDtKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
-TkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkRnTkTkKgTkTkTkTkTkTkTkTkKgZIZIZIZIZIKgBvBvBvBvKfKfKfKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
-TkTkTkTkTkTkTkOSlqlqfulqlqnslqlqfulqlqnslqlqfulqlqnslqlqfulqeITkTkKgTkTkTkTkTkTkTkTkKgZIZIZIZIZIKgBvBvBvKgKfKfKfKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
-TkTkTkTkTkTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkKgTkTkTkTkTkTkTkTkKgZIZIZIZIZIKgKgKgKgKgKfKfKfKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
-TkTkTkTkTkTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkKgTkTkTkTkTkTkTkTkTkZIZIZIZIZIKgYnYnYnYnKfKfKfKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
-TkTkTkTkTkTkTkRnTkTkTkTkTkTkaVaVaVaVaVaVaVaVaVKgKgKgKgKgKgKgKgKgKgKgTkTkTkTkTkTkTkTkTkZIZIZIZIZIKgYnYnYnKgKfKfKfKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
-TkTkTkTkTkTkTkRnTkTkTkTkTkaVaVteteteteqIZMZMZMKgTkTkTkTkTkTkTkTkTkKgTkTkTkTkTkTkTkTkTkZIZIZIZIZIKgKgKgKgKgKfKfKfKgTkTkOSlqlqfulqlqnslqlqlqeITkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
-TkTkTkTkTkTkTkRnTkTkTkTkaVaVZMZMZMZMZMZMZMZMZMKgTkTkTkTkTkTkTkTkTkKgTkTkTkTkTkTkTkTkKgZIZIZIZIZIKgbFbFbFbFKfKfKfKgTkTkTkTkTkTkTkTkTkTkTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
-TkTkTkTkTkTkTkRnTkTkTkaVaVZMZMZMZMZMZMZMdEnuouKgTkTkTkKgKgKgKgKgKgKgKgKgKgKgKgKgKgKgKgZIZIZIZIZIKgbFbFbFKgKfKfKfKgTkTkTkTkTkTkTkTkTkTkTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
-TkTkTkTkTkTkTkRnTkTkaVaVZMiWZMZMJFZMZMZMFjDGInKgTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkKgZIZIZIZIZIKgKgKgKgKgKgKfKfKgTkTkTkKgKgKgKgTkTkTkTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
-TkTkTkTkTkTkTkRnTkTkaVZMZMZMOLZMZMZMTkZMGalCDGKgTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkKgZIZIZIZIZIKgKfKfKfKfKfKfKfKgTkKgKgKgZIZIKgKgKgTkTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
-TkTkTkTkTkTkTkRnTkTkaViWZMZMhrZMZMZMJFZMFjhZVdKgTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkKgZIZIZIZIZIKgKfKfKfKfKfKfKfKgKgKgZIZIZIZIZIZIKgKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
-TkTkTkTkTkTkTkRnTkTkaVZMZMZMZMZMZMZMZMZMVoszqYKgTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkKgZIZIZIZIZIKfKfKfKfKfKfKfKfKgZIZIZIZIZIZIZIZIZIKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
-TkTkTkTkTkTkTkRnTkTkaVeZeZeZeZeZeZZMZMZMZMZMZMKgTkTkTkTkTkTkTkTkTkTkTkTkKgKgKgKgKgKgKgZIZIZIZIZIKgKfKfKfKfKfKfKfKgZIZIZIZIZIZIZIZIZIKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
-TkTkTkTkTkSBSBOqSBSBSBTkSBSBSBSBmJeZZMZMZMTkZMKgTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkZIZIZIZIZIZIZIZIZIKgKfKfKfKfKfKfKfKgZIZIZIZIZIZIZIZIZIKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
-TkTkTkTkTkTkTkOqSBSBSBSBSBSBSBSBXDZBZMZMZMZMZMKgTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkZIZIZIZIZIZIZIZIZIKgKgKfKfKfKfKfKfKgZIZIZIZIZIZIZIZIZIKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
-TkTkTkTkTkSBSBOqSBSBSBSBSBTkSBSBXDeZTkZMZMZMZMKgKgKgKgKgKgKgKgKgKgKgKgKgKgKgKgZIZIZIZIZIZIZIZIZIZIKgKgKgKgKgKgKgKgZIZIZIZIZIZIZIZIZIKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
-TkTkTkTkTkTkTkaMDaDaDaDaDaDaDaDaJveZZMZMZMnwMgKgZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIKgZIZIZIZIZIZIZIZIZIKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
-TkTkTkTkTkTkSBOqSBSBSBSBSBSBSBSBXDeZZMZMnwIWAtubZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
-TkTkTkTkTkSBSBOqSBSBSBSBSBSBSBTkXDeZZMZMrvAtAtKgZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIKgZIZIZIZIZIZIZIZIZIKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
-TkTkTkTkTkTkSBOqSBSBTkSBSBSBSBSBXDZBZMZMxkTkAtubZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIKgKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
-TkTkTkTkTkSBSBOqSBSBSBSBSBSBSBSBXDeZZMZMZMxkEPKgZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIKgZIZIZIZIZIZIZIKgKgTkTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
-TkTkTkTkTkTkTkRnTkTkaVaVaVaVaVaVaVaVaVaVaVaVaVKgKgKgKgKgKgKgKgKgKgKgKgKgKgKgKgKgKgKgKgKgZIKgZIKgKgKgKgKgKgKgKgKgKgKgKgKgKgKgKgKgKgTkTkTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
-TkTkTkTkTkTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkKgZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIKgTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
-TkTkTkTkTkTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkKgZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIKgTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
-TkTkTkTkTkTkTkOSfulqlqnslqlqfulqlqnslqlqfulqlqnslqlqfulqlqnslqlqfueITkTkKgZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIKgTkTkOSlqlqnslqlqfulqlqnslqlqfueITkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
-TkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkRnTkTkKgZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
-TkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkRnTkTkKgZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
-TkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkRnTkTkKgZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
-TkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkRnTkTkKgKgKgTkTkKgKgKgKgKgKgKgKgTkTkKgKgKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
+TkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkRnTkTkKgKgTkKgKgKgKgKgKgKgKgZIkfZIKgKgKgKgKgKgKgKgDtKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
+TkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkRnTkTkKgTkTkTkTkTkTkTkTkTkKgZInfZIKgKfKfKfKfkwKfKfKfKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
+TkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkRnTkTkKgTkTkTkTkTkTkTkTkTkKgZInfZIKgKfKfKfKfKfKfKfKfKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
+TkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkRnTkTkKgTkTkTkTkTkTkTkTkTkKgZInfZIKgKfKfKfKfKfKfKfKfKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
+TkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkRnTkTkKgTkTkTkTkTkTkTkTkTkZIZInfZIKgKfKfKfKfEMKfKfKfKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
+TkTkTkTkTkTkTkOSlqlqfulqlqnslqlqfulqlqnslqlqfulqlqnslqlqfulqeITkTkKgTkTkTkTkTkTkTkTkTkZIZInfZIKgKfKfKfKfKfKfKfKfKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
+TkTkTkTkTkTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkKgTkTkTkTkTkTkTkTkTkZIZInfZIKgKfKfKfKfKfKfKfKfKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
+TkTkTkTkTkTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkKgTkTkTkTkTkTkTkTkTkKgZInfZIKgKfKfKfKfPSKfKfKfKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
+TkTkTkTkTkTkTkRnTkTkTkTkTkTkaVaVaVaVaVaVaVaVaVKgTkTkTkKgKgKgKgKgKgKgKgKgKgKgKgKgKgKgKgKgZInfZIKgKfKfKfKfKfKfKfKfKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
+TkTkTkTkTkTkTkRnTkTkTkTkTkaVaVteteteteqIZMZMZMKgTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkKgZInfZIKgKfKfKfKfKfKfKfKfKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
+TkTkTkTkTkTkTkRnTkTkTkTkaVaVZMZMZMZMZMZMZMZMZMKgTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkKgZInfZIKgKfKfKfKfKfKfKfKfKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
+TkTkTkTkTkTkTkRnTkTkTkaVaVZMZMZMZMZMZMZMdEnuouKgTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkKgZInfZIKgKfKfKfKfKfKfKfKfKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
+TkTkTkTkTkTkTkRnTkTkaVaVZMiWZMZMJFZMZMZMFjDGInKgTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkKgZInfBKDJKfKfKfKfKfKfKfKfKgTkTkOSlqlqfulqlqnslqlqlqeITkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
+TkTkTkTkTkTkTkRnTkTkaVZMZMZMOLZMZMZMTkZMGalCDGKgTkTkTkTkTkTkTkTkTkTkTkTkKgKgKgKgpdKgKgKgZInfjiKgKfKfKfKfKfKfKfKfKgTkTkTkTkTkTkTkTkTkTkTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
+TkTkTkTkTkSBSBOqSBSBaViWZMZMhrZMZMZMJFZMFjhZVdKgTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkozozIpozozOenfjiKgKfKfKfKfKfKfKfKfKgTkTkTkTkTkTkTkTkTkTkTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
+TkTkTkTkTkTkTkOqSBSBaVZMZMZMZMZMZMZMZMZMVoszqYKgTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkZIZIddZIZIEBnfjiKgKgKfKfKfKfKfKfKfKgTkTkTkKgKgKgKgTkTkTkTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
+TkTkTkTkTkSBSBOqSBSBaVeZeZeZeZeZeZZMZMZMZMZMZMKgTkTkTkTkTkTkTkTkTkTkTkTkTkKgKgddddddZIZIEBmYjiZIKgKgKfKfKfKfKfKfKgTkKgKgKgZIZIKgKgKgTkTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
+TkTkTkTkTkTkTkaMDaDaDaDaDaDaDaDaJveZZMZMZMnwMgKgKgKgKgKgKgKgKgKgKgKgKgKgKgKgKgZIZIZIZIZImYmYmYZIZIKgKgKgKgKgKgKgKgKgKgZIZIZIZIZIZIKgKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
+TkTkTkTkTkTkSBOqSBSBSBSBSBSBSBSBXDeZZMZMnwIWAtubiKiKiKiKiKiKiKiKiKiKiKiKiKiKiKiKiKiKiKmYmYmYmYmYcxcxcxcxcxcxcxcxEGZIZIZIZIZIZIZIZIZIKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
+TkTkTkTkTkSBSBOqSBSBSBSBSBSBSBTkXDeZZMZMrvAtAtdpZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZIZImYmYmYZIZIZIZIZIZIZIZIZIuyZIZIZIZIZIZIZIZIZIKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
+TkTkTkTkTkTkSBOqSBSBTkSBSBSBSBSBXDZBZMZMxkTkAtubxhxhxhxhxhxhxhxhxhxhxhxhxhxhxhxhxhxhxhxhLnmYbGMiMiMiMiMiMiMiMiMiEGZIZIZIZIZIZIZIZIKgKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
+TkTkTkTkTkSBSBOqSBSBSBSBSBSBSBSBXDeZZMZMZMxkEPKgKgKgKgKgKgKgKgKgKgKgKgKgKgKgKgKgKgKgKgKgVOZIKIKgKgKgKgKgKgKgKgKgKgZIZIZIZIZIZIZIKgKgTkTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
+TkTkTkTkTkTkTkRnTkTkaVaVaVaVaVaVaVaVaVaVaVaVaVKgTkTkTkTkTkTkTkTkTkTkTkKgKgKgKgygKghzKgKgJBZJJBpRKgKgKgZlKgKgKgKgKgKgKgKgKgKgKgKgKgTkTkTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
+TkTkTkTkTkTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkKgcgvWpcpcpccGnbnbnbnbzXQWpchEpcDWKgTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
+TkTkTkTkTkTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkKgoOtctctctcpwuZuZohuZuZPztctctcrjKgTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
+TkTkTkTkTkTkTkOSfulqlqnslqlqfulqlqnslqlqfulqlqnslqlqfulqlqnslqlqfueITkTkTIkptcWnizBJpwQqpwpwcBXYpwNlizBJUGKgTkTkOSlqlqnslqlqfulqlqnslqlqfueITkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
+TkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkRnTkTkKgUVtctXlsCrtctctctctctctctXlsCrfUKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
+TkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkRnTkTkKgiAtcVHyKECtctctctctctctcVHyKECfLKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
+TkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkRnTkTkKgQVurbVbVbVbVbVbVbVbVbVbVbVbVbVrpKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
+TkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkRnTkTkKgKgKggFgFKgKgKgKgKgKgKgKggFgFKgKgKgTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
 TkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
 TkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkRnTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
 TkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkOSlqlqnslqlqfulqlqnslqlqfulqlqnslqlqfulqlqnslqeITkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTkTk
