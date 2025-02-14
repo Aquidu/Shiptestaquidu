@@ -34,6 +34,7 @@
 
 	light_range = 3
 	light_color = COLOR_VERY_SOFT_YELLOW
+	light_on = FALSE
 
 	///Icon state of the muzzle flash effect.
 	var/muzzleflash_iconstate
@@ -136,6 +137,8 @@
 	var/wielded_fully = FALSE
 	///Slowdown for wielding
 	var/wield_slowdown = 0.1
+	///slowdown for aiming whilst wielding
+	var/aimed_wield_slowdown = 0.1
 	///How long between wielding and firing in tenths of seconds
 	var/wield_delay	= 0.4 SECONDS
 	///Storing value for above
@@ -215,6 +218,8 @@
 
 	///Used if the guns recoil is lower then the min, it clamps the highest recoil
 	var/min_recoil = 0
+	///if we want a min recoil (or lack of it) whilst aiming
+	var/min_recoil_aimed = 0
 
 	var/gunslinger_recoil_bonus = 0
 	var/gunslinger_spread_bonus = 0
@@ -263,8 +268,12 @@
 /*
  *  Attachment
 */
-	///The types of attachments allowed, a list of types. SUBTYPES OF AN ALLOWED TYPE ARE ALSO ALLOWED
+	///The types of attachments allowed, a list of types. SUBTYPES OF AN ALLOWED TYPE ARE ALSO ALLOWED.
 	var/list/valid_attachments = list()
+	///The types of attachments that are unique to this gun. Adds it to the base valid_attachments list. So if this gun takes a special stock, add it here.
+	var/list/unique_attachments = list()
+	///The types of attachments that aren't allowed. Removes it from the base valid_attachments list.
+	var/list/refused_attachments
 	///Number of attachments that can fit on a given slot
 	var/list/slot_available = ATTACHMENT_DEFAULT_SLOT_AVAILABLE
 	///Offsets for the slots on this gun. should be indexed by SLOT and then by X/Y
@@ -275,7 +284,7 @@
  *  Zooming
 */
 	///Whether the gun generates a Zoom action on creation
-	var/zoomable = FALSE
+	var/zoomable = TRUE
 	//Zoom toggle
 	var/zoomed = FALSE
 	///Distance in TURFs to move the user's screen forward (the "zoom" effect)
@@ -339,7 +348,14 @@
 
 /obj/item/gun/ComponentInitialize()
 	. = ..()
-	AddComponent(/datum/component/attachment_holder, slot_available, valid_attachments, slot_offsets, default_attachments)
+	var/list/attachment_list = valid_attachments
+	attachment_list += unique_attachments
+	if(refused_attachments)
+		for(var/to_remove in attachment_list)
+			if(refused_attachments.Find(to_remove))
+				attachment_list -= to_remove
+
+	AddComponent(/datum/component/attachment_holder, slot_available, attachment_list, slot_offsets, default_attachments)
 	AddComponent(/datum/component/two_handed)
 
 /// triggered on wield of two handed item
@@ -398,6 +414,9 @@
 	. = ..()
 	if(has_safety)
 		. += "The safety is [safety ? "<span class='green'>ON</span>" : "<span class='red'>OFF</span>"]. Ctrl-Click to toggle the safety."
+
+	if(gun_firemodes.len > 1)
+		. += "You can change the [src]'s firemode by pressing the <b>secondary action</b> key. By default, this is <b>Shift + Space</b>"
 
 	if(manufacturer)
 		. += "<span class='notice'>It has <b>[manufacturer]</b> engraved on it.</span>"
@@ -879,7 +898,7 @@
 	var/atom/movable/flash_loc = user
 	if(!light_on)
 		set_light_on(TRUE)
-		addtimer(CALLBACK(src, TYPE_PROC_REF(/atom, set_light_on), FALSE), 1 SECONDS)
+		addtimer(CALLBACK(src, TYPE_PROC_REF(/atom, set_light_on), FALSE), 3)
 
 	//Offset the pixels.
 	switch(firing_angle)
@@ -1005,7 +1024,7 @@
 
 //I need to refactor this into an attachment
 /datum/action/toggle_scope_zoom
-	name = "Toggle Scope"
+	name = "Aim Down Sights"
 	check_flags = AB_CHECK_CONSCIOUS|AB_CHECK_HANDS_BLOCKED|AB_CHECK_IMMOBILE|AB_CHECK_LYING
 	icon_icon = 'icons/mob/actions/actions_items.dmi'
 	button_icon_state = "sniper_zoom"
@@ -1016,6 +1035,7 @@
 
 	var/obj/item/gun/gun = target
 	gun.zoom(owner, owner.dir)
+	gun.min_recoil = gun.min_recoil_aimed
 
 /datum/action/toggle_scope_zoom/Remove(mob/user)
 	if(!istype(target, /obj/item/gun))
@@ -1041,17 +1061,23 @@
 		if((!zoomed && wielded_fully) || zoomed)
 			zoomed = !zoomed
 		else
-			to_chat(user, "<span class='danger'>You can't look down the scope without wielding [src]!</span>")
+			to_chat(user, span_danger("You can't look down the sights without wielding [src]!"))
 			zoomed = FALSE
 	else
 		zoomed = forced_zoom
 
 	if(zoomed)
 		RegisterSignal(user, COMSIG_ATOM_DIR_CHANGE, PROC_REF(rotate))
+		ADD_TRAIT(user, TRAIT_AIMING, ref(src))
 		user.client.view_size.zoomOut(zoom_out_amt, zoom_amt, direc)
+		min_recoil = min_recoil_aimed
+		user.add_or_update_variable_movespeed_modifier(/datum/movespeed_modifier/aiming, multiplicative_slowdown = aimed_wield_slowdown)
 	else
 		UnregisterSignal(user, COMSIG_ATOM_DIR_CHANGE)
+		REMOVE_TRAIT(user, TRAIT_AIMING, ref(src))
 		user.client.view_size.zoomIn()
+		min_recoil = initial(min_recoil)
+		user.remove_movespeed_modifier(/datum/movespeed_modifier/aiming)
 	return zoomed
 
 //Proc, so that gun accessories/scopes/etc. can easily add zooming.
@@ -1111,6 +1137,10 @@
 	update_appearance()
 	for(var/datum/action/current_action as anything in actions)
 		current_action.UpdateButtonIcon()
+
+/obj/item/gun/secondary_action(user)
+	if(gun_firemodes.len > 1)
+		fire_select(user)
 
 /datum/action/item_action/toggle_firemode/UpdateButtonIcon(status_only = FALSE, force = FALSE)
 	var/obj/item/gun/our_gun = target
