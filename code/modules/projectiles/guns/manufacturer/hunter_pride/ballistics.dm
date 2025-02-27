@@ -110,7 +110,7 @@ EMPTY_GUN_HELPER(revolver/firebrand)
 		"Lanchester Special" = "shadow_lanchester"
 		)
 
-	recoil = 0 //weaker than normal revolver, no recoil
+	recoil = 0
 	spread_unwielded = 10
 
 /obj/item/gun/ballistic/revolver/shadow/ComponentInitialize()
@@ -152,7 +152,7 @@ EMPTY_GUN_HELPER(revolver/shadow)
 	w_class = WEIGHT_CLASS_SMALL
 	manufacturer = MANUFACTURER_HUNTERSPRIDE
 
-	recoil = 0 //weaker than normal revolver, no recoil
+	recoil = 0
 	fire_delay = 0.2 SECONDS
 
 EMPTY_GUN_HELPER(revolver/detective)
@@ -401,7 +401,8 @@ EMPTY_GUN_HELPER(shotgun/doublebarrel)
 
 // sawn off beforehand
 /obj/item/gun/ballistic/shotgun/doublebarrel/presawn
-	name = "sawn-off double-barreled shotgun"
+	//init gives it the sawn_off name
+	name = "double-barreled shotgun"
 	desc = "A break action shotgun cut down to the size of a sidearm. While the recoil is even harsher, it offers a lot of power in a very small package. Chambered in 12g."
 	sawn_off = TRUE
 	weapon_weight = WEAPON_MEDIUM
@@ -810,6 +811,18 @@ EMPTY_GUN_HELPER(shotgun/flamingarrow)
 		recoil = 0
 		recoil_unwielded = 3
 
+/obj/item/gun/ballistic/shotgun/flamingarrow/absolution/factory
+	desc = "A large lever-action rifle with hand-stamped Hunter's Pride marks on the receiver and an 8 round ammunition capacity. More powerful than the Flaming Arrow, the Absolution is a popular pick for hunting larger fauna like bears and goliaths, especially when a bolt action's slower rate of fire would be a liability. This example has been kept in excellent shape and may as well be fresh out of the workshop. Chambered in .357."
+	icon_state = "absolution_factory"
+	base_icon_state = "absolution_factory"
+	item_state = "absolution_factory"
+
+/obj/item/gun/ballistic/shotgun/flamingarrow/absolution/factory/sawoff(forced = FALSE)
+	. = ..()
+	if(.)
+		item_state = "absolution_factory_sawn"
+		mob_overlay_state = item_state
+
 //Break-Action Rifle
 /obj/item/gun/ballistic/shotgun/doublebarrel/beacon
 	name = "HP Beacon"
@@ -883,7 +896,7 @@ EMPTY_GUN_HELPER(shotgun/doublebarrel/beacon)
 
 //pre sawn off beacon
 /obj/item/gun/ballistic/shotgun/doublebarrel/beacon/presawn
-	name = "sawn-off HP Beacon"
+	name = "HP Beacon"
 	sawn_desc= "A single-shot break-action pistol chambered in .45-70. A bit difficult to aim."
 	sawn_off = TRUE
 	w_class = WEIGHT_CLASS_NORMAL
