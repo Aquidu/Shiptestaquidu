@@ -1,0 +1,38 @@
+"a" = (/turf/open/space/basic,/area/space)
+"d" = (/turf/open/floor/wood/birch,/area/space)
+"g" = (/turf/closed/wall/r_wall,/area/space)
+"h" = (/obj/machinery/light/small/directional/west,/obj/structure/table/wood/fancy/blue,/obj/item/gun/ballistic/revolver/viper{pixel_x = 0; pixel_y = 5},/turf/open/floor/wood/birch,/area/space)
+"i" = (/obj/item/clothing/under/clip/officer{pixel_x = 10; pixel_y = -16},/obj/item/radio/headset/clip/alt/captain{pixel_x = 9; pixel_y = 4},/obj/item/clothing/accessory/medal/gold/captain{pixel_x = -9; pixel_y = -1},/turf/open/floor/carpet/royalblue,/area/space)
+"l" = (/obj/structure/dresser{dir = 4},/obj/machinery/light/small/directional/east,/obj/item/storage/fancy/cigarettes/cigars/cohiba{pixel_x = 0; pixel_y = 9},/obj/item/clothing/head/clip/slouch/officer{pixel_x = -5; pixel_y = 11},/obj/item/lighter{pixel_x = 7; pixel_y = 7},/turf/open/floor/carpet/royalblue,/area/space)
+"n" = (/obj/structure/table/wood/fancy/blue,/obj/item/gun/ballistic/automatic/pistol/cm357{pixel_x = -1; pixel_y = 4},/turf/open/floor/wood/birch,/area/space)
+"o" = (/obj/item/kirbyplants/random,/turf/open/floor/wood/birch,/area/space)
+"r" = (/obj/machinery/door/airlock/freezer,/turf/open/floor/wood/birch,/area/space)
+"s" = (/obj/structure/table/wood/fancy/blue,/turf/open/floor/wood/birch,/area/space)
+"t" = (/obj/structure/sign/poster/clip/enlist,/turf/closed/wall/r_wall,/area/space)
+"v" = (/obj/item/clothing/mask/gas/syndicate{pixel_x = 7; pixel_y = -12},/obj/item/clothing/under/syndicate/gorlex{pixel_x = -7; pixel_y = -2},/turf/open/floor/carpet/royalblue,/area/space)
+"w" = (/obj/structure/dresser{dir = 4},/obj/machinery/light/small/directional/east,/obj/item/clothing/head/HoS/syndicate{pixel_x = 5; pixel_y = 4},/obj/item/reagent_containers/food/drinks/bottle/wine{pixel_x = -4; pixel_y = 12},/turf/open/floor/carpet/royalblue,/area/space)
+"x" = (/obj/machinery/light_switch{dir = 8; pixel_x = -10; pixel_y = -9},/turf/closed/wall/r_wall,/area/space)
+"y" = (/obj/machinery/light_switch{dir = 4; pixel_x = 10; pixel_y = -11},/turf/closed/wall/r_wall,/area/space)
+"z" = (/obj/machinery/light/small/directional/north,/turf/open/floor/wood/birch,/area/space)
+"C" = (/obj/machinery/light/small/directional/south,/obj/item/clothing/shoes/combat{pixel_x = -6; pixel_y = -4},/turf/open/floor/wood/birch,/area/space)
+"D" = (/obj/machinery/light/small/directional/west,/obj/structure/closet/cabinet{pixel_x = -1; pixel_y = 9},/obj/item/clothing/suit/armor/clip_capcoat{pixel_x = -5; pixel_y = 5},/obj/item/clothing/suit/armor/vest/capcarapace/syndicate{pixel_x = 4; pixel_y = 7},/turf/open/floor/wood/birch,/area/space)
+"E" = (/obj/item/clothing/gloves/color/captain{pixel_x = 2; pixel_y = -12},/turf/open/floor/wood/birch,/area/space)
+"H" = (/obj/machinery/door/airlock/command{dir = 4},/turf/open/floor/wood/birch,/area/space)
+"O" = (/obj/item/radio/headset/syndicate/alt/captain{pixel_x = -6; pixel_y = -5},/turf/open/floor/wood/birch,/area/space)
+"Q" = (/obj/item/clothing/shoes/jackboots,/turf/open/floor/wood/birch,/area/space)
+"T" = (/obj/structure/bed/double{dir = 10},/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass{pixel_x = 7; pixel_y = -6},/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass{pixel_x = 7; pixel_y = 20},/obj/item/bedsheet/double/captain,/turf/open/floor/carpet/royalblue,/area/space)
+"W" = (/obj/item/clothing/gloves/tackler/combat/insulated{pixel_x = -2; pixel_y = -4},/turf/open/floor/carpet/royalblue,/area/space)
+"X" = (/obj/structure/sign/poster/clip/gold,/turf/closed/wall/r_wall,/area/space)
+
+(1,1,1) = {"
+aaaaaaaaaa
+aggggrggaa
+agnszQdtaa
+aghdEiwxaa
+aXdddvTgaa
+ayDddWlgaa
+aHddCOogaa
+agggggggaa
+aaaaaaaaaa
+aaaaaaaaaa
+"}
