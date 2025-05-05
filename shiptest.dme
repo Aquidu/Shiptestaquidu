@@ -170,9 +170,12 @@
 #include "code\__DEFINES\dcs\helpers.dm"
 #include "code\__DEFINES\dcs\signals\signals.dm"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 #include "code\__DEFINES\dcs\signals\signals_clothing.dm"
 #include "code\__DEFINES\dcs\signals\signals_event.dm"
 #include "code\__DEFINES\dcs\signals\signals_global.dm"
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 #include "code\__DEFINES\dcs\signals\signals_mod.dm"
@@ -2220,9 +2223,12 @@
 #include "code\modules\error_handler\error_viewer.dm"
 #include "code\modules\events\_event.dm"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 #include "code\modules\events\_event_admin_setup.dm"
 #include "code\modules\events\_ghost_role.dm"
 =======
+=======
+>>>>>>> Stashed changes
 #include "code\modules\events\abductor.dm"
 #include "code\modules\events\alien_infestation.dm"
 >>>>>>> Stashed changes
