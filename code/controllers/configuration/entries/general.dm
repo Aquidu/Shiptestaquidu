@@ -216,12 +216,12 @@
 /datum/config_entry/flag/use_exp_restrictions_admin_bypass
 
 /datum/config_entry/number/ship_spawn_base_exp_min
-	config_entry_value = 0
+	config_entry_value = 3200
 	integer = FALSE
 	min_val = 0
 
 /datum/config_entry/number/officer_join_base_exp_min
-	config_entry_value = 0
+	config_entry_value = 1200
 	integer = FALSE
 	min_val = 0
 
