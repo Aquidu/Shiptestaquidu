@@ -297,3 +297,5 @@
 	if(istype(stomach))
 		return stomach.crystal_charge
 	return ELZUOSE_CHARGE_NONE
+
+/datum/species/elzuose/proc/share_charge(mob/living/carbon/_human)
