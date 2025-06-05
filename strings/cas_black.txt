@@ -1,130 +1,100 @@
-Security, the clown's breaking into ____.
-Our last Chaplain believed in nothing but _____.
-What angered the gods this time?
-Why didn't engineering set up the supermatter?
-What does the traitor need to steal this time?
-Cargo: There's a galaxy-wide shortage of _______.
-I don't care what they called me back on the station, I'm not a traitor. I'm a man of _________.
-The Syndicate is offering crew members _________ to defect.
-What is Nanotrasen's highest-priority bounty?
-What is the gray tide protesting this time?
-If the Space Gods didn't want _________ they wouldn't have given us __________.
-Why was the death squad sent in?
-Current Active Laws: ________ is the only human.
-Today, science found an anomaly that made people ____ and ____.
-______ has been detected on a collision course with the ship.
-Today's kitchen menu includes _____ stuffed with _____.
-What's the Captain's fetish?
-___________: more robust than a toolbox to the head!
-________ is the crew's friend. Would you abandon a friend?
-_______ tastes good like a ________ should.
-Why leave style up to fate? Use _________!
-How did the detective conduct a successful interrogation?
-New in syndicate uplinks: __________!
-Nanotrasen's labor union decided to use _______ to raise employee morale.
-The Chemist's drug of choice is ______
-According to space law, ________ is now punishable by ______.
-________ is why I'm afraid of maintenance.
-________ is the most robust person in the frontier.
-What made the nuclear operatives fluke?
-Why did the Chief Engineer disable comms?
-Every spaceman receives an internals box and ________.
-What brought the space orgy to a grinding halt?
-Scientists are no longer allowed to make ______.
-What was the clown's best joke?
-The Head of Personnel is now hiring assistants for __________.
-What happens when you emag an emag?
-No matter how many lizards you have, _____ is never acceptable.
-First CentCom came for the ________. Then they came for the __________.
-The borgs are not slaves for your _____.
-Why can't I find a space relationship?
-The assistants gathered around the brig, with toolboxes and ___________.
-Confirmed outbreak of _____ aboard the station.
-The AI was horrified to discover security was executing prisoners via ________.
-Attention crew: the word _____ is now a punishable offense.
-The chemist cackled as he labeled ________ pills as __________.
-The Space Wizard Federation has regrettably begun to summon _____.
-Who's the real seat of power in the galaxy?
-__________ was called into the Captain's office because of ______.
-Deep in the heart of the derelict lies ________.
-My Kalixcian name is _____-And-_____.
-What can solve any crisis?
-The traitorous atmos tech slowly replaced the station's air with ________.
-_______ and _______ were found together in the dorms.
-What's the Syndicate's real beef with Nanotrasen?
-What finally killed the Head of Security?
-Code Delta: __________ has escaped containment!
-The rogue virologist released a disease with symptoms of __________ and ______.
-How do you drive an assistant to suicide?
-With no chef on board, the crew was reduced to eating ________.
-Why was the emergency shuttle called?
-In the future, all ERP will involve ____________.
-Law 2 is not to be used for __________!
-What really goes on in the Prisoner Transfer Center?
-What will get you bluespace artilleried every time?
-This isn't omnizine, it's _________!
-What's stopping the Space Station 13 remake?
-When they make a movie about Shiptest, they better include ________.
-What's the worst thing an abductor can give you?
-One day while Andy was __________, Woody got _________.
-A good engineer always carries ________.
-I'm not a space bigot, I just hate _________.
-Why is the ship so filthy?
-THE SHUTTLE CANNOT BE CALLED BECAUSE OF ________ ON THE STATION.
-After murdering dozens, the traitor was finally brought down by _________.
-The curator has read a lot of porn, but never about _____________!
-Oh god! There's ________________ outside escape!
-The hottest new space couple is ________ and __________.
-Lord Singulo hungers for _______.
-What did the ERT find upon arriving onsite?
-The bartender's newest recipe: a drink made with _____ and _____.
-SECURITY! Cargo's ordering 20 crates of ________!
-On the nearly empty station, all that could be heard were the sounds of __________.
-I cannot comply with that order, meatbag. My _____ module is malfunctioning.
-_______ was thrown out the airlock after ___________.
-Real men accomplish their objectives by _________.
-How did I pass the time during a slow shift?
-Why did the lizard cross the road?
-Space lag is primarily caused by ___________.
-Back in my day, we had to clone people with ________.
-What's the worst thing a wizard can summon?
-What is the rarest substance known to Nanotrasen?
-The chaplain stopped performing marriages after seeing ___________.
-The gods were too busy with _______ to respond to _______.
-The Roboticist was fired after naming the borgs ______ and _________.
-What's funnier than a dead clown?
-What made the mime speak?
-How do you get an assistant to assist?
-What was I last brigged for?
-Why does Security no longer use the gulag?
-Old versions of Space Law used to authorize __________.
-Our new state-of-the-art shield is made entirely of ________.
-What's the most terrifying thing on Lavaland?
-Listen. Recent _______ on this station left me very disappointed, OK?
-The auxiliary base was disabled after landing in the middle of _______.
-Xenobiologists have found slimes to be exceptionally responsive to _______.
-Why did the captain give me a medal?
-The curator's new exhibit is devoted solely to _________.
-What made me sell my soul to the devil?
-The engineers are testing an experimental supermatter setup involving _________.
-I'm __________ in the streets, __________ in the sheets.
-What's my family heirloom?
-An NT Lawyer was fired for messaging the entire company a picture of ___________.
-On Lavaland, it is rumored that ashwalkers roam, worshipping _________.
-How did the traitor die a glorious death?
-Nanotrasen's new state-of-the-art emergency shuttle was repurposed from _________ and _________.
-What caused my brain trauma?
-What makes the most robust security team?
-The CE has found a way to power ships solely with _________.
-Why was the maintenance bar abandoned?
-Yeah, there we go, ______ destroyed, mission accomplished!
-How did the QM finally become a full head of staff?
-HELP MAINT _______!
-Nanotrasen crews have introduced a new species, evolved from _____.
-What's tormenting the ghosts in the afterlife?
-What left the stains in the permabrig?
-How did the Lawyer win their trial?
-That was the last time Security used ______ to subdue a criminal.
-without __________ blob can't __________.
-What's hidden past the CentCom docks?
-The devious traitor replaced the Syndicate bomb payload with ________.
+Why did Captain Rawk really invade CLIP?
+The latest craze for bridge bunnies: _____.
+A ship launched a distress beacon after being overrun by _____.
+Gorlex's bombing of _____ escalated the ICW.
+President Kiirv-Waha is making a new exciting announcement about Gorlex's Expansion into _____.
+The Minutemen locating a smuggling compartment and finding _____ inside.
+No one really knows, but the Gateway Project was disrupted by _____.
+Miskilamo is now rolling out it's latest design, the _____-class.
+In the PGF, it's now considered self-defense to kill someone for _____.
+I snuck into Zohil and found _____.
+Frontiersmen boarding your ship demanding _____.
+GOLD policy now lists _____ as contraband.
+The Hardliner captain fired on the indies after they _____.
+Teceti women want one thing and it's _____.
+I went to the outpost bar and asked for a _____.
+You know you're fucked when your dead deckhand is next to _____.
+Inteq just called, they're demanding you hand over the _____.
+The latest Frontiersman fleet appears to be using _____ as it's gimmick.
+Rumor has it the next RILENA game will feature _____.
+Cybersun's secret weapon during the ICW, _____.
+A SUNS biology student told me they were working on _____.
+I can't believe I looked on the black market and found _____.
+All they shipped us for this deployment was a bunch of _____.
+To raise employee morale, the NGR has begun putting _____ onto their ships.
+Every _____ you could want, at your beak!
+I'd rather _____ than switch.
+Why did the Ramzi Clique fail their last raid?
+The Most Serene Solar and Intersolar Confederation made me fill out forms for _____.
+A new scandal within the PGFMC reveals that several marines were caught with _____.
+Who really started the ICW?
+What caused the Night of Fire?
+The Clique is back, and they've brought _____!
+We caught the new deckhand overdosing on _____.
+Never visit spaceport bars after 9. Last time I was there it was full of _____.
+The Evidenzkompanien cracked our comms but all they heard was _____.
+A new scheme to make money quickly has been gripping the sector, and it's _____.
+What did VI's Crisis Response Unit find when arriving to the site?
+Why is the outpost always deserted?
+Some say Nanotrasen won the ICW, some say the Syndicate did. But I know that the real winners were _____.
+The latest hit cocktail has a secret ingredient - _____.
+I heard rumors that deckhands are being replaced with _____.
+The actual reason why planetoids disappear from radar after you leave is because of _____.
+The PGF waited until 505 to re-enter the Frontier because it was only then they discovered it was full of _____.
+My deckhand just came up to me and asked if I could change her ID assignment to say "_____."
+Strangely, local outposts have begun to stock _____ recently.
+The real reason people come to the Frontier is because of _____.
+The strongest claim to the Frontier's territory actually belongs to _____.
+The newest ration is going to include _____ and _____.
+CLIP doesn't want you to know anomalies are caused by _____.
+Which planetoids are marked for trash disposal is decided by _____.
+Any crisis can be solved with enough _____.
+My stupid mechanic tried to fill the combustion engines with half _____ and half _____.
+If you run out of fuel, you can always use _____ as an emergency substitute.
+The Syndicate Coalition hates Nanotrasen because of _____.
+A high-level assassination on a VI Manager was carried out by _____.
+Eoehoma Firearms' new E-12 is reportedly strong enough to destroy _____.
+I was annoyed when I crashed into _____, but then I found out it was full of _____!
+My doggirl Junior Agent jumped out the airlock after I told her there were _____ out there.
+With no food budget, the chef was forced to use _____ to cook _____ for the crew.
+This is getting out of hand. The The Most Serene Solar and Intersolar Confederation just faxed me _____!
+By 520, most _____ will be replaced by _____.
+The hottest new IPC frame model is based on _____.
+The last Lugol-class blew up because of _____.
+The new Auxiliary has been crying in her room for the past three hours because she saw _____.
+The crucial thing that makes Frontier chemistry different from normal chemistry is _____.
+I would've left the Frontier years ago, but _____ stopped me.
+A documentary about the Frontier wouldn't be complete without _____.
+Goliaths are always pissed because of _____.
+Hermits all went insane because of _____.
+The last Kilo I was on cut costs by repairing their ship with _____.
+Unbeknownst to the galaxy, a race of sentient _____ lives in the Frontier.
+The ships are always dirty when you get them because of _____.
+A little known fact, AI cores have control over _____.
+The heavily-armored Frontiersmen's secret weakness? _____.
+What's in the outpost library, anyway?
+I think we took a wrong turn, Captain. _____ is outside the port window.
+If we land on one more planetoid filled with nothing but _____, I'm going to lose it.
+When I wasn't looking, the deckhand blew all our money on _____.
+This is the Outpost Authority. We're detecting lots of _____ on your ship, care to explain?
+The PGFN is getting so stretched thin, I heard they're starting to conscript _____.
+Hiding in a nebula won't save you from _____.
+If you can't afford grounding rods, _____ works as a decent substitute.
+Packing up all your things for the mission, and only once you arrive do you realize you forgot _____.
+Twenty pounds of _____ are an important part of the Frontier breakfast.
+Hey babe, sorry, I'm gonna be late coming back. The Captain flew us into _____.
+Cybersun is allegedly allowing _____ as payment now.
+I'm prepared for anything. I never leave the ship without my _____.
+Gravity generators are made possible through the unique science of mixing _____ and _____
+Cloning was only outlawed after a horrific incident involving _____ and _____.
+The weirdest hivebot I ever saw shouted: "DEFEND _____!!"
+Anyone know how to stop Rachnids from constantly wrapping _____ in their webs?
+The new planetoid types getting discovered are getting crazier and crazier. Yesterday I saw a _____ planetoid!
+The Honorable Vanguard was horrified when the cargo bay doors open and he saw _____ inside.
+If Elzuosa could taste, their favorite food would be _____.
+Most core sectors use _____, but out in the Frontier? You make do with _____.
+By far, the most dangerous anomaly is the _____ one.
+New technology has opened the door for people to fax _____ to each other.
+I swear, if one more SUNS therapist shows me pictures of _____, I'm going to lose it.
+Nanotrasen is apparently working on monopolizing _____.
+I've had enough. I'm leaving the Frontier. It's filled with nothing but ______.

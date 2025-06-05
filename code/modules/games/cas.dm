@@ -11,7 +11,7 @@
 
 /obj/item/toy/cards/deck/cas
 	name = "\improper CAS deck (white)"
-	desc = "A deck for the game Cards Against Spess, still popular after all these centuries. Warning: may include traces of broken fourth wall. This is the white deck."
+	desc = "A card deck for the cynical game Cards Against Space: Frontier Edition. This is the white deck of the 506 revision. You probably shouldn't play this within earshot of your superior."
 	icon = 'icons/obj/toy.dmi'
 	icon_state = "deck_caswhite_full"
 	deckstyle = "caswhite"
@@ -23,7 +23,7 @@
 
 /obj/item/toy/cards/deck/cas/black
 	name = "\improper CAS deck (black)"
-	desc = "A deck for the game Cards Against Spess, still popular after all these centuries. Warning: may include traces of broken fourth wall. This is the black deck."
+	desc = "A card deck for the satirical game Cards Against Space: Frontier Edition. This is the black deck of the 506 revision. The source of many laughs and demotions."
 	icon_state = "deck_casblack_full"
 	deckstyle = "casblack"
 	card_face = "cas_black"
@@ -107,7 +107,7 @@
 	flipped = 0
 	var/card_face = "cas_white"
 	var/blank = 0
-	var/buffertext = "A funny bit of text."
+	var/buffertext = "A CAS card containing a funny blurb. Pair the best black and white ones to win the round!"
 
 /obj/item/toy/cards/singlecard/cas/examine(mob/user)
 	. = ..()
