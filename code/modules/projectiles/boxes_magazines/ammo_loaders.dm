@@ -82,7 +82,7 @@
 /obj/item/ammo_box/a858
 	name = "stripper clip (8x58mm)"
 	desc = "A 5-round stripper clip for the SSG-669C rifle. These rounds do good damage with significant armor penetration."
-	icon_state = "enbloc_858"
+	icon_state = "858"
 	ammo_type = /obj/item/ammo_casing/caseless/a858
 	max_ammo = 5
 	multiple_sprites = AMMO_BOX_PER_BULLET
@@ -132,8 +132,8 @@
 /obj/item/ammo_box/a762_stripper
 	name = "stripper clip (7.62)"
 	desc = "A 5-round stripper clip for makeshift bolt-action rifles. These rounds do good damage with good armor penetration."
-	icon_state = "300m-5"
-	base_icon_state = "300m"
+	icon_state = "850-5"
+	base_icon_state = "850"
 	ammo_type = /obj/item/ammo_casing/a762_40
 	caliber = "7.62x40mm"
 	max_ammo = 5

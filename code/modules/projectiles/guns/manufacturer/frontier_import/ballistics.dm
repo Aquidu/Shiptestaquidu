@@ -326,7 +326,16 @@
 
 /obj/item/ammo_box/magazine/m12_shredder/update_icon_state()
 	. = ..()
-	icon_state = "[base_icon_state]-[!!ammo_count()]"
+	if(ammo_count() >= 31)
+		icon_state = "[base_icon_state]-[!!ammo_count()]"
+	else if(ammo_count() >= 3)
+		icon_state = "[base_icon_state]-3"
+	else if(ammo_count() >= 2)
+		icon_state = "[base_icon_state]-2"
+	else if(ammo_count() >= 1)
+		icon_state = "[base_icon_state]-1"
+	else
+		icon_state = "[base_icon_state]-0"
 
 /obj/item/ammo_box/magazine/m12_shredder/slug
 	name = "belt box (12g slug)"

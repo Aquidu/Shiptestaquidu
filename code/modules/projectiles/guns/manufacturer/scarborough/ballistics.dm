@@ -575,6 +575,27 @@ NO_MAG_GUN_HELPER(automatic/smg/sidewinder)
 	max_ammo = 30
 	multiple_sprites = AMMO_BOX_FULL_EMPTY
 
+/obj/item/ammo_box/magazine/m57_39_sidewinder/update_icon_state()
+	. = ..()
+	if(ammo_count() == 30)
+		icon_state = "[base_icon_state]-30"
+	else if(ammo_count() >= 29)
+		icon_state = "[base_icon_state]-29"
+	else if(ammo_count() >= 26)
+		icon_state = "[base_icon_state]-26"
+	else if(ammo_count() >= 21)
+		icon_state = "[base_icon_state]-21"
+	else if(ammo_count() >= 16)
+		icon_state = "[base_icon_state]-16"
+	else if(ammo_count() >= 11)
+		icon_state = "[base_icon_state]-11"
+	else if(ammo_count() >= 6)
+		icon_state = "[base_icon_state]-6"
+	else if(ammo_count() >= 1)
+		icon_state = "[base_icon_state]-1"
+	else
+		icon_state = "[base_icon_state]-0"
+
 /obj/item/ammo_box/magazine/m57_39_sidewinder/empty
 	start_empty = TRUE
 
@@ -881,9 +902,22 @@ NO_MAG_GUN_HELPER(automatic/assault/hydra/dmr)
 
 /obj/item/ammo_box/magazine/m556_42_hydra/update_icon_state()
 	. = ..()
-	if(multiple_sprites == AMMO_BOX_FULL_EMPTY)
-		return
-	icon_state = "[base_icon_state]-[ammo_count() == 1 ? 1 : round(ammo_count(),5)]"
+	if(ammo_count() == 30)
+		icon_state = "[base_icon_state]-30"
+	else if(ammo_count() >= 26)
+		icon_state = "[base_icon_state]-25"
+	else if(ammo_count() >= 21)
+		icon_state = "[base_icon_state]-20"
+	else if(ammo_count() >= 16)
+		icon_state = "[base_icon_state]-15"
+	else if(ammo_count() >= 11)
+		icon_state = "[base_icon_state]-10"
+	else if(ammo_count() >= 6)
+		icon_state = "[base_icon_state]-5"
+	else if(ammo_count() >= 1)
+		icon_state = "[base_icon_state]-1"
+	else
+		icon_state = "[base_icon_state]-0"
 
 /obj/item/ammo_box/magazine/m556_42_hydra/empty
 	start_empty = TRUE

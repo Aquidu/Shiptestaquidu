@@ -92,6 +92,31 @@
 	max_ammo = 30
 	multiple_sprites = AMMO_BOX_FULL_EMPTY
 
+/obj/item/ammo_box/magazine/swiss/update_icon_state()
+	. = ..()
+	if(ammo_count() == 30)
+		icon_state = "[base_icon_state]-30"
+	else if(ammo_count() >= 27)
+		icon_state = "[base_icon_state]-27"
+	else if(ammo_count() >= 24)
+		icon_state = "[base_icon_state]-24"
+	else if(ammo_count() >= 21)
+		icon_state = "[base_icon_state]-21"
+	else if(ammo_count() >= 18)
+		icon_state = "[base_icon_state]-18"
+	else if(ammo_count() >= 15)
+		icon_state = "[base_icon_state]-15"
+	else if(ammo_count() >= 10)
+		icon_state = "[base_icon_state]-10"
+	else if(ammo_count() >= 7)
+		icon_state = "[base_icon_state]-7"
+	else if(ammo_count() >= 4)
+		icon_state = "[base_icon_state]-4"
+	else if(ammo_count() >= 1)
+		icon_state = "[base_icon_state]-1"
+	else
+		icon_state = "[base_icon_state]-0"
+
 // 8x50mmR En Bloc Clip (Illestren Hunting Rifle)
 
 /obj/item/ammo_box/magazine/illestren_a850r //this is a magazine codewise do nothing breaks

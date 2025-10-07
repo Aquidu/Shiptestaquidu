@@ -176,12 +176,16 @@ NO_MAG_GUN_HELPER(automatic/pistol/cm357)
 /obj/item/ammo_box/magazine/cm357
 	name = "CM-357 pistol magazine (.357)"
 	desc = "A 7-round magazine designed for the CM-357 pistol. These rounds do good damage, but struggle against armor."
-	icon_state = "cm23_mag-1"
-	base_icon_state = "cm23_mag"
+	icon_state = "cm357_mag-1"
+	base_icon_state = "cm357_mag"
 	ammo_type = /obj/item/ammo_casing/a357
 	caliber = ".357"
 	max_ammo = 7
 	multiple_sprites = AMMO_BOX_FULL_EMPTY
+
+/obj/item/ammo_box/magazine/cm357/update_icon_state()
+	. = ..()
+	icon_state = "[base_icon_state]-[!!ammo_count()]"
 
 /obj/item/ammo_box/magazine/cm357/empty
 	start_empty = TRUE
