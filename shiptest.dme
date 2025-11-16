@@ -3538,6 +3538,7 @@
 #include "code\modules\ruins\rockplanet_ruin_code\mining_base.dm"
 #include "code\modules\ruins\rockplanet_ruin_code\somme.dm"
 #include "code\modules\ruins\sandplanet_ruin_code\cave_base.dm"
+#include "code\modules\ruins\spaceruin_code\arachnophobia.dm"
 #include "code\modules\ruins\spaceruin_code\bigderelict1.dm"
 #include "code\modules\ruins\spaceruin_code\TheDerelict.dm"
 #include "code\modules\ruins\wasteplanet_ruin_code\facility.dm"

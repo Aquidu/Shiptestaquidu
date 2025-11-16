@@ -1,0 +1,211 @@
+"aG" = (/obj/effect/landmark/start/medical_doctor,/turf/open/floor/plasteel/white,/area/space)
+"bX" = (/obj/structure/table/wood/fancy/royalblue,/obj/item/paper_bin{pixel_x = 0; pixel_y = 5},/turf/open/floor/plasteel/dark,/area/space)
+"ck" = (/obj/structure/window/reinforced/fulltile/shuttle,/obj/structure/grille,/turf/open/space/basic,/area/space)
+"cJ" = (/obj/structure/table/reinforced,/obj/item/stamp/nanotrasen/ns/supply{pixel_x = 9; pixel_y = 12},/obj/item/stamp/denied{pixel_x = 0; pixel_y = 12},/obj/item/stamp{pixel_x = -9; pixel_y = 12},/obj/item/folder/yellow{pixel_x = 8; pixel_y = -1},/turf/open/floor/plasteel/patterned/cargo_one,/area/space)
+"cU" = (/turf/open/floor/plasteel/dark,/area/space)
+"dp" = (/turf/closed/wall/mineral/titanium/nodiagonal,/area/space)
+"ek" = (/obj/machinery/power/smes/engineering{charge = 0},/turf/open/floor/plasteel/dark,/area/space)
+"eQ" = (/obj/item/chair/wood,/obj/item/stack/ore/salvage/scraptitanium{pixel_y = -3; pixel_x = 11},/turf/open/floor/plasteel/dark,/area/space)
+"fd" = (/obj/machinery/suit_storage_unit/open,/turf/open/floor/plasteel/dark,/area/space)
+"fl" = (/obj/structure/sign/nanotrasen{pixel_y = 32},/turf/open/floor/plasteel,/area/space)
+"fR" = (/obj/structure/chair/comfy/shuttle{dir = 1},/turf/open/floor/plasteel/dark,/area/space)
+"gf" = (/obj/machinery/holopad/secure,/turf/open/floor/plasteel,/area/space)
+"go" = (/turf/open/floor/plasteel/freezer,/area/space)
+"hn" = (/obj/machinery/computer/cargo{dir = 8},/turf/open/floor/plasteel/patterned/cargo_one,/area/space)
+"hC" = (/obj/machinery/holopad/secure,/turf/open/floor/plasteel/dark,/area/space)
+"hW" = (/obj/machinery/power/shuttle/engine/electric{dir = 1},/turf/open/floor/plating/airless,/area/space)
+"hY" = (/obj/effect/landmark/start/captain,/obj/effect/decal/cleanable/glass,/turf/open/floor/plasteel/dark,/area/space)
+"iF" = (/obj/item/gun/ballistic/revolver/rhino,/turf/open/floor/plasteel/dark,/area/space)
+"jq" = (/obj/structure/table_frame/wood,/obj/item/stamp/nanotrasen/captain{pixel_x = 3; pixel_y = 5},/turf/open/floor/plasteel/dark,/area/space)
+"jB" = (/obj/item/storage/belt{pixel_y = -5},/turf/open/space/basic,/area/space)
+"ke" = (/obj/machinery/power/smes/shuttle/micro{dir = 1},/turf/open/floor/plasteel/dark,/area/space)
+"kh" = (/obj/effect/turf_decal/solarpanel,/obj/machinery/power/solar,/obj/structure/cable{icon_state = "0-1"},/turf/open/floor/plating/airless,/area/space)
+"kN" = (/obj/effect/turf_decal/solarpanel,/obj/machinery/power/tracker,/obj/structure/cable{icon_state = "0-4"},/turf/open/floor/plating/airless,/area/space)
+"lB" = (/obj/structure/sign/departments/medbay{pixel_y = -32},/turf/open/floor/plasteel,/area/space)
+"mR" = (/obj/structure/table/wood/fancy/royalblue,/turf/open/floor/plasteel/dark,/area/space)
+"np" = (/obj/machinery/modular_computer/console/preset/engineering{icon_state = "computer-right"; dir = 4; pixel_x = -8; pixel_y = 0},/turf/open/floor/plasteel/patterned,/area/space)
+"nq" = (/obj/structure/chair/wood{dir = 1},/turf/open/floor/plasteel/dark,/area/space)
+"ov" = (/obj/structure/closet/l3closet/scientist,/turf/open/floor/plasteel/white,/area/space)
+"oA" = (/obj/structure/salvageable/safe_server,/obj/effect/decal/cleanable/glass,/turf/open/floor/plasteel/dark,/area/space)
+"pn" = (/turf/open/floor/plasteel/showroomfloor{name = "bathroom floor"},/area/space)
+"pD" = (/obj/machinery/portable_atmospherics/scrubber,/turf/open/floor/plasteel/dark,/area/space)
+"pL" = (/turf/open/floor/plasteel/tech/grid,/area/space)
+"qI" = (/obj/structure/grille/broken,/turf/open/space/basic,/area/space)
+"qJ" = (/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel/tech/grid,/area/space)
+"sU" = (/obj/structure/table/wood/fancy/blue,/obj/item/storage/fancy/cigarettes/cigars/havana{pixel_x = 0; pixel_y = 6},/obj/item/lighter{pixel_y = 4; pixel_x = -8},/turf/open/floor/plasteel/dark,/area/space)
+"uN" = (/obj/structure/chair/wood{dir = 8},/turf/open/floor/plasteel/dark,/area/space)
+"uX" = (/turf/open/floor/plasteel,/area/space)
+"vd" = (/obj/structure/safe,/obj/item/spacecash/bundle/c1000,/obj/item/spacecash/bundle/c1000,/obj/item/spacecash/bundle/c1000,/obj/item/spacecash/bundle/c1000,/obj/item/spacecash/bundle/c1000,/obj/item/storage/box/ammo/a357_hp,/obj/item/ammo_box/a357/empty,/obj/item/ammo_box/a357/empty,/obj/effect/spawner/random/food_or_drink/ration,/obj/effect/spawner/random/food_or_drink/ration,/obj/effect/spawner/random/food_or_drink/ration,/obj/effect/spawner/random/food_or_drink/ration,/obj/effect/spawner/random/food_or_drink/ration,/obj/item/storage/firstaid/regular,/obj/item/storage/firstaid/regular,/obj/item/reagent_containers/food/drinks/bottle/champagne,/obj/item/documents/nanotrasen,/obj/item/reagent_containers/food/drinks/bottle/champagne,/obj/item/stack/sheet/mineral/titanium/twenty,/obj/item/stock_parts/cell/high/plus,/turf/open/floor/plasteel/dark,/area/space)
+"vl" = (/obj/item/shard{pixel_x = 5},/obj/machinery/holopad/secure,/turf/open/floor/plasteel/dark,/area/space)
+"vo" = (/obj/structure/catwalk,/turf/open/floor/plating/airless,/area/space)
+"vT" = (/obj/effect/turf_decal/solarpanel,/obj/structure/cable{icon_state = "0-1"},/obj/structure/cable{icon_state = "1-2"},/obj/item/solar_assembly,/obj/effect/decal/cleanable/glass,/turf/open/floor/plating/airless,/area/space)
+"wc" = (/obj/machinery/pipedispenser,/turf/open/floor/plasteel/tech,/area/space)
+"ww" = (/obj/structure/lattice,/obj/item/stack/ore/salvage/scrapmetal,/turf/open/space/basic,/area/space)
+"wC" = (/obj/effect/turf_decal/solarpanel,/obj/structure/cable{icon_state = "1-2"},/obj/structure/cable{icon_state = "0-2"},/obj/item/solar_assembly,/obj/effect/decal/cleanable/glass,/turf/open/floor/plating/airless,/area/space)
+"xa" = (/obj/item/stack/ore/salvage/scrapgold,/obj/item/shard{icon_state = "medium"},/obj/effect/decal/cleanable/glass,/turf/open/floor/plasteel/dark,/area/space)
+"yc" = (/obj/structure/grille,/turf/open/space/basic,/area/space)
+"yJ" = (/obj/effect/turf_decal/solarpanel,/obj/structure/cable{icon_state = "0-2"},/obj/item/solar_assembly,/obj/effect/decal/cleanable/glass,/turf/open/floor/plating/airless,/area/space)
+"zu" = (/turf/open/floor/plasteel/patterned,/area/space)
+"zZ" = (/turf/open/space/basic,/area/space)
+"Ac" = (/obj/item/stack/ore/salvage/scraptitanium{pixel_x = 4; pixel_y = 14},/turf/open/floor/plasteel/dark,/area/space)
+"Ah" = (/obj/machinery/suit_storage_unit/inherit,/turf/open/floor/plasteel/tech/techmaint/airless,/area/space)
+"AL" = (/obj/structure/window/reinforced/fulltile/shuttle,/turf/open/space/basic,/area/space)
+"AS" = (/obj/item/stack/ore/salvage/scrapmetal,/turf/open/floor/plating{icon_state = "platingdmg3"},/area/space)
+"AU" = (/obj/structure/sign/departments/engineering{pixel_y = 31},/turf/open/floor/plasteel,/area/space)
+"AZ" = (/obj/machinery/telecomms/relay/preset/nanotrasen,/turf/open/floor/plasteel/patterned,/area/space)
+"Cj" = (/obj/structure/crate_shelf,/obj/item/storage/box/stockparts/t2,/obj/item/stock_parts/cell/high,/obj/item/stock_parts/cell/high,/obj/structure/closet/crate/engineering,/obj/item/stack/sheet/metal/ten,/obj/item/stack/sheet/glass/five,/obj/item/stack/sheet/glass/five,/turf/open/floor/plasteel/tech,/area/space)
+"CC" = (/obj/item/stack/ore/salvage/scrapmetal,/turf/open/floor/plasteel/dark,/area/space)
+"CE" = (/obj/structure/table/reinforced,/obj/item/paper_bin{pixel_x = 6; pixel_y = 4},/obj/item/pen/fourcolor{pixel_x = -9; pixel_y = 32},/obj/item/paper/crumpled/fluff/ruin/space/arachnophobia/cargo{pixel_x = -7; pixel_y = 1},/turf/open/floor/plasteel/patterned/cargo_one,/area/space)
+"CI" = (/obj/structure/catwalk,/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plating/airless,/area/space)
+"CM" = (/obj/structure/crate_shelf,/turf/open/floor/plasteel/tech/techmaint/airless,/area/space)
+"CP" = (/obj/effect/turf_decal/solarpanel,/obj/structure/cable{icon_state = "0-2"},/obj/effect/decal/cleanable/glass,/obj/item/solar_assembly,/turf/open/floor/plating/airless,/area/space)
+"Dr" = (/obj/machinery/holopad/secure,/turf/open/floor/wood/walnut,/area/space)
+"Dy" = (/obj/effect/turf_decal/solarpanel,/obj/machinery/power/solar,/obj/structure/cable{icon_state = "1-2"},/obj/structure/cable{icon_state = "0-2"},/turf/open/floor/plating/airless,/area/space)
+"Ef" = (/obj/structure/cable{icon_state = "0-10"},/obj/machinery/power/port_gen/pacman{anchored = 1},/turf/open/floor/plasteel/dark,/area/space)
+"Ek" = (/obj/item/stack/ore/salvage/scrapgold{pixel_x = -4; pixel_y = 7},/obj/item/shard{icon_state = "medium"},/obj/effect/decal/cleanable/glass,/turf/open/floor/plasteel/dark,/area/space)
+"Ex" = (/obj/item/chair/wood,/obj/item/stack/ore/salvage/scrapmetal{pixel_x = 0; pixel_y = 13},/obj/effect/decal/cleanable/glass,/turf/open/floor/plasteel/dark,/area/space)
+"EM" = (/obj/structure/sign/departments/botany{pixel_x = 32; pixel_y = 0},/turf/open/floor/plasteel/white,/area/space)
+"FC" = (/obj/structure/table/chem,/turf/open/floor/plasteel/white,/area/space)
+"Gd" = (/obj/item/stack/ore/salvage/scrapmetal{pixel_x = -8; pixel_y = -8},/obj/item/shard,/turf/open/floor/plasteel/dark,/area/space)
+"Hj" = (/obj/effect/turf_decal/solarpanel,/obj/machinery/power/solar,/obj/structure/cable{icon_state = "0-1"},/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plating/airless,/area/space)
+"Hz" = (/obj/structure/lattice,/obj/item/shard{icon_state = "medium"},/turf/open/space/basic,/area/space)
+"HB" = (/obj/machinery/computer/monitor/secret{icon_state = "computer-left"; dir = 4; pixel_x = -8; pixel_y = 0},/turf/open/floor/plasteel/patterned,/area/space)
+"HD" = (/obj/structure/sign/departments/science/alt{pixel_x = 0; pixel_y = 32},/turf/open/floor/plasteel,/area/space)
+"HF" = (/obj/structure/window/reinforced/fulltile/shuttle,/turf/open/floor/plasteel,/area/space)
+"Ij" = (/turf/open/floor/carpet/nanoweave,/area/space)
+"IA" = (/obj/item/shard,/turf/open/space/basic,/area/space)
+"IP" = (/obj/structure/reagent_dispensers/fueltank,/turf/open/floor/plasteel/tech,/area/space)
+"IX" = (/obj/structure/closet/secure_closet/engineering_personal{populate = 0},/obj/item/storage/toolbox/mechanical{pixel_x = 1; pixel_y = -2},/obj/item/storage/toolbox/electrical{pixel_x = 1; pixel_y = -8},/obj/item/analyzer{pixel_x = 0; pixel_y = 10},/obj/item/clothing/gloves/color/yellow,/obj/item/stack/tape/industrial/electrical,/obj/item/stack/tape/industrial,/obj/item/storage/belt/utility/full/engi,/obj/item/screwdriver/power{pixel_y = -3},/turf/open/floor/plasteel/patterned,/area/space)
+"Ja" = (/obj/machinery/door/firedoor/border_only/closed{dir = 1},/turf/open/floor/plasteel/dark,/area/space)
+"JN" = (/obj/structure/closet/wall/orange/directional/south,/obj/item/clothing/glasses/welding{pixel_y = 13; pixel_x = -6},/obj/item/weldingtool{pixel_x = 6; pixel_y = 3},/obj/item/weldingtool,/obj/item/clothing/glasses/welding{pixel_y = 7; pixel_x = -6},/turf/open/floor/plasteel/dark,/area/space)
+"JQ" = (/obj/structure/catwalk,/obj/structure/marker_beacon{picked_color = "Lime"},/turf/open/floor/plating/airless,/area/space)
+"KH" = (/obj/machinery/portable_atmospherics/pump,/turf/open/floor/plasteel/dark,/area/space)
+"KI" = (/obj/machinery/autolathe,/turf/open/floor/plasteel/tech,/area/space)
+"Ld" = (/turf/open/floor/plasteel/white,/area/space)
+"Lf" = (/obj/structure/catwalk,/obj/structure/cable{icon_state = "4-8"},/obj/item/flamethrower/full/tank{pixel_x = 0; pixel_y = 7},/turf/open/floor/plating/airless,/area/space)
+"LI" = (/obj/effect/landmark/start/cargo_technician,/turf/open/floor/plasteel,/area/space)
+"LL" = (/obj/structure/table/wood/fancy/royalblue,/obj/item/broken_bottle{pixel_x = 4; pixel_y = 10},/turf/open/floor/plasteel/dark,/area/space)
+"Md" = (/obj/structure/crate_shelf,/obj/structure/closet/crate/secure/plasma,/obj/item/stack/sheet/mineral/plasma/five,/turf/open/floor/plasteel/tech,/area/space)
+"MJ" = (/turf/open/floor/plasteel/tech/techmaint/airless,/area/space)
+"MN" = (/turf/open/floor/plasteel/tech,/area/space)
+"MY" = (/obj/structure/bed,/obj/item/bedsheet/captain,/obj/structure/curtain/cloth/fancy,/turf/open/floor/plasteel/dark,/area/space)
+"Na" = (/obj/item/clothing/glasses/meson/engine,/turf/open/space/basic,/area/space)
+"Nr" = (/obj/structure/sign/nanotrasen/vigilitas{pixel_y = -32},/turf/open/floor/plasteel,/area/space)
+"NK" = (/obj/structure/tank_dispenser,/turf/open/floor/plasteel/tech,/area/space)
+"Ob" = (/obj/structure/cable{icon_state = "0-4"},/turf/open/floor/plating/airless,/area/space)
+"OE" = (/obj/structure/chair/wood{dir = 4},/turf/open/floor/plasteel/dark,/area/space)
+"OQ" = (/turf/open/floor/plasteel/patterned/cargo_one,/area/space)
+"Pg" = (/obj/structure/reagent_dispensers/watertank,/turf/open/floor/plasteel/tech,/area/space)
+"Pm" = (/obj/structure/table/wood/fancy/blue,/obj/item/binoculars,/turf/open/floor/plasteel/dark,/area/space)
+"Po" = (/obj/structure/chair/office{dir = 8; pixel_x = -17; pixel_y = 5},/turf/open/floor/plasteel/patterned,/area/space)
+"PN" = (/obj/structure/lattice,/turf/open/space/basic,/area/space)
+"PX" = (/obj/effect/landmark/start/scientist,/turf/open/floor/plasteel/white,/area/space)
+"PY" = (/obj/structure/salvageable/computer,/obj/effect/decal/cleanable/glass,/turf/open/floor/plasteel/dark,/area/space)
+"Qa" = (/obj/structure/sign/warning/biohazard,/turf/closed/wall/mineral/titanium/nodiagonal,/area/space)
+"Qs" = (/obj/structure/noticeboard{pixel_x = -28; pixel_y = -1; dir = 4},/obj/item/paper/fluff/ruins/arachnophobia/pacman,/turf/open/floor/plasteel/tech,/area/space)
+"QG" = (/turf/open/floor/engine/hull,/area/space)
+"QM" = (/obj/item/stack/ore/salvage/scraptitanium/five,/turf/open/floor/plasteel/dark,/area/space)
+"Rt" = (/obj/structure/cable{icon_state = "4-8"},/obj/structure/catwalk/over/plated_catwalk/dark,/turf/open/floor/plating,/area/space)
+"RI" = (/obj/item/stack/ore/salvage/scrapmetal,/turf/open/space/basic,/area/space)
+"Sg" = (/obj/structure/cable{icon_state = "0-8"},/turf/open/floor/plating{icon_state = "platingdmg3"},/area/space)
+"Sh" = (/obj/item/stack/ore/salvage/scraptitanium{pixel_y = 14},/obj/item/shard{icon_state = "small"},/obj/item/megaphone/command{pixel_x = -12; pixel_y = -8},/turf/open/floor/plasteel/dark,/area/space)
+"Si" = (/obj/structure/table,/obj/item/modular_computer/laptop/preset{pixel_x = 0; pixel_y = 5},/obj/item/photo/old{pixel_x = 7; pixel_y = -2; desc = "An old-looking photo showing an Elzuose couple on it."; name = "couple's photo"},/turf/open/floor/plasteel/patterned,/area/space)
+"TD" = (/obj/structure/chair/office{dir = 4},/turf/open/floor/plasteel/patterned/cargo_one,/area/space)
+"TQ" = (/obj/machinery/computer/solar_control{dir = 4; pixel_x = -8; pixel_y = 0},/obj/machinery/power/terminal,/obj/structure/cable{icon_state = "0-1"},/turf/open/floor/plasteel/dark,/area/space)
+"TU" = (/obj/structure/table,/obj/machinery/cell_charger{pixel_y = 3},/turf/open/floor/plasteel/patterned,/area/space)
+"Um" = (/obj/machinery/holopad/secure,/turf/open/floor/plasteel/white,/area/space)
+"Un" = (/obj/structure/catwalk,/obj/structure/cable{icon_state = "4-8"},/obj/structure/cable{icon_state = "1-4"},/obj/structure/cable{icon_state = "2-4"},/turf/open/floor/plating/airless,/area/space)
+"Up" = (/obj/effect/turf_decal/solarpanel,/obj/machinery/power/solar,/obj/structure/cable{icon_state = "0-2"},/turf/open/floor/plating/airless,/area/space)
+"UN" = (/obj/structure/displaycase/broken,/turf/open/floor/plasteel/white,/area/space)
+"VI" = (/obj/structure/sign/departments/cargo{pixel_x = 0; pixel_y = -32},/turf/open/floor/plasteel,/area/space)
+"VS" = (/obj/structure/marker_beacon{picked_color = "Burgundy"},/turf/open/floor/engine/hull,/area/space)
+"VT" = (/obj/structure/lattice,/obj/effect/landmark/start/station_engineer,/turf/open/space/basic,/area/space)
+"WC" = (/obj/structure/catwalk,/obj/structure/marker_beacon{picked_color = "Burgundy"},/turf/open/floor/plating/airless,/area/space)
+"WG" = (/obj/structure/grille/broken,/obj/item/stack/ore/salvage/scrapmetal,/turf/open/space/basic,/area/space)
+"WO" = (/obj/structure/table/reinforced,/turf/open/floor/plasteel/white,/area/space)
+"WU" = (/obj/machinery/atmospherics/components/unary/tank/air,/turf/open/floor/plasteel/tech,/area/space)
+"WZ" = (/obj/item/chair/wood,/turf/open/floor/plasteel/dark,/area/space)
+"Xy" = (/turf/open/floor/wood/walnut,/area/space)
+"XV" = (/obj/structure/catwalk,/obj/structure/cable{icon_state = "4-8"},/obj/structure/cable{icon_state = "2-4"},/obj/structure/cable{icon_state = "1-4"},/turf/open/floor/plating/airless,/area/space)
+"Yo" = (/obj/machinery/power/terminal,/turf/open/floor/plasteel/dark,/area/space)
+"YH" = (/obj/structure/lattice,/obj/item/shard{icon_state = "small"},/turf/open/space/basic,/area/space)
+"YM" = (/obj/structure/crate_shelf,/obj/structure/closet/crate/solarpanel_small,/turf/open/floor/plasteel/tech/techmaint/airless,/area/space)
+"ZO" = (/obj/item/clothing/suit/hazardvest{pixel_x = 6; pixel_y = 8},/obj/item/clothing/head/hardhat{pixel_x = -11; pixel_y = 12},/obj/structure/cable{icon_state = "2-8"},/obj/structure/cable{icon_state = "5-8"},/turf/open/floor/plasteel/dark,/area/space)
+
+(1,1,1) = {"
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZckckckckzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZckckPYPYckckzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZdpEkfRxaoAdpzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZdpckckckdpdpGdhYiFExdpzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZckcUcUcUcUcUAcvlQMWZdpzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZckcUcUcUvddpCCeQjqShdpzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZckPmcUcUdpdpcUOEmRuNdpzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZcksUcUMYdpLLcUcUnqcUdpzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZdpdpdpdpdpbXcUcUcUcUdpzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZdpYocUcUcUcUYodpzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZdpkecUcUcUcUkedpzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZyczZzZzZzZzZzZzZzZzZzZzZzZzZdphWdpcUcUdphWdpzZzZzZzZzZzZzZzZzZdpdpckckckckckdpdpzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZyczZzZycPNWGzZzZzZzZzZzZzZzZzZzZzZzZzZzZdpcUcUdpzZzZzZzZzZzZzZzZzZzZdpdpUNFCFCFCFCFCLddpzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZyczZzZycPNyczZPNCPzZzZzZzZzZdpckckckdpdpdpdpdpdpzZzZzZzZzZzZzZzZzZzZzZzZdpdpdpLdLdLdLdLdLdLdLdckzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZycPNyczZPNUpPNzZPNyJRIzZzZzZdpdpTUSiAZdpCjMdKIWUdpdpPNPNdpdpdpckckckdpdpdpQaovdpLdLdLdLdLdLdLdLdckzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZycPNUpPNzZPNDyPNzZYHUpPNzZzZzZdpnpzuzuzudpMNMNMNMNMNckJaJackLdLdLdLdLdLdLddpLdLdLdLdLdLdLdUmLdLdPXckzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZycPNDyPNzZPNDyRIzZPNUpPNzZzZzZdpHBPozuIXdpQsMNMNMNMNckcUcUckLdLdLdLdLdLdLddpLdLdLdLdLdLdLdLdLdLdLdckzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZycPNDyPNzZPNwCHzzZPNUpPNNazZzZdpdpdpcUdpdpMNMNMNMNPgdpcUcUdpLdLdLdLdLdLdLdQaLdLddpLdLdLdLdLdLdLdLdckzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZycPNDyPNzZwwwCPNzZPNUpVTjBdpdpdpfdEfcUKHpDcUMNMNMNIPdpcUcUdpLdLdLdLdUmLdLdLdLdEMdpLdLdLdLdLdFCFCFCdpzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZycPNkNXVSgASObUnCICICIUnLfCIqJRtqJZOcUcUcUcUcUMNMNNKdpdpcUcUdpdpLdLdLdLdLdLdLdLdLddpdpdpdpdpdpdpdpdpdpzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZycPNHjwwzZPNHjPNzZPNHjPNzZdpdpdpTQcUcUcUcUhCMNwcdpdpfluXuXfldpdpLdLdLdLdLdLdLddpdpuXuXuXuXdpLdLdLddpzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZycPNvTIAzZPNHjPNzZPNHjPNzZzZzZdpekcUJNcUcUcUcUdpdpuXuXuXuXuXuXdpdpLdLdLdLdLdLddpuXuXuXuXuXWOLdLdLdckzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZqIPNvTPNzZPNHjPNzZPNHjPNzZzZzZdpdpdpdpdpcUdpcUdpuXuXuXuXuXuXuXuXdpLddpLddpdpdpdpuXuXuXuXuXWOLdLdLdckzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZkhPNzZPNHjPNzZPNHjPNzZzZzZzZzZzZckuXuXAUuXuXuXuXuXuXuXuXuXuXuXuXHDuXuXuXuXuXuXuXuXuXuXWOLdLdLdckzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZqIPNyczZPNkhPNzZPNHjPNzZzZzZzZzZzZckuXuXuXuXuXuXuXuXuXuXuXuXuXuXuXuXuXuXuXuXHFuXuXuXuXuXdpLdLdLddpzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZyczZzZycPNyczZPNkhPNzZzZzZzZzZzZcklBuXuXuXlBuXuXuXNruXuXuXuXuXuXVIuXuXuXuXuXuXuXuXuXuXdpdpgodpdpzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZyczZzZycPNyczZzZzZdpdpdpdpdpLdALLddpdpdpdpdpcUdpdpdpdpuXdpuXdpdpdpdpdpdpdpXydpdpgogogodpzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZyczZzZzZzZdpLdLdLdLdLdLdLdLdLdckcUcUcUcUckOQOQuXuXuXMJMJYMdppnpnpnXyXydpgogogodpzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZdpLdLdLdLdLdLdLdLdLdckcUcUhCcUckOQOQuXuXuXMJMJCMdppnpndpXyXydpgogogodpzZzZzZzZzZQGVSzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZckLdLdLdLdLdUmLdLdLddpcUcUcUcUdpOQOQuXgfuXMJMJCMdppnpndpXyXydpdpgodpdpQGQGVSQGQGQGzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZckLdLdLdLdLdLdLdLdLddpcUcUcUcUdpOQhnuXuXuXMJMJMJdpdpdpdpXyXyXyXyXyXyckzZzZPNzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZckLdLdLdLdLdLdLddpdpdpdpckckdpdpTDcJuXuXuXMJMJMJdpIjIjIjXyDrXyXyXyXyckzZzZPNzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZdpdpLddpLddpdpdpdpzZzZzZzZzZzZdpOQCELIuXuXMJAhAhdpIjIjIjIjXyXyXyXyXyckzZzZPNzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZVSQGQGQGQGQGdpdpdpLdLdLddpzZzZzZzZzZzZzZdpdpdppLdppLdpdpdpdpIjIjIjIjIjXyXyXydpdpQGQGVSQGzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZckLdLdLdckzZzZzZzZzZzZzZzZzZdppLpLpLdpzZzZdpdpdpdpdpdpckckckdpzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZckLdaGLdckzZzZzZzZzZzZzZzZzZdppLpLpLdpzZzZzZzZQGQGzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZdpdpLdLddpQGVSQGQGVSQGQGVSQGdppLdppLdpQGQGVSQGQGzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZdpckckdpzZzZzZzZzZzZzZzZPNVSQGQGQGVSPNzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZPNPNQGQGQGPNPNzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZPNWCPNWCPNzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZPNzZzZPNzZzZPNzZvoPNvozZPNzZzZPNzZzZPNzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZPNJQPNPNJQPNPNJQPNWCPNWCPNJQPNPNJQPNPNJQPNzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZPNzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZPNzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZPNzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZPNzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZPNJQzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZJQPNzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZPNzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZPNzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+zZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZzZ
+"}
