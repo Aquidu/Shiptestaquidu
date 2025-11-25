@@ -256,6 +256,12 @@
 	smoothing_groups = list(SMOOTH_GROUP_TURF_OPEN, SMOOTH_GROUP_FLOOR_GRASS)
 	canSmoothWith = list(SMOOTH_GROUP_CLOSED_TURFS, SMOOTH_GROUP_FLOOR_GRASS, SMOOTH_GROUP_FLOOR_PLASTEEL)
 
+/turf/open/floor/grass/ship/wilted ///Dry wilted grass for use in ruins.
+	name = "dry grass"
+	desc = "A bed of dry, red grass, almost wilted away. It crunches under your footsteps."
+	icon = 'icons/turf/floors/redgrass.dmi'
+	smooth_icon = 'icons/turf/floors/redgrass.dmi'
+
 /turf/open/floor/plating/ship/water
 	name = "water"
 	desc = "Shallow water."
