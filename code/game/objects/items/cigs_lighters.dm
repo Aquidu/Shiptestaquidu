@@ -313,7 +313,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 // Cigarette brands.
 
 /obj/item/clothing/mask/cigarette/space_cigarette
-	desc = "A Space Cigarette brand cigarette."
+	desc = "A Space Cigarette brand cigarette. Doesn't smell like much of anything."
 
 /obj/item/clothing/mask/cigarette/dromedary
 	desc = "A DromedaryCo brand cigarette. Contrary to popular belief, does not contain Calomel, but is reported to have a watery taste."
@@ -324,10 +324,10 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	list_reagents = list(/datum/reagent/drug/nicotine = 13, /datum/reagent/consumable/menthol = 5)
 
 /obj/item/clothing/mask/cigarette/robust
-	desc = "A Robust brand cigarette."
+	desc = "A Robust brand cigarette. Smells strong."
 
 /obj/item/clothing/mask/cigarette/robustgold
-	desc = "A Robust Gold brand cigarette."
+	desc = "A Robust Gold brand cigarette. Smells expensive."
 	list_reagents = list(/datum/reagent/drug/nicotine = 15, /datum/reagent/gold = 3) // Just enough to taste a hint of expensive metal.
 
 /obj/item/clothing/mask/cigarette/carp
@@ -340,7 +340,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	reagents?.add_reagent(/datum/reagent/toxin/carpotoxin , 3) // They lied
 
 /obj/item/clothing/mask/cigarette/syndicate
-	desc = "An unknown brand cigarette."
+	desc = "An unknown brand cigarette. Smells overwhelming."
 	chem_volume = 60
 	smoketime = 2 * 60
 	smoke_all = TRUE
@@ -643,7 +643,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 				playsound(src.loc, 'sound/items/zippo_on.ogg', 100, 1)
 				return
 			else
-				if(prob(60)) ///light, you damn thing...
+				if(prob(80)) ///light, you damn thing...
 					user.visible_message(span_notice("The nozzle of [src] briefly sparks as [user] attempts to light it."), span_notice("You attempt to light [src], but the spark doesn't catch!"))
 					playsound(src.loc, 'sound/items/lighter_fail.ogg', 100, 1)
 				else
@@ -733,11 +733,15 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 		. = span_notice("After some fiddling, [user] manages to light [A] with [src].")
 
 /obj/item/lighter/greyscale/empty ///never lights
-
+	name =
+	desc =
+	grind_results = list(/datum/reagent/iron = 1)
 	empty = TRUE
 
 /obj/item/lighter/empty
 	name = "empty Zippo lighter"
+	desc =
+	grind_results = list(/datum/reagent/iron = 1)
 	empty = TRUE
 
 
