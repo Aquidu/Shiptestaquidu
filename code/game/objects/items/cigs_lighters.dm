@@ -576,6 +576,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	light_on = FALSE
 	var/lit = 0
 	var/fancy = TRUE
+	var/empty = FALSE ///for empty lighters
 	var/overlay_state
 	var/overlay_list = list(
 		"plain",
@@ -632,30 +633,23 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 /obj/item/lighter/attack_self(mob/living/user)
 	if(user.is_holding(src))
 		if(!lit)
-			set_lit(TRUE)
-			if(fancy)
+			if((empty) || (user.has_status_effect(/datum/status_effect/fire_handler/wet_stacks))) ///never lights if the lighter is empty or the user is wet
+				user.visible_message(span_notice("The nozzle of [src] briefly sparks as [user] attempts to light it."), span_notice("You attempt to light [src], but the spark doesn't catch! Seems it won't light like this..."))
+				playsound(src.loc, 'sound/items/lighter_fail.ogg', 100, 1)
+				return
+			if(fancy) ///zippos always light successfully
+				set_lit(TRUE)
 				user.visible_message(span_notice("Without even breaking stride, [user] flips open and lights [src] in one smooth movement."), span_notice("Without even breaking stride, you flip open and light [src] in one smooth movement."))
 				playsound(src.loc, 'sound/items/zippo_on.ogg', 100, 1)
+				return
 			else
-				var/prot = FALSE
-				var/mob/living/carbon/human/H = user
-
-				if(istype(H) && H.gloves)
-					var/obj/item/clothing/gloves/G = H.gloves
-					if(G.max_heat_protection_temperature)
-						prot = (G.max_heat_protection_temperature > 360)
+				if(prob(60)) ///light, you damn thing...
+					user.visible_message(span_notice("The nozzle of [src] briefly sparks as [user] attempts to light it."), span_notice("You attempt to light [src], but the spark doesn't catch!"))
+					playsound(src.loc, 'sound/items/lighter_fail.ogg', 100, 1)
 				else
-					prot = TRUE
-
-				if(prot || prob(75))
-					user.visible_message(span_notice("After a few attempts, [user] manages to light [src]."), span_notice("After a few attempts, you manage to light [src]."))
-				else
-					var/hitzone = user.held_index_to_dir(user.active_hand_index) == "r" ? BODY_ZONE_PRECISE_R_HAND : BODY_ZONE_PRECISE_L_HAND
-					user.apply_damage(5, BURN, hitzone)
-					user.visible_message(span_warning("After a few attempts, [user] manages to light [src] - however, [user.p_they()] burn [user.p_their()] finger in the process."), span_warning("You burn yourself while lighting the lighter!"))
-					SEND_SIGNAL(user, COMSIG_ADD_MOOD_EVENT, "burnt_thumb", /datum/mood_event/burnt_thumb)
-				playsound(src.loc, 'sound/items/lighter_on.ogg', 100, 1)
-
+					set_lit(TRUE)
+					user.visible_message(span_notice("A dim yellow flame appears as [user] lights [src]."), span_notice("A dim yellow flame appears as you light [src]."))
+					playsound(src.loc, 'sound/items/lighter_on.ogg', 100, 1)
 		else
 			set_lit(FALSE)
 			if(fancy)
@@ -737,6 +731,14 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 /obj/item/lighter/greyscale/ignition_effect(atom/A, mob/user)
 	if(get_temperature())
 		. = span_notice("After some fiddling, [user] manages to light [A] with [src].")
+
+/obj/item/lighter/greyscale/empty ///never lights
+
+	empty = TRUE
+
+/obj/item/lighter/empty
+	name = "empty Zippo lighter"
+	empty = TRUE
 
 
 /obj/item/lighter/slime
