@@ -313,14 +313,14 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 // Cigarette brands.
 
 /obj/item/clothing/mask/cigarette/space_cigarette
-	desc = "An Uplift Common brand cigarette. Generic as ever."
+	desc = "A Uplift Common brand cigarette. Generic as ever."
 
 /obj/item/clothing/mask/cigarette/dromedary
-	desc = "A Dromedary Straw brand cigarette. Contains a small water pill that moistens and hydrates your mouth."
+	desc = "A Dromedary Straws brand cigarette. Contains a small water pill that moistens and hydrates your mouth."
 	list_reagents = list(/datum/reagent/drug/nicotine = 13, /datum/reagent/water = 5) //camel has water
 
 /obj/item/clothing/mask/cigarette/uplift
-	desc = "An Uplift Smooth brand cigarette. Smells refreshing."
+	desc = "A Uplift Smooth brand cigarette. Smells refreshing."
 	list_reagents = list(/datum/reagent/drug/nicotine = 13, /datum/reagent/consumable/menthol = 5)
 
 /obj/item/clothing/mask/cigarette/robust
@@ -331,7 +331,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	list_reagents = list(/datum/reagent/drug/nicotine = 15, /datum/reagent/gold = 3) // Just enough to taste a hint of expensive metal.
 
 /obj/item/clothing/mask/cigarette/carp
-	desc = "A Carp Classic brand cigarette. A small label on its side indicates that it does NOT contain carpotoxin."
+	desc = "A Uplift Classic brand cigarette. Smells like fish."
 
 /obj/item/clothing/mask/cigarette/carp/Initialize()
 	. = ..()
@@ -340,7 +340,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	reagents?.add_reagent(/datum/reagent/toxin/carpotoxin , 3) ///reflavored into containing trace amounts of carp
 
 /obj/item/clothing/mask/cigarette/syndicate
-	desc = "An unknown brand of cigarette."
+	desc = "An unmarked cigarette. Smelling it makes your heart beat a little faster."
 	chem_volume = 60
 	smoketime = 2 * 60
 	smoke_all = TRUE
@@ -368,6 +368,8 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	pixel_y = rand(-5, 5)
 
 /obj/item/clothing/mask/cigarette/rollie/nicotine
+	name = "rollie"
+	desc = "A roll of dried plant matter wrapped in thin paper."
 	list_reagents = list(/datum/reagent/drug/nicotine = 15)
 
 /obj/item/clothing/mask/cigarette/rollie/trippy

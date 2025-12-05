@@ -330,8 +330,8 @@
 	custom_price = 20
 
 /obj/item/storage/fancy/cigarettes/cigpack_carp
-	name = "\improper Carp Classic packet"
-	desc = "Since 207 FS."
+	name = "\improper Uplift Classic packet"
+	desc = "A packet of Uplift Classic cigarettes, manufactured by Uplift Intergalactic as a tribute to their company's first-generation cigarette, which was wrapped in cleaned carp skin. These new ones use a synthetic alternative, leading to hopefully less Carpotoxin poisoning, while still providing the fishy taste."
 	icon_state = "carp"
 	base_icon_state = "carp"
 	spawn_type = /obj/item/clothing/mask/cigarette/carp
@@ -339,15 +339,15 @@
 
 
 /obj/item/storage/fancy/cigarettes/cigpack_syndicate
-	name = "cigarette packet"
-	desc = "A semi-obscure brand of cigarettes, favored by interstellar miners."
+	name = "\improper Cybersun Combat Cigarettes packet"
+	desc = "A packet of now-discontinued cigarettes manufactured by Cybersun Biodynamics for the Gorlex Marauders during the Inter-Corporate War. Probably helps you fight harder. Also probably bad for your long-term health."
 	icon_state = "syndie"
 	base_icon_state = "syndie"
 	spawn_type = /obj/item/clothing/mask/cigarette/syndicate
 
 /obj/item/storage/fancy/cigarettes/cigpack_midori
-	name = "\improper Midori Tabako packet"
-	desc = "You can't understand the runes, but the packet smells funny."
+	name = "\improper Shafiti Tamaci packet"
+	desc = "A packet of Shafiti Pharmaceuticals' Tamaci-brand cigarettes, rolled in a dried Siti leaf as opposed to standard paper. Marketed as lighter and environmentally-friendly, these nicotine rollies are popular alternatives to standard cigarettes preferred by many Tecetians, or the environmentally concious."
 	icon_state = "midori"
 	base_icon_state = "midori"
 	spawn_type = /obj/item/clothing/mask/cigarette/rollie/nicotine
@@ -355,7 +355,7 @@
 
 /obj/item/storage/fancy/cigarettes/cigpack_candy
 	name = "\improper Timmy's First Candy Smokes packet"
-	desc = "Unsure about smoking? Want to bring your children safely into the family tradition? Look no more with this special packet! Includes 100%* Nicotine-Free candy cigarettes."
+	desc = "Originally a joke gift, these sugar sticks gained a scary amount of popularity after several viral Intranet videos of pranksters handing them out to children went viral. Since then, the original production company has discontinuted the product, but that only served to spur on the production of more off-brands, some of which are rumored to be spiked with real nicotine. While mostly contained in the Core, these sugar sticks are still easy to find in the Frontier."
 	icon_state = "candy"
 	base_icon_state = "candy"
 	contents_tag = "candy cigarette"
@@ -369,14 +369,14 @@
 
 /obj/item/storage/fancy/cigarettes/cigpack_cannabis
 	name = "\improper Freak Brothers' Special packet"
-	desc = "A label on the packaging reads, \"Endorsed by Phineas, Freddy and Franklin.\""
+	desc = "A packet of Freak Brothers' Special brand joints. One of the few smoke brands based in-house in the Frontier, Freak Brothers' Special joints contain a Tecetian herb known for it's stimulating and relaxing effects. Due to practically no information being available on the Freak Brothers' production methods, or even where they're based, they have not been approved by any health organization, as a result rarely travel outside of the Frontier. Despite this, their often high quality combined with their rarity makes them often sought after."
 	icon_state = "midori"
 	base_icon_state = "midori"
 	spawn_type = /obj/item/clothing/mask/cigarette/rollie/cannabis
 
 /obj/item/storage/fancy/cigarettes/cigpack_mindbreaker
-	name = "\improper Leary's Delight packet"
-	desc = "Banned in over 36 Sectors."
+	name = "\improper Kingpin Extreme packet"
+	desc = "A packet of recalled Kingpin Extreme brand blunts. These blunts, loaded with hallucinogenic drugs and compounds, were created and approved almost soley by Kingpin Tobacco's overbearingly controlling and powerful spokesperson, Yalaki-Bezha. Seeking to create the most powerful smokable ever, Bezha speed-ran getting the blunt created and produced before the company's leadership found out. Production was shut down fast and a recall was ordered, but several thousand packets still managed to escape, with most finding their way to unregulated pockets of space such as the Frontier."
 	icon_state = "shadyjim"
 	base_icon_state = "shadyjim"
 	spawn_type = /obj/item/clothing/mask/cigarette/rollie/mindbreaker
@@ -452,8 +452,8 @@
 /////////////
 
 /obj/item/storage/fancy/cigarettes/cigars
-	name = "\improper premium cigar case"
-	desc = "A case of premium cigars. Very expensive."
+	name = "\improper cigar case"
+	desc = "A case of generic-brand cigars."
 	icon = 'icons/obj/cigarettes.dmi'
 	icon_state = "cigarcase"
 	w_class = WEIGHT_CLASS_NORMAL
@@ -488,8 +488,8 @@
 	spawn_type = /obj/item/clothing/mask/cigarette/cigar/cohiba
 
 /obj/item/storage/fancy/cigarettes/cigars/havana
-	name = "\improper premium Havanian cigar case"
-	desc = "Even after centuries of Solarian export, Havana smooth is only found in proper terran cigars."
+	name = "\improper Solarian cigar case"
+	desc = "A case of expensive Solarian cigars imported straight from Terra. Uses all-natural, expertly grown tobacco for a luxurious taste."
 	icon_state = "cohibacase"
 	base_icon_state = "cohibacase"
 	spawn_type = /obj/item/clothing/mask/cigarette/cigar/havana
