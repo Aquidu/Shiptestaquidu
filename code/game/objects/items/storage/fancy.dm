@@ -185,8 +185,8 @@
 //CIG PACK//
 ////////////
 /obj/item/storage/fancy/cigarettes
-	name = "\improper Space Cigarettes packet"
-	desc = "The most popular brand of cigarettes on the Frontier."
+	name = "\improper Uplift Common packet"
+	desc = "A pack of Uplift Intergalactic's flagship cigarette, sometimes called \"The Smoke That Won The Galaxy.\" Their cheap production cost and low tobacco quality standards made them extremely easy to mass-produce throughout the galaxy, leading to it's current reputation of the most popular cigarette brand."
 	icon = 'icons/obj/cigarettes.dmi'
 	base_icon_state = "cig"
 	icon_state = "cig"
@@ -196,7 +196,7 @@
 	slot_flags = ITEM_SLOT_BELT
 	spawn_type = /obj/item/clothing/mask/cigarette/space_cigarette
 	var/candy = FALSE //for cigarette overlay
-	custom_price = 10
+	custom_price = 5
 	contents_tag = "cigarette"
 
 /obj/item/storage/fancy/cigarettes/ComponentInitialize()
@@ -298,32 +298,36 @@
 	return
 
 /obj/item/storage/fancy/cigarettes/dromedaryco
-	name = "\improper DromedaryCo packet"
-	desc = "A packet of six imported DromedaryCo cancer sticks. A label on the packaging reads, \"Wouldn't a slow death make a change?\""
+	name = "\improper Dromedary Straws packet"
+	desc = "A pack of Dromedary Corporation's marketed \"survival\" cigarettes. Normally known for their camping and survival gear, Dromedary Co. couldn't keep their hands out of the lucrative tobacco market, debuting their \"Straws\" in 463 FSC. Claiming them as \"survival cigarettes,\" the packaging proudly brags about the hydrating effects of each cigarette. Despite the otherwise lackluster quality, they proved popular with many workers of labor-intensive jobs, especially in the Frontier."
 	icon_state = "dromedary"
 	base_icon_state = "dromedary"
 	spawn_type = /obj/item/clothing/mask/cigarette/dromedary
+	custom_price = 10
 
 /obj/item/storage/fancy/cigarettes/cigpack_uplift
 	name = "\improper Uplift Smooth packet"
-	desc = "Your favorite brand, now menthol flavored."
+	desc = "A pack of Uplift Intergalactic's next-generation cigarette, Uplift Smooth cigarettes attempt to improve on the quality of Uplift Common by adding menthol as a flavor, masking the lower-quality tobacco. The side of the package shows a step-by-step diagram on how to \"properly\" enjoy an Uplift Smooth, with instructions in multiple languages. While not as popular as their flagship brand, Uplift Smooth has been rapidly growing in popularity in the Frontier since the end of the Inter-Corporate Wars."
 	icon_state = "uplift"
 	base_icon_state = "uplift"
 	spawn_type = /obj/item/clothing/mask/cigarette/uplift
+	custom_price = 10
 
 /obj/item/storage/fancy/cigarettes/cigpack_robust
-	name = "\improper Robust packet"
-	desc = "Smoked by the robust."
+	name = "\improper Kingpin Heavy packet"
+	desc = "A packet of Kingpin Tobacco's Heavy brand cigarettes. One of the few remaining unfiltered cigarette brands available for purchase, Kingpin Heavy cigarettes continue to sell due to the Pan-Gezenan Federation's lax restrictions on their tobacco export. While many other polities have enacted their own restrictions, the nature of the Frontier allows these tar-sticks to be sold easily. Marketed primarily to the macho and masculine, the packet's slogan proudly states: \"You ain't a KING 'til you smoke KINGPIN!\""
 	icon_state = "robust"
 	base_icon_state = "robust"
 	spawn_type = /obj/item/clothing/mask/cigarette/robust
+	custom_price = 10
 
 /obj/item/storage/fancy/cigarettes/cigpack_robustgold
-	name = "\improper Robust Gold packet"
-	desc = "Smoked by the truly robust."
+	name = "\improper Kingpin Elite packet"
+	desc = "A packet of Kingpin Tobacco's Elite brand cigarettes. One of their most expensive products, Kingpin Elite cigarettes are lined with gold dust, allowing the smoker's breath to glitter slightly when they exhale. Marketed to high-class socialites, Kingpin Elite cigarettes see more sales in the core regions of space, but a Frontier baron or warload using them to impress their peers or subordinates isn't unheard of."
 	icon_state = "robustg"
 	base_icon_state = "robustg"
 	spawn_type = /obj/item/clothing/mask/cigarette/robustgold
+	custom_price = 20
 
 /obj/item/storage/fancy/cigarettes/cigpack_carp
 	name = "\improper Carp Classic packet"
@@ -331,6 +335,8 @@
 	icon_state = "carp"
 	base_icon_state = "carp"
 	spawn_type = /obj/item/clothing/mask/cigarette/carp
+	custom_price = 10
+
 
 /obj/item/storage/fancy/cigarettes/cigpack_syndicate
 	name = "cigarette packet"
@@ -345,6 +351,7 @@
 	icon_state = "midori"
 	base_icon_state = "midori"
 	spawn_type = /obj/item/clothing/mask/cigarette/rollie/nicotine
+	custom_price = 10
 
 /obj/item/storage/fancy/cigarettes/cigpack_candy
 	name = "\improper Timmy's First Candy Smokes packet"
@@ -376,7 +383,7 @@
 
 /obj/item/storage/fancy/rollingpapers
 	name = "rolling paper pack"
-	desc = "A pack of Nanotrasen brand rolling papers."
+	desc = "A pack of Uplift brand rolling papers, cheaply made from pressed plant matter and treated with chemicals to burn better."
 	w_class = WEIGHT_CLASS_TINY
 	icon = 'icons/obj/cigarettes.dmi'
 	icon_state = "cig_paper_pack"
@@ -402,8 +409,8 @@
 		. += "[base_icon_state]_empty"
 
 /obj/item/storage/fancy/cigarettes/derringer
-	name = "\improper Robust packet"
-	desc = "Smoked by the robust."
+	name = "\improper Kingpin Heavy packet"
+	desc = "A packet of Kingpin Tobacco's Heavy brand cigarettes. One of the few remaining unfiltered cigarette brands available for purchase, Kingpin Heavy cigarettes continue to sell due to the Pan-Gezenan Federation's lax restrictions on their tobacco export. While many other polities have enacted their own restrictions, the nature of the Frontier allows these tar-sticks to be sold easily. Marketed primarily to the macho and masculine, the packet's slogan proudly states: \"You ain't a KING 'til you smoke KINGPIN!\""
 	icon_state = "robust"
 	spawn_type = /obj/item/gun/ballistic/derringer/traitor
 
@@ -435,8 +442,8 @@
 
 //For traitors with luck/class
 /obj/item/storage/fancy/cigarettes/derringer/gold
-	name = "\improper Robust Gold packet"
-	desc = "Smoked by the truly robust."
+	name = "\improper Kingpin Elite packet"
+	desc = "A packet of Kingpin Tobacco's Elite brand cigarettes. One of their most expensive products, Kingpin Elite cigarettes are lined with gold dust, allowing the smoker's breath to glitter slightly when they exhale. Marketed to high-class socialites, Kingpin Elite cigarettes see more sales in the core regions of space, but a Frontier baron or warload using them to impress their peers or subordinates isn't unheard of."
 	icon_state = "robustg"
 	spawn_type = /obj/item/gun/ballistic/derringer/gold
 
@@ -474,8 +481,8 @@
 		cigar_position++
 
 /obj/item/storage/fancy/cigarettes/cigars/cohiba
-	name = "\improper Cohiba Robusto cigar case"
-	desc = "A case of imported Cohiba cigars, renowned for their strong flavor."
+	name = "\improper Kingpin cigar case"
+	desc = "A case of Kingpin brand cigars imported straight from Kalixcis. Expensive and densely packed, but the strongest tobacco flavor you'll ever taste."
 	icon_state = "cohibacase"
 	base_icon_state = "cohibacase"
 	spawn_type = /obj/item/clothing/mask/cigarette/cigar/cohiba

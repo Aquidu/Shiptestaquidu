@@ -1,23 +1,24 @@
 /obj/machinery/vending/cigarette
 	name = "\improper ShadyCigs Deluxe"
 	desc = "If you want to get cancer, might as well do it in style."
-	product_slogans = "Space cigs taste good like a cigarette should.;I'd rather die than switch.;Smoke!;Don't believe the reports - smoke today!"
+	product_slogans = "Try the new Uplift Smooth for a minty puff!;You ain't a KING 'til you smoke KINGPIN!;Dromedary. We've got you on our back.;"
 	product_ads = "Probably not bad for you!;Don't believe the scientists!;It's good for you!;Don't quit, buy more!;Smoke!;Nicotine heaven.;Best cigarettes since 150 FSC.;Award-winning cigs."
 	icon_state = "cigs"
 	products = list(
 		/obj/item/storage/fancy/cigarettes = 5,
-		/obj/item/storage/fancy/cigarettes/cigpack_candy = 4,
-		/obj/item/storage/fancy/cigarettes/cigpack_uplift = 3,
-		/obj/item/storage/fancy/cigarettes/cigpack_robust = 3,
+		/obj/item/storage/fancy/cigarettes/cigpack_uplift = 4,
 		/obj/item/storage/fancy/cigarettes/cigpack_carp = 3,
+		/obj/item/storage/fancy/cigarettes/cigpack_candy = 4,
+		/obj/item/storage/fancy/cigarettes/cigpack_robust = 4,
+		/obj/item/storage/fancy/cigarettes/cigpack_robustgold = 3,
 		/obj/item/storage/fancy/cigarettes/cigpack_midori = 3,
-		/obj/item/storage/fancy/cigarettes/dromedaryco = 3,
+		/obj/item/storage/fancy/cigarettes/dromedaryco = 4,
 		/obj/item/clothing/mask/vape = 5,
 		/obj/item/storage/box/matches = 10,
-		/obj/item/lighter/greyscale = 4,
+		/obj/item/lighter/greyscale = 5,
 		/obj/item/storage/fancy/rollingpapers = 5)
 	premium = list(
-		/obj/item/storage/fancy/cigarettes/cigpack_robustgold = 3,
+
 		/obj/item/lighter = 3,
 		/obj/item/storage/fancy/cigarettes/cigars = 1,
 		/obj/item/storage/fancy/cigarettes/cigars/havana = 1,

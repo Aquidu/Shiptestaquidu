@@ -313,10 +313,10 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 // Cigarette brands.
 
 /obj/item/clothing/mask/cigarette/space_cigarette
-	desc = "A Space Cigarette brand cigarette. Doesn't smell like much of anything."
+	desc = "An Uplift Common brand cigarette. Generic as ever."
 
 /obj/item/clothing/mask/cigarette/dromedary
-	desc = "A DromedaryCo brand cigarette. Contrary to popular belief, does not contain Calomel, but is reported to have a watery taste."
+	desc = "A Dromedary Straw brand cigarette. Contains a small water pill that moistens and hydrates your mouth."
 	list_reagents = list(/datum/reagent/drug/nicotine = 13, /datum/reagent/water = 5) //camel has water
 
 /obj/item/clothing/mask/cigarette/uplift
@@ -324,10 +324,10 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	list_reagents = list(/datum/reagent/drug/nicotine = 13, /datum/reagent/consumable/menthol = 5)
 
 /obj/item/clothing/mask/cigarette/robust
-	desc = "A Robust brand cigarette. Smells strong."
+	desc = "A Kingpin Heavy brand unfiltered cigarette. You can practically smell the tar."
 
 /obj/item/clothing/mask/cigarette/robustgold
-	desc = "A Robust Gold brand cigarette. Smells expensive."
+	desc = "A Kingpin Elite brand cigarette. The outside glitters with gold dust."
 	list_reagents = list(/datum/reagent/drug/nicotine = 15, /datum/reagent/gold = 3) // Just enough to taste a hint of expensive metal.
 
 /obj/item/clothing/mask/cigarette/carp
@@ -337,10 +337,10 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	. = ..()
 	if(!prob(5))
 		return
-	reagents?.add_reagent(/datum/reagent/toxin/carpotoxin , 3) // They lied
+	reagents?.add_reagent(/datum/reagent/toxin/carpotoxin , 3) ///reflavored into containing trace amounts of carp
 
 /obj/item/clothing/mask/cigarette/syndicate
-	desc = "An unknown brand cigarette. Smells overwhelming."
+	desc = "An unknown brand of cigarette."
 	chem_volume = 60
 	smoketime = 2 * 60
 	smoke_all = TRUE
@@ -422,8 +422,8 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	list_reagents = list(/datum/reagent/drug/nicotine = 25)
 
 /obj/item/clothing/mask/cigarette/cigar/cohiba
-	name = "\improper Cohiba Robusto cigar"
-	desc = "There's little more you could want from a cigar."
+	name = "\improper premium Kingpin cigar"
+	desc = "An expensive, intensely flavored Kingpin brand cigar, stuffed to the brim with flavor. You'll either look really cool or like a real asshole smoking this."
 	icon_state = "cigar2off"
 	icon_on = "cigar2on"
 	icon_off = "cigar2off"
@@ -557,7 +557,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 //ZIPPO//
 /////////
 /obj/item/lighter
-	name = "\improper Zippo lighter"
+	name = "\improper fancy lighter"
 	desc = "The zippo."
 	icon = 'icons/obj/cigarettes.dmi'
 	icon_state = "zippo"
@@ -688,7 +688,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 
 /obj/item/lighter/greyscale
 	name = "cheap lighter"
-	desc = "A cheap lighter."
+	desc = "A cheap, generic-brand disposable lighter. Can light something, given enough tries..."
 	icon_state = "lighter"
 	fancy = FALSE
 	overlay_list = list(
@@ -719,8 +719,10 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 
 /obj/item/lighter/greyscale/Initialize()
 	. = ..()
-	if(!lighter_color)
-		lighter_color = pick(color_list)
+	var/mutable_appearance/lighter_overlay
+	if(lighter_overlay == "transp")
+		if(!lighter_color)
+			lighter_color = pick(color_list)
 	update_appearance()
 
 /obj/item/lighter/greyscale/create_lighter_overlay()
@@ -733,14 +735,14 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 		. = span_notice("After some fiddling, [user] manages to light [A] with [src].")
 
 /obj/item/lighter/greyscale/empty ///never lights
-	name =
-	desc =
+	name = "empty lighter"
+	desc = "A cheap, generic-brand disposable lighter. It feels light, and the flame doesn't ever seem to catch."
 	grind_results = list(/datum/reagent/iron = 1)
 	empty = TRUE
 
 /obj/item/lighter/empty
 	name = "empty Zippo lighter"
-	desc =
+	desc = "e"
 	grind_results = list(/datum/reagent/iron = 1)
 	empty = TRUE
 
@@ -834,7 +836,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 ///////////////
 /obj/item/clothing/mask/vape
 	name = "\improper E-Cigarette"
-	desc = "A classy and highly sophisticated electronic cigarette, for classy and dignified gentlemen. A warning label reads \"Warning: Do not fill with flammable materials.\" Can be lit via interfacing with a PDA, tablet computer, or an APC."//<<< i'd vape to that.
+	desc = "An electronic cigarette manufactured by Uplift Intergalactic as a substitute for paper cigarettes, used for smoking any number of substances. A warning label reads \"Warning: Do not fill with flammable materials.\" Can be lit via interfacing with a PDA, tablet computer, or an APC."//<<< i'd vape to that.
 	icon = 'icons/obj/clothing/masks.dmi'
 	icon_state = "red_vapeoff"
 	item_state = "red_vapeoff"
