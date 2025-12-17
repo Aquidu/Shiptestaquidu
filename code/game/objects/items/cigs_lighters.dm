@@ -434,8 +434,8 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	list_reagents =list(/datum/reagent/drug/nicotine = 40)
 
 /obj/item/clothing/mask/cigarette/cigar/havana
-	name = "premium Havanian cigar"
-	desc = "A cigar fit for only the best of the best."
+	name = "\improper premium Solarian cigar"
+	desc = "A cigar straight from Sol. Made of some of the highest quality tobacco found anywhere in the galaxy."
 	icon_state = "cigar2off"
 	icon_on = "cigar2on"
 	icon_off = "cigar2off"
@@ -560,7 +560,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 /////////
 /obj/item/lighter
 	name = "\improper fancy lighter"
-	desc = "The zippo."
+	desc = "An expertly crafted luxury lighter made by Kingpin Tobacco. One of their oldest and most famous products, predating the company's development into smokables, the Kingpin brand flip lighter has changed little since its debut on Gezena. Eternally a sign of the wealthy, the Kingpin lighter's signature click sound is sure to draw attention whenever you light it. Good or bad attention, that's up to you."
 	icon = 'icons/obj/cigarettes.dmi'
 	icon_state = "zippo"
 	item_state = "zippo"
@@ -689,7 +689,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 
 
 /obj/item/lighter/greyscale
-	name = "cheap lighter"
+	name = "\improper cheap lighter"
 	desc = "A cheap, generic-brand disposable lighter. Can light something, given enough tries..."
 	icon_state = "lighter"
 	fancy = FALSE
@@ -721,10 +721,8 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 
 /obj/item/lighter/greyscale/Initialize()
 	. = ..()
-	var/mutable_appearance/lighter_overlay
-	if(lighter_overlay == "transp")
-		if(!lighter_color)
-			lighter_color = pick(color_list)
+	if(!lighter_color)
+		lighter_color = pick(color_list)
 	update_appearance()
 
 /obj/item/lighter/greyscale/create_lighter_overlay()
@@ -737,16 +735,31 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 		. = span_notice("After some fiddling, [user] manages to light [A] with [src].")
 
 /obj/item/lighter/greyscale/empty ///never lights
-	name = "empty lighter"
+	name = "\improper empty lighter"
 	desc = "A cheap, generic-brand disposable lighter. It feels light, and the flame doesn't ever seem to catch."
 	grind_results = list(/datum/reagent/iron = 1)
 	empty = TRUE
 
 /obj/item/lighter/empty
-	name = "empty Zippo lighter"
-	desc = "e"
+	name = "\improper empty fancy lighter"
+	desc = "An expertly crafted luxury lighter made by Kingpin Tobacco. One of their oldest and most famous products, predating the company's development into smokables, the Kingpin brand flip lighter has changed little since its debut on Gezena. Unfortunately, it seems like this one's empty. At least you can show it off."
 	grind_results = list(/datum/reagent/iron = 1)
 	empty = TRUE
+
+/obj/item/lighter/novelty
+	name = "\improper novelty lighter"
+	desc = "A lighter with a special design on it. Unfortunately, looks like this one didn't come with one! Too bad!"
+	icon_state = "lighter"
+	fancy = FALSE
+	overlay_state = null
+
+/obj/item/lighter/novelty/pickle ///PICKLE!?!? NAH MAN
+	desc = "A lighter with a special design on it. This one has... a pickle on it?"
+	overlay_state = "pickle"
+
+/obj/item/lighter/novelty/lighterlighter
+	desc = "A lighter with a special design on it. This one has another lighter on it."
+	overlay_state = "lighterlighter"
 
 
 /obj/item/lighter/slime
@@ -759,8 +772,8 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	grind_results = list(/datum/reagent/iron = 1, /datum/reagent/fuel = 5)
 
 /obj/item/lighter/clockwork
-	name = "bronze zippo"
-	desc = "A zippo plated with brass. I mean bronze. Has a neat red flame!"
+	name = "\improper bronze lighter"
+	desc = "An older-generation Kingpin brand flip lighter, before the change of the company's demographic from the rich elite to the macho. Hand-crafted with exquisite handiwork, this lighter is highly sought after for its expert craftsmanship. Burns red with unique fuel."
 	icon = 'icons/obj/cigarettes.dmi'
 	icon_state = "clockworklighter"
 	heat = 2000 //??????????????????
@@ -798,8 +811,8 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 		playsound(src, 'sound/voice/lizard/firespit.ogg', 20, TRUE)
 
 /obj/item/lighter/enigma
-	name = "\improper Enigma Shipworks Lighter"
-	desc = "A lighter from a now defunct company. Feels nice to hold."
+	name = "\improper antique fancy lighter"
+	desc = "An exceedingly rare flip lighter created before Kingpin trademarked the design. While the company that made this is likely long-gone, this exceptionally rare lighter remains as an icon of an age past."
 	icon_state = "enigmaburner"
 	heat = 1500
 	overlay_state = "enigma2"
@@ -1068,7 +1081,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 
 /obj/item/clothing/mask/vape/cigar
 	name = "\improper E-Cigar"
-	desc = "The latest recreational device developed by a small tech startup, Shadow Tech, the E-Cigar has all the uses of a normal E-Cigarette, with the classiness of short fat cigar. Can be lit via interfacing with a PDA, tablet computer, or an APC."
+	desc = "Kingpin Tobacco's attempt to cash in on the eletronic cigarette craze, the E-Cigar is functionally the same as a E-cigarette, however can fit much more inside, and, as the name suggests, is designed to look more akin to a cigar. Great for passing the time. Can be lit via interfacing with a PDA, tablet computer, or an APC."
 	icon_state = "ecigar_vapeoff"
 	item_state = "ecigar_vapeoff"
 	vapecolor = "ecigar"

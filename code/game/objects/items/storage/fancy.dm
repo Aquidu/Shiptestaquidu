@@ -355,7 +355,7 @@
 
 /obj/item/storage/fancy/cigarettes/cigpack_candy
 	name = "\improper Timmy's First Candy Smokes packet"
-	desc = "Originally a joke gift, these sugar sticks gained a scary amount of popularity after several viral Intranet videos of pranksters handing them out to children went viral. Since then, the original production company has discontinuted the product, but that only served to spur on the production of more off-brands, some of which are rumored to be spiked with real nicotine. While mostly contained in the Core, these sugar sticks are still easy to find in the Frontier."
+	desc = "Originally a joke gift, these sugar sticks gained a scary amount of popularity after several viral Intranet videos of pranksters handing them out to children went viral. Since then, the original production company has discontinuted the product, but that only served to spur on the production of more off-brands, some of which are rumored to be spiked with real nicotine. While mostly controlled in the Core, these sugar sticks are still easy to find in the Frontier."
 	icon_state = "candy"
 	base_icon_state = "candy"
 	contents_tag = "candy cigarette"
