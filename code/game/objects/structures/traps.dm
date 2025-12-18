@@ -20,7 +20,7 @@
 
 /obj/structure/trap/Initialize(mapload)
 	. = ..()
-	flare_message = span_warning("[src] flares brightly!")
+	flare_message = span_warning("[src] emits sparks as it scans you!") ///i'm using these for ctf and i don't think these are used ANYWHERE else
 	spark_system = new
 	spark_system.set_up(4,1,src)
 	spark_system.attach(src)
