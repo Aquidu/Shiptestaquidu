@@ -38,6 +38,12 @@
 	display_name = "poncho, recolorable"
 	path = /obj/item/clothing/neck/poncho
 
+//neckwraps
+
+/datum/gear/accessory/neckwraps
+	display_name = "neckwraps, recolorable"
+	path = /obj/item/clothing/neck/neckwraps
+
 //(The actually good scarves)
 
 /datum/gear/accessory/scarf/striped
@@ -74,6 +80,14 @@
 	display_name = "gloves, black"
 	description = "Standard hand coverings for everyday use."
 	path = /obj/item/clothing/gloves/color/black
+
+/datum/gear/accessory/gloves/armwarmers
+	display_name = "arm warmers"
+	path = /obj/item/clothing/gloves/armwarmer
+
+/datum/gear/accessory/gloves/stripedwarmers
+	display_name = "striped arm warmers"
+	path = /obj/item/clothing/gloves/armwarmer/striped
 
 /datum/gear/accessory/gloves/white
 	display_name = "gloves, white"
