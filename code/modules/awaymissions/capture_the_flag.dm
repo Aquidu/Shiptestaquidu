@@ -557,14 +557,6 @@
 // OUTFITS
 
 /datum/outfit/ctf
-	name = "CTF"
-	ears = /obj/item/radio/headset
-	uniform = /obj/item/clothing/under/syndicate
-	suit = /obj/item/clothing/suit/space/hardsuit/shielded/ctf
-	toggle_helmet = FALSE // see the whites of their eyes
-	shoes = /obj/item/clothing/shoes/combat
-	gloves = /obj/item/clothing/gloves/tackler/combat
-	id = /obj/item/card/id/away
 
 /datum/outfit/ctf/post_equip(mob/living/carbon/human/H, visualsOnly=FALSE)
 	if(visualsOnly)
@@ -584,12 +576,6 @@
 		var/obj/item/I = i
 		ADD_TRAIT(I, TRAIT_NODROP, CAPTURE_THE_FLAG_TRAIT)
 
-/datum/outfit/ctf/instagib
-	name = "CTF (Instagib)"
-
-	r_hand = /obj/item/gun/energy/laser/instakill
-	shoes = /obj/item/clothing/shoes/jackboots/fast
-
 /datum/outfit/ctf/red
 	name = "CTF (Frontiersman)"
 
@@ -604,12 +590,6 @@
 	belt = /obj/item/storage/belt/security/military/frontiersmen/skm_ammo/ctf
 	id = /obj/item/card/id/syndicate_command //it's red
 
-/datum/outfit/ctf/red/instagib
-	name = "CTF (Red, Instagib)"
-
-	r_hand = /obj/item/gun/energy/laser/instakill/red
-	shoes = /obj/item/clothing/shoes/jackboots/fast
-
 /datum/outfit/ctf/blue
 	name = "CTF (Minuteman)"
 
@@ -623,26 +603,6 @@
 	r_pocket = /obj/item/storage/pouch/medical/ctf
 	belt = /obj/item/storage/belt/military/clip/cm82/ctf
 	id = /obj/item/card/id/centcom //it's blue
-
-/datum/outfit/ctf/blue/instagib
-	name = "CTF (Blue, Instagib)"
-
-	r_hand = /obj/item/gun/energy/laser/instakill/blue
-	shoes = /obj/item/clothing/shoes/jackboots/fast
-
-/datum/outfit/ctf/red/post_equip(mob/living/carbon/human/H)
-	..()
-	var/obj/item/radio/R = H.ears
-	R.freqlock = TRUE
-	R.independent = TRUE
-	H.dna.species.stunmod = 0
-
-/datum/outfit/ctf/blue/post_equip(mob/living/carbon/human/H)
-	..()
-	var/obj/item/radio/R = H.ears
-	R.freqlock = TRUE
-	R.independent = TRUE
-	H.dna.species.stunmod = 0
 
 /obj/structure/trap/ctf
 	name = "Spawn protection"
