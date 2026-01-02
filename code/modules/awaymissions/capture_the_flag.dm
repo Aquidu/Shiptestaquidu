@@ -112,19 +112,19 @@
 
 
 /obj/item/ctf/red
-	name = "red flag"
-	icon_state = "banner-red"
-	item_state = "banner-red"
-	desc = "A red banner used to play capture the flag."
+	name = "Frontiersmen banner"
+	icon_state = "banner-frontiersmen"
+	item_state = "banner-frontiersmen"
+	desc = "The proud banner of the New Frontiersmen. To be captured by CLIP."
 	team = RED_TEAM
 	reset_path = /obj/effect/ctf/flag_reset/red
 
 
 /obj/item/ctf/blue
-	name = "blue flag"
-	icon_state = "banner-blue"
-	item_state = "banner-blue"
-	desc = "A blue banner used to play capture the flag."
+	name = "Confederated League banner"
+	icon_state = "banner-clip"
+	item_state = "banner-clip"
+	desc = "The proud banner of the Confederated League of Independent Planets. To be captured by the Frontiersmen."
 	team = BLUE_TEAM
 	reset_path = /obj/effect/ctf/flag_reset/blue
 
@@ -144,13 +144,13 @@
 
 /obj/effect/ctf/flag_reset/red
 	name = "red flag landmark"
-	icon_state = "banner-red"
+	icon_state = "banner-frontiersmen"
 	desc = "This is where a red banner used to play capture the flag \
 		would go."
 
 /obj/effect/ctf/flag_reset/blue
 	name = "blue flag landmark"
-	icon_state = "banner-blue"
+	icon_state = "banner-clip"
 	desc = "This is where a blue banner used to play capture the flag \
 		would go."
 
@@ -168,8 +168,8 @@
 /obj/machinery/capture_the_flag
 	name = "CTF Controller"
 	desc = "Used for running friendly games of capture the flag."
-	icon = 'icons/obj/device.dmi'
-	icon_state = "syndbeacon"
+	icon = 'icons/obj/machines/sleeper.dmi'
+	icon_state = "sleeper"
 	resistance_flags = INDESTRUCTIBLE
 	processing_flags = START_PROCESSING_MANUALLY
 	var/team = WHITE_TEAM
@@ -216,7 +216,7 @@
 
 /obj/machinery/capture_the_flag/red
 	name = "Red CTF Controller"
-	icon_state = "syndbeacon"
+	icon_state = "frontiersmen-spawner"
 	team = RED_TEAM
 	team_span = "redteamradio"
 	ctf_gear = /datum/outfit/ctf/red
@@ -224,7 +224,7 @@
 
 /obj/machinery/capture_the_flag/blue
 	name = "Blue CTF Controller"
-	icon_state = "bluebeacon"
+	icon_state = "clip-spawner"
 	team = BLUE_TEAM
 	team_span = "blueteamradio"
 	ctf_gear = /datum/outfit/ctf/blue
@@ -262,6 +262,31 @@
 			ctf_dust_old(user.mind.current)
 		spawn_team_member(new_team_member)
 		return
+
+/obj/machinery/capture_the_flag/proc/spawn_team_member(client/new_team_member, datum/component/ctf_player/ctf_player_component)
+	var/datum/outfit/chosen_class
+
+	if(ctf_gear.len == 1) //no choices to make
+		for(var/key in ctf_gear)
+			chosen_class = ctf_gear[key]
+
+	else //There's a choice to make, present a radial menu
+		var/list/display_classes = list()
+
+		for(var/key in ctf_gear)
+			var/datum/outfit/ctf/class = ctf_gear[key]
+			var/datum/radial_menu_choice/option = new
+			option.image  = image(icon = initial(class.icon), icon_state = initial(class.icon_state))
+			option.info = span_boldnotice("[initial(class.class_description)]")
+			display_classes[key] = option
+
+		sort_list(display_classes)
+		var/choice = show_radial_menu(new_team_member.mob, src, display_classes, radius = 38)
+		if(!choice || !(GLOB.ghost_role_flags & GHOSTROLE_MINIGAME) || !isobserver(new_team_member.mob) || ctf_game.ctf_enabled == FALSE || !(new_team_member.ckey in ctf_game.get_players(team)))
+			return //picked nothing, admin disabled it, cheating to respawn faster, cheating to respawn... while in game?,
+				   //there isn't a game going on any more, you are no longer a member of this team (perhaps a new match already started?)
+
+		chosen_class = ctf_gear[choice]
 
 	for(var/obj/machinery/capture_the_flag/CTF in GLOB.machines)
 		if(CTF == src || CTF.ctf_enabled == FALSE)
@@ -617,6 +642,7 @@
 /obj/structure/trap/ctf/blue
 	team = BLUE_TEAM
 	icon_state = "mine_blue"
+
 /obj/structure/barricade/security/ctf
 	name = "barrier"
 	desc = "A barrier. Provides cover in fire fights."
