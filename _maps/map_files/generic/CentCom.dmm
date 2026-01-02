@@ -205,11 +205,11 @@
 /turf/open/floor/circuit/green/anim,
 /area/ctf)
 "ahE" = (
-/obj/item/ctf/blue,
+/obj/item/ctf_flag/blue,
 /turf/open/floor/circuit/green/anim,
 /area/ctf)
 "ahF" = (
-/obj/item/ctf/red,
+/obj/item/ctf_flag/red,
 /turf/open/floor/circuit/green/anim,
 /area/ctf)
 "ahG" = (
