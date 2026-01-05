@@ -556,8 +556,6 @@
 
 // OUTFITS
 
-/datum/outfit/ctf
-
 /datum/outfit/ctf/post_equip(mob/living/carbon/human/H, visualsOnly=FALSE)
 	if(visualsOnly)
 		return
