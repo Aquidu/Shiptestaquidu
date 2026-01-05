@@ -48,8 +48,14 @@
 /datum/outfit/ctf/clip/medic
 	name = "CTF Medic (Minutemen)"
 	suit_store = /obj/item/gun/ballistic/automatic/smg/cm5
-	belt = /obj/item/storage/belt/military/clip/cm5/ctf
+	belt = /obj/item/storage/belt/medical/webbing/clip/ctf
+	gloves = /obj/item/clothing/gloves/color/latex/nitrile
+	accessory = /obj/item/clothing/accessory/armband/medblue
 
+/datum/outfit/ctf/clip/breacher
+	name = "CTF Breacher (Minutemen)"
+	suit_store = /obj/item/gun/ballistic/shotgun/cm15
+	belt = /obj/item/storage/belt/military/clip/cm15/ctf
 
 //FRONTIERSMEN
 /datum/outfit/ctf/frontiersmen
