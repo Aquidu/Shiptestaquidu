@@ -10,7 +10,7 @@
 	r_pocket = /obj/item/melee/knife/combat
 	id = /obj/item/card/id
 
-//CLIP
+///CLIP
 /datum/outfit/ctf/clip
 	name = "CTF Base Outfit (Minutemen)"
 	head = /obj/item/clothing/head/helmet/bulletproof/x11/clip
@@ -26,23 +26,24 @@
 	name = "CTF Engineer (Minutemen)"
 	suit_store = /obj/item/gun/ballistic/automatic/smg/cm5
 	belt = /obj/item/storage/belt/military/clip/cm5/ctf
-	eyes = /obj/item/clothing/glasses/welding
+	gloves = /obj/item/clothing/gloves/color/yellow
+	glasses = /obj/item/clothing/glasses/welding
 	accessory = /obj/item/clothing/accessory/armband/engine
 	back = /obj/item/storage/backpack/satchel/eng
-		backpack_contents = list(
-			/obj/item/grenade/c4 = 2,
-			/obj/item/crowbar/red,
-			/obj/item/weldingtool/electric,
-			/obj/item/extinguisher,
-			/obj/item/stack/rods/twentyfive,
-			/obj/item/stack/wood/twentyfive)
+	backpack_contents = list(
+		/obj/item/grenade/c4 = 2,
+		/obj/item/crowbar/red,
+		/obj/item/weldingtool/electric,
+		/obj/item/extinguisher,
+		/obj/item/stack/rods/twentyfive,
+		/obj/item/stack/sheet/mineral/wood/twentyfive)
 
 /datum/outfit/ctf/clip/marksman
 	name = "CTF Marksman (Minutemen)"
 	suit_store = /obj/item/gun/ballistic/automatic/marksman/f4
 	belt = /obj/item/storage/belt/military/clip/f4/ctf
 	neck = /obj/item/binoculars
-	suit = NULL
+	suit = null
 	head = /obj/item/clothing/head/clip
 
 /datum/outfit/ctf/clip/medic
@@ -54,17 +55,77 @@
 
 /datum/outfit/ctf/clip/breacher
 	name = "CTF Breacher (Minutemen)"
+	suit = /obj/item/clothing/suit/armor/vest/marine/heavy
 	suit_store = /obj/item/gun/ballistic/shotgun/cm15
 	belt = /obj/item/storage/belt/military/clip/cm15/ctf
 
-//FRONTIERSMEN
+/datum/outfit/ctf/clip/specialist
+	name = "CTF Specialist (Minutemen)"
+	suit = /obj/item/clothing/suit/bio_suit/bard/heavy
+	suit_store = /obj/item/gun/energy/kalix/clip
+	belt = /obj/item/storage/belt/military/clip/alt/ecm6/ctf
+	mask = /obj/item/clothing/mask/gas/clip
+	head = /obj/item/clothing/head/bio_hood/bard/armored
+
+
+
+///FRONTIERSMEN
 /datum/outfit/ctf/frontiersmen
 	name = "CTF Base Outfit (Frontiersmen)"
+	head = /obj/item/clothing/head/helmet/bulletproof/x11/frontier
 	suit = /obj/item/clothing/suit/armor/vest/bulletproof/frontier
-	suit_store = /obj/item/gun/ballistic/automatic/assault/skm
-	l_pocket = /obj/item/ammo_box/magazine/m9mm_mauler
-	belt = /obj/item/storage/belt/security/military/frontiersmen/skm_ammo
+	uniform = /obj/item/clothing/under/frontiersmen
 
+/datum/outfit/ctf/frontiersman/rifleman
+	name = "CTF Rifleman (Frontiersmen)"
+	suit_store = /obj/item/gun/ballistic/automatic/assault/skm
+	belt = /obj/item/storage/belt/security/military/frontiersmen/skm_ammo/ctf
+
+/datum/outfit/ctf/frontiersman/engineer
+	name = "CTF Engineer (Frontiersmen)"
+	suit_store = /obj/item/gun/ballistic/automatic/smg/pounder
+	belt = /obj/item/storage/belt/security/military/frontiersmen/pounder_ammo/ctf
+	gloves = /obj/item/clothing/gloves/color/yellow
+	glasses = /obj/item/clothing/glasses/welding
+	accessory = /obj/item/clothing/accessory/armband/engine
+	back = /obj/item/storage/backpack/satchel/eng
+	backpack_contents = list(
+		/obj/item/grenade/c4 = 2,
+		/obj/item/crowbar/red,
+		/obj/item/weldingtool/electric,
+		/obj/item/extinguisher,
+		/obj/item/stack/rods/twentyfive,
+		/obj/item/stack/sheet/mineral/wood/twentyfive)
+
+/datum/outfit/ctf/frontiersman/marksman
+	name = "CTF Marksman (Frontiersmen)"
+	suit_store = /obj/item/gun/ballistic/automatic/marksman/f4/indie
+	belt = /obj/item/storage/belt/security/military/frontiersmen/f3_ammo/ctf
+	neck = /obj/item/binoculars
+	suit = null
+	head = /obj/item/clothing/head/beret/sec/frontier
+
+/datum/outfit/ctf/frontiersman/medic
+	name = "CTF Medic (Frontiersmen)"
+	suit_store = /obj/item/gun/ballistic/automatic/pistol/spitter
+	belt = /obj/item/storage/belt/medical/webbing/frontiersmen/ctf
+	gloves = /obj/item/clothing/gloves/color/latex/nitrile
+	accessory = /obj/item/clothing/accessory/armband/medblue
+
+/datum/outfit/ctf/frontiersman/breacher
+	name = "CTF Breacher (Frontiersmen)"
+	suit = /obj/item/clothing/suit/armor/vest/marine/heavy
+	suit_store = /obj/item/gun/ballistic/shotgun/automatic/slammer
+	belt = /obj/item/storage/belt/security/military/frontiersmen/slammer_ammo/ctf
+	head = /obj/item/clothing/head/helmet/frontier
+
+/datum/outfit/ctf/frontiersman/specialist
+	name = "CTF Specialist (Frontiersmen)"
+	suit = /obj/item/clothing/suit/armor/frontier/fireproof
+	suit_store = /obj/item/gun/energy/laser/wasp
+	belt = /obj/item/storage/belt/security/military/frontiersmen/wasp_ammo/ctf
+	mask = /obj/item/clothing/mask/gas/frontiersmen
+	uniform = /obj/item/clothing/under/frontiersmen/fireproof
 
 
 /datum/outfit/ctf/post_equip(mob/living/carbon/human/H, visualsOnly=FALSE)
@@ -84,3 +145,6 @@
 	for(var/i in no_drops)
 		var/obj/item/I = i
 		ADD_TRAIT(I, TRAIT_NODROP, CAPTURE_THE_FLAG_TRAIT)
+
+	for(var/obj/item/thing in H.contents)
+		thing.AddElement(/datum/element/vanish_on_drop)

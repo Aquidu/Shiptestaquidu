@@ -302,6 +302,21 @@
 		new /obj/item/stock_parts/cell/gun(src)
 	new /obj/item/grenade/frag(src)
 
+/obj/item/storage/belt/security/military/frontiersmen/pounder_ammo/PopulateContents()
+	for(var/i in 1 to 4)
+		new /obj/item/ammo_box/magazine/c22lr_pounder_pan(src)
+	new /obj/item/grenade/frag(src)
+
+/obj/item/storage/belt/security/military/frontiersmen/f3_ammo/PopulateContents()
+	for(var/i in 1 to 4)
+		new /obj/item/ammo_box/magazine/f4_308(src)
+	new /obj/item/grenade/frag(src)
+
+/obj/item/storage/belt/security/military/frontiersmen/slammer_ammo/PopulateContents()
+	for(var/i in 1 to 4)
+		new /obj/item/ammo_box/magazine/m12g_slammer(src)
+	new /obj/item/grenade/frag(src)
+
 /obj/item/storage/belt/medical/webbing/frontiersmen
 	name = "leather medical bandolier"
 	desc = "A rudimentary leather bandolier, utilized by both independents and frontiersmen alike. This one is painted white, usually to be worn by a medic."

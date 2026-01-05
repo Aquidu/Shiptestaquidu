@@ -186,7 +186,6 @@
 	var/list/recently_dead_ckeys = list()
 	var/ctf_enabled = FALSE
 	var/ctf_gear = /datum/outfit/ctf
-	var/instagib_gear = /datum/outfit/ctf/instagib
 
 	var/list/dead_barricades = list()
 
@@ -213,22 +212,6 @@
 			// instantly critted are low, but have some healing.
 			living_participant.adjustBruteLoss(-2.5 * seconds_per_tick)
 			living_participant.adjustFireLoss(-2.5 * seconds_per_tick)
-
-/obj/machinery/capture_the_flag/red
-	name = "Red CTF Controller"
-	icon_state = "syndbeacon"
-	team = RED_TEAM
-	team_span = "redteamradio"
-	ctf_gear = /datum/outfit/ctf/red
-	instagib_gear = /datum/outfit/ctf/red/instagib
-
-/obj/machinery/capture_the_flag/blue
-	name = "Blue CTF Controller"
-	icon_state = "bluebeacon"
-	team = BLUE_TEAM
-	team_span = "blueteamradio"
-	ctf_gear = /datum/outfit/ctf/blue
-	instagib_gear = /datum/outfit/ctf/blue/instagib
 
 //ATTACK GHOST IGNORING PARENT RETURN VALUE
 /obj/machinery/capture_the_flag/attack_ghost(mob/user)
@@ -528,107 +511,8 @@
 		if(istype(H.wear_suit, /obj/item/clothing/suit/armor/vest/bulletproof))
 			return TRUE
 
-// CTF MISCELLANEOUS
-
-/obj/item/storage/pouch/medical/ctf
-
-/obj/item/storage/pouch/medical/ctf/dropped()
-	. = ..()
-	addtimer(CALLBACK(src, PROC_REF(floor_vanish)), 1)
-
-/obj/item/storage/pouch/medical/ctf/proc/floor_vanish()
-	if(isturf(loc))
-		qdel(src)
-
-/obj/item/melee/knife/combat/ctf
-	desc = "A standard issue combat knife. This could really hurt someone."
-	force = 25
-	throwforce = 25
-
-/obj/item/melee/knife/combat/ctf/dropped()
-	. = ..()
-	addtimer(CALLBACK(src, PROC_REF(floor_vanish)), 60)
-
-/obj/item/melee/knife/combat/ctf/proc/floor_vanish()
-	if(isturf(loc))
-		qdel(src)
-
-
-// OUTFITS
-
-/datum/outfit/ctf/post_equip(mob/living/carbon/human/H, visualsOnly=FALSE)
-	if(visualsOnly)
-		return
-	var/list/no_drops = list()
-	var/obj/item/card/id/W = H.wear_id
-	no_drops += W
-	W.registered_name = H.real_name
-	W.update_label()
-
-	no_drops += H.get_item_by_slot(ITEM_SLOT_OCLOTHING)
-	no_drops += H.get_item_by_slot(ITEM_SLOT_GLOVES)
-	no_drops += H.get_item_by_slot(ITEM_SLOT_FEET)
-	no_drops += H.get_item_by_slot(ITEM_SLOT_ICLOTHING)
-	no_drops += H.get_item_by_slot(ITEM_SLOT_EARS)
-	for(var/i in no_drops)
-		var/obj/item/I = i
-		ADD_TRAIT(I, TRAIT_NODROP, CAPTURE_THE_FLAG_TRAIT)
-
-/datum/outfit/ctf/red
-	name = "CTF (Frontiersman)"
-
-	head = /obj/item/clothing/head/helmet/bulletproof/x11/frontier
-	suit = /obj/item/clothing/suit/armor/vest/bulletproof/frontier
-	uniform = /obj/item/clothing/under/frontiersmen
-	shoes = /obj/item/clothing/shoes/combat
-	gloves = /obj/item/clothing/gloves/color/black
-	suit_store = /obj/item/gun/ballistic/automatic/assault/skm/ctf
-	l_pocket = /obj/item/ammo_box/magazine/m9mm_mauler/ctf
-	r_pocket = /obj/item/storage/pouch/medical/ctf
-	belt = /obj/item/storage/belt/security/military/frontiersmen/skm_ammo/ctf
-	id = /obj/item/card/id/syndicate_command //it's red
-
-/datum/outfit/ctf/blue
-	name = "CTF (Minuteman)"
-
-	head = /obj/item/clothing/head/helmet/bulletproof/x11/clip
-	suit = /obj/item/clothing/suit/armor/vest/bulletproof
-	uniform = /obj/item/clothing/under/clip/minutemen
-	shoes = /obj/item/clothing/shoes/combat
-	gloves = /obj/item/clothing/gloves/color/black
-	suit_store = /obj/item/gun/ballistic/automatic/assault/cm82/ctf
-	l_pocket = /obj/item/ammo_box/magazine/cm23/ctf
-	r_pocket = /obj/item/storage/pouch/medical/ctf
-	belt = /obj/item/storage/belt/military/clip/cm82/ctf
-	id = /obj/item/card/id/centcom //it's blue
-
-/obj/structure/trap/ctf
-	name = "Spawn protection"
-	desc = "Stay outta the enemy spawn!"
-	icon_state = "trap"
-	resistance_flags = INDESTRUCTIBLE
-	var/team = WHITE_TEAM
-	time_between_triggers = 1
-	anchored = TRUE
-	alpha = 255
-
 /obj/structure/trap/ctf/examine(mob/user)
 	return
-
-/obj/structure/trap/ctf/trap_effect(mob/living/L)
-	if(!is_ctf_player(L))
-		return
-	if(!(src.team in L.faction))
-		to_chat(L, span_danger("<B>Stay out of the enemy spawn!</B>"))
-		L.death()
-
-/obj/structure/trap/ctf/red
-	team = RED_TEAM
-	icon_state = "trap-fire"
-
-/obj/structure/trap/ctf/blue
-	team = BLUE_TEAM
-	icon_state = "trap-frost"
 
 /obj/structure/barricade/security/ctf
 	name = "barrier"

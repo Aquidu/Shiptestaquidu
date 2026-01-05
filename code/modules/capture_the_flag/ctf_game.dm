@@ -53,7 +53,14 @@
 	icon_state = "frontiersmen-spawner"
 	team = RED_TEAM
 	team_span = "redteamradio"
-	ctf_gear = list("Rifleman" = /datum/outfit/ctf/red)
+	ctf_gear = list(
+		"Rifleman" = /datum/outfit/ctf/frontiersman/rifleman,
+		"Engineer" = /datum/outfit/ctf/frontiersman/engineer,
+		"Marksman" = /datum/outfit/ctf/frontiersman/marksman,
+		"Medic" = /datum/outfit/ctf/frontiersman/medic,
+		"Breacher" = /datum/outfit/ctf/frontiersman/breacher,
+		"Specialist" = /datum/outfit/ctf/frontiersman/specialist
+	)
 
 /obj/machinery/ctf/spawner/blue
 	name = "Minutemen Avatar Generator"
@@ -61,7 +68,14 @@
 	icon_state = "clip-spawner"
 	team = BLUE_TEAM
 	team_span = "blueteamradio"
-	ctf_gear = list("Rifleman" = /datum/outfit/ctf/blue)
+	ctf_gear = list(
+	"Rifleman" = /datum/outfit/ctf/clip/rifleman,
+	"Engineer" = /datum/outfit/ctf/clip/engineer,
+	"Marksman" = /datum/outfit/ctf/clip/marksman,
+	"Medic" = /datum/outfit/ctf/clip/medic,
+	"Breacher" = /datum/outfit/ctf/clip/breacher,
+	"Specialist" = /datum/outfit/ctf/clip/specialist
+	)
 
 /obj/machinery/ctf/spawner/attack_ghost(mob/user)
 	if(ctf_game.ctf_enabled == FALSE)
@@ -289,194 +303,6 @@
 		E.active = ctf_enabled
 	message_admins("[key_name_admin(user)] has [ctf_enabled? "enabled" : "disabled"] CTF!")
 	notify_ghosts("CTF has been [ctf_enabled? "enabled" : "disabled"]!",'sound/effects/ghost2.ogg')
-
-/obj/item/ammo_box/magazine/m50/ctf
-	ammo_type = /obj/item/ammo_casing/a50/ctf
-
-/obj/item/ammo_casing/a50/ctf
-	projectile_type = /obj/projectile/bullet/ctf
-
-/obj/projectile/bullet/ctf
-	damage = 0
-
-/obj/projectile/bullet/ctf/prehit_pierce(atom/target)
-	if(is_ctf_target(target))
-		damage = 60
-		return PROJECTILE_PIERCE_NONE	/// hey uhh don't hit anyone behind them
-	. = ..()
-
-/obj/item/gun/ballistic/automatic/laser
-	bad_type = /obj/item/gun/ballistic/automatic/laser
-	spawn_blacklisted = TRUE
-
-/obj/item/gun/ballistic/automatic/laser/ctf
-	default_ammo_type = /obj/item/ammo_box/magazine/recharge/ctf
-	allowed_ammo_types = list(
-		/obj/item/ammo_box/magazine/recharge/ctf,
-	)
-	desc = "This looks like it could really hurt in melee."
-	force = 50
-
-/obj/item/gun/ballistic/automatic/laser/ctf/dropped()
-	. = ..()
-	addtimer(CALLBACK(src, PROC_REF(floor_vanish)), 1)
-
-/obj/item/gun/ballistic/automatic/laser/ctf/proc/floor_vanish()
-	if(isturf(loc))
-		qdel(src)
-
-/obj/item/ammo_box/magazine/recharge/ctf
-	ammo_type = /obj/item/ammo_casing/caseless/laser/ctf
-
-/obj/item/ammo_box/magazine/recharge/ctf/dropped()
-	. = ..()
-	addtimer(CALLBACK(src, PROC_REF(floor_vanish)), 1)
-
-/obj/item/ammo_box/magazine/recharge/ctf/proc/floor_vanish()
-	if(isturf(loc))
-		qdel(src)
-
-/obj/item/ammo_casing/caseless/laser/ctf
-	projectile_type = /obj/projectile/beam/ctf
-
-/obj/projectile/beam/ctf
-	damage = 0
-	icon_state = "omnilaser"
-
-/obj/projectile/beam/ctf/prehit_pierce(atom/target)
-	if(is_ctf_target(target))
-		damage = 150
-		return PROJECTILE_PIERCE_NONE		/// hey uhhh don't hit anyone behind them
-	. = ..()
-
-/proc/is_ctf_target(atom/target)
-	. = FALSE
-	if(istype(target, /obj/structure/barricade/security/ctf))
-		. = TRUE
-	if(ishuman(target))
-		var/mob/living/carbon/human/H = target
-		if(istype(H.wear_suit, /obj/item/clothing/suit/space/hardsuit/shielded/ctf))
-			. = TRUE
-
-// RED TEAM GUNS
-
-/obj/item/gun/ballistic/automatic/laser/ctf/red
-	default_ammo_type = /obj/item/ammo_box/magazine/recharge/ctf/red
-	allowed_ammo_types = list(
-		/obj/item/ammo_box/magazine/recharge/ctf/red,
-	)
-
-/obj/item/ammo_box/magazine/recharge/ctf/red
-	ammo_type = /obj/item/ammo_casing/caseless/laser/ctf/red
-
-/obj/item/ammo_casing/caseless/laser/ctf/red
-	projectile_type = /obj/projectile/beam/ctf/red
-
-/obj/projectile/beam/ctf/red
-	icon_state = "laser"
-	impact_effect_type = /obj/effect/temp_visual/impact_effect/red_laser
-
-// BLUE TEAM GUNS
-
-/obj/item/gun/ballistic/automatic/laser/ctf/blue
-	default_ammo_type = /obj/item/ammo_box/magazine/recharge/ctf/blue
-	allowed_ammo_types = list(
-		/obj/item/ammo_box/magazine/recharge/ctf/blue,
-	)
-
-/obj/item/ammo_box/magazine/recharge/ctf/blue
-	ammo_type = /obj/item/ammo_casing/caseless/laser/ctf/blue
-
-/obj/item/ammo_casing/caseless/laser/ctf/blue
-	projectile_type = /obj/projectile/beam/ctf/blue
-
-/obj/projectile/beam/ctf/blue
-	icon_state = "bluelaser"
-	impact_effect_type = /obj/effect/temp_visual/impact_effect/blue_laser
-
-/datum/outfit/ctf
-	name = "CTF"
-	ears = /obj/item/radio/headset
-	uniform = /obj/item/clothing/under/syndicate
-	suit = /obj/item/clothing/suit/space/hardsuit/shielded/ctf
-	toggle_helmet = FALSE // see the whites of their eyes
-	shoes = /obj/item/clothing/shoes/combat
-	gloves = /obj/item/clothing/gloves/tackler/combat
-	id = /obj/item/card/id/away
-	belt = /obj/item/gun/ballistic/automatic/pistol/cm357
-	l_pocket = /obj/item/ammo_box/magazine/recharge/ctf
-	r_pocket = /obj/item/ammo_box/magazine/recharge/ctf
-	r_hand = /obj/item/gun/ballistic/automatic/laser/ctf
-
-/datum/outfit/ctf/post_equip(mob/living/carbon/human/H, visualsOnly=FALSE)
-	if(visualsOnly)
-		return
-	var/list/no_drops = list()
-	var/obj/item/card/id/W = H.wear_id
-	no_drops += W
-	W.registered_name = H.real_name
-	W.update_label()
-
-	no_drops += H.get_item_by_slot(ITEM_SLOT_OCLOTHING)
-	no_drops += H.get_item_by_slot(ITEM_SLOT_GLOVES)
-	no_drops += H.get_item_by_slot(ITEM_SLOT_FEET)
-	no_drops += H.get_item_by_slot(ITEM_SLOT_ICLOTHING)
-	no_drops += H.get_item_by_slot(ITEM_SLOT_EARS)
-	for(var/i in no_drops)
-		var/obj/item/I = i
-		ADD_TRAIT(I, TRAIT_NODROP, CAPTURE_THE_FLAG_TRAIT)
-
-/datum/outfit/ctf/instagib
-	name = "CTF (Instagib)"
-
-	r_hand = /obj/item/gun/energy/laser/instakill
-	shoes = /obj/item/clothing/shoes/jackboots/fast
-
-/datum/outfit/ctf/red
-	name = "CTF (Red)"
-
-	suit = /obj/item/clothing/suit/space/hardsuit/shielded/ctf/red
-	r_hand = /obj/item/gun/ballistic/automatic/laser/ctf/red
-	l_pocket = /obj/item/ammo_box/magazine/recharge/ctf/red
-	r_pocket = /obj/item/ammo_box/magazine/recharge/ctf/red
-	id = /obj/item/card/id/syndicate_command //it's red
-
-/datum/outfit/ctf/red/instagib
-	name = "CTF (Red, Instagib)"
-
-	r_hand = /obj/item/gun/energy/laser/instakill/red
-	shoes = /obj/item/clothing/shoes/jackboots/fast
-
-/datum/outfit/ctf/blue
-	name = "CTF (Blue)"
-
-	suit = /obj/item/clothing/suit/space/hardsuit/shielded/ctf/blue
-	r_hand = /obj/item/gun/ballistic/automatic/laser/ctf/blue
-	l_pocket = /obj/item/ammo_box/magazine/recharge/ctf/blue
-	r_pocket = /obj/item/ammo_box/magazine/recharge/ctf/blue
-	id = /obj/item/card/id/centcom //it's blue
-
-/datum/outfit/ctf/blue/instagib
-	name = "CTF (Blue, Instagib)"
-
-	r_hand = /obj/item/gun/energy/laser/instakill/blue
-	shoes = /obj/item/clothing/shoes/jackboots/fast
-
-/datum/outfit/ctf/red/post_equip(mob/living/carbon/human/H)
-	..()
-	var/obj/item/radio/R = H.ears
-	R.freqlock = TRUE
-	R.independent = TRUE
-	H.dna.species.stunmod = 0
-
-/datum/outfit/ctf/blue/post_equip(mob/living/carbon/human/H)
-	..()
-	var/obj/item/radio/R = H.ears
-	R.freqlock = TRUE
-	R.independent = TRUE
-	H.dna.species.stunmod = 0
-
-
 
 /obj/structure/trap/ctf
 	name = "smart mine"

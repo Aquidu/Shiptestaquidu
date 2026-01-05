@@ -180,8 +180,7 @@
 	name = "ERT - Frontiersman Grunt (Pounder SMG)"
 
 	suit_store = /obj/item/gun/ballistic/automatic/smg/pounder
-	belt = null
-	backpack_contents = list(/obj/item/clothing/mask/gas/frontiersmen=1, /obj/item/ammo_box/magazine/c22lr_pounder_pan=2)
+	belt = /obj/item/storage/belt/security/military/frontiersmen/pounder_ammo
 
 /datum/outfit/job/frontiersmen/ert/leader
 	name = "ERT - Frontiersman Officer"
