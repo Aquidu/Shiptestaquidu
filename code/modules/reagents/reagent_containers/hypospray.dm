@@ -441,7 +441,7 @@
 	inject_self = DELUXE_SELF_INJECT
 
 /obj/item/hypospray/mkii/mkiii/combat
-	name = "combat hypospray mk.II"
+	name = "combat hypospray mk.III"
 	desc = "A combat-ready deluxe hypospray that acts almost instantly. It can be tactically reloaded by using a vial on it."
 	icon_state = "combat2"
 	start_vial = /obj/item/reagent_containers/glass/bottle/vial/large/preloaded/combat
@@ -686,6 +686,10 @@
 	volume = 35
 	amount_per_transfer_from_this = 36
 	list_reagents = list(/datum/reagent/medicine/epinephrine = 5.5, /datum/reagent/medicine/hunter_extract = 3, /datum/reagent/drug/methamphetamine = 2, /datum/reagent/medicine/morphine = 0.5, /datum/reagent/medicine/leporazine = 6, /datum/reagent/medicine/salglu_solution = 8, /datum/reagent/medicine/ysiltane = 5, /datum/reagent/medicine/silfrine = 5)
+
+/obj/item/hypospray/mkii/mkiii/combat/ctf ///this was meant to go into ctf_equipment but var/mode is undefined there
+	start_vial = /obj/item/reagent_containers/glass/bottle/vial/large/preloaded/combat/ctf
+	mode = HYPO_SPRAY ///the hadrakine poisoning you is bad i think
 
 #undef HYPO_SPRAY
 #undef HYPO_INJECT

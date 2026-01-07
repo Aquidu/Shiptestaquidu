@@ -2,6 +2,7 @@
 #define RED_TEAM "Frontiersmen"
 #define BLUE_TEAM "CLIP"
 #define FLAG_RETURN_TIME 20 SECONDS
+#define AMMO_DROP_LIFETIME 300
 
 ///Base CTF machines, if spawned in creates a CTF game with the provided game_id unless one already exists. If one exists associates itself with it.
 /obj/machinery/ctf
@@ -36,6 +37,7 @@
 	var/ammo_type = /obj/effect/ctf/ammo
 	// Fast paced gameplay, no real time for burn infections.
 	var/player_traits = list(TRAIT_NEVER_WOUNDED)
+	var/list/spawned_mobs = list()
 
 /obj/machinery/ctf/spawner/Initialize(mapload)
 	. = ..()
@@ -54,12 +56,12 @@
 	team = RED_TEAM
 	team_span = "redteamradio"
 	ctf_gear = list(
-		"Rifleman" = /datum/outfit/ctf/frontiersman/rifleman,
-		"Engineer" = /datum/outfit/ctf/frontiersman/engineer,
-		"Marksman" = /datum/outfit/ctf/frontiersman/marksman,
-		"Medic" = /datum/outfit/ctf/frontiersman/medic,
-		"Breacher" = /datum/outfit/ctf/frontiersman/breacher,
-		"Specialist" = /datum/outfit/ctf/frontiersman/specialist
+		"Rifleman" = /datum/outfit/ctf/frontiersmen/rifleman,
+		"Engineer" = /datum/outfit/ctf/frontiersmen/engineer,
+		"Marksman" = /datum/outfit/ctf/frontiersmen/marksman,
+		"Medic" = /datum/outfit/ctf/frontiersmen/medic,
+		"Breacher" = /datum/outfit/ctf/frontiersmen/breacher,
+		"Specialist" = /datum/outfit/ctf/frontiersmen/specialist
 	)
 
 /obj/machinery/ctf/spawner/blue
@@ -129,24 +131,15 @@
 
 		sortList(display_classes)
 		var/choice = show_radial_menu(new_team_member.mob, src, display_classes, radius = 38)
-		if(!choice || !(GLOB.ghost_role_flags & GHOSTROLE_CTF) || !isobserver(new_team_member.mob) || ctf_game.ctf_enabled == FALSE || !(new_team_member.ckey in ctf_game.get_players(team)))
+		if(!choice || !isobserver(new_team_member.mob) || ctf_game.ctf_enabled == FALSE || !(new_team_member.ckey in ctf_game.get_players(team)))
 			return //picked nothing, admin disabled it, cheating to respawn faster, cheating to respawn... while in game?,
-				   //there isn't a game going on any more, you are no longer a member of this team (perhaps a new match already started?)
+					//there isn't a game going on any more, you are no longer a member of this team (perhaps a new match already started?)
 
 		chosen_class = ctf_gear[choice]
 
 	var/turf/spawn_point = pick(get_adjacent_open_turfs(get_turf(src)))
 	var/mob/living/carbon/human/player_mob = new(spawn_point)
-	new_team_member.prefs.safe_transfer_prefs_to(player_mob, is_antag = TRUE)
-	if(player_mob.dna.species.outfit_important_for_life)
-
-	var/datum/mind/new_member_mind = new_team_member.mob.mind
-	if(new_member_mind)
-		player_mob.AddComponent( \
-			/datum/component/temporary_body, \
-			old_mind = new_member_mind, \
-			old_body = new_member_mind.current, \
-		)
+	new_team_member.prefs.copy_to(player_mob)
 
 	player_mob.ckey = new_team_member.ckey
 	if(isnull(ctf_player_component))
@@ -165,6 +158,37 @@
 		if(flag.team != team)
 			ctf_game.capture_flag(team, user, team_span, flag)
 			flag.reset_flag(capture = TRUE) //This might be buggy, confirm and fix if it is.
+
+/obj/item/ctf_flag
+	name = "banner"
+	icon = 'icons/obj/banner.dmi'
+	icon_state = "banner"
+	item_state = "banner"
+	lefthand_file = 'icons/mob/inhands/equipment/banners_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/equipment/banners_righthand.dmi'
+	desc = "A banner with Nanotrasen's logo on it."
+	slowdown = 2
+	throw_speed = 0
+	throw_range = 1
+	force = 200
+	armour_penetration = 1000
+	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
+	anchored = TRUE
+	item_flags = SLOWS_WHILE_IN_HAND
+	///Team that this flag is associated with, a team cannot capture its own flag.
+	var/team = WHITE_TEAM
+	///Var used for tracking when this flag should be returned to base.
+	var/reset_cooldown = 0
+	///Can anyone pick up the flag or only players of the opposing team.
+	var/anyonecanpickup = TRUE
+	///Reference to an object that's location is used when this flag needs to respawn.
+	var/obj/effect/ctf/flag_reset/reset
+	///Game_id that this flag is associated with.
+	var/game_id = CTF_GHOST_CTF_GAME_ID
+	///Reference to the CTF controller associated with the above game ID.
+	var/datum/ctf_controller/ctf_game
+	///How many points this flag is worth when captured.
+	var/flag_value = 1
 
 /obj/item/ctf_flag/Initialize(mapload)
 	. = ..()
@@ -231,7 +255,7 @@
 	var/obj/item/ctf_flag/flag = item
 	if(flag.team != team)
 		to_chat(user, span_userdanger("Take \the [initial(flag.name)] to your team's controller!"))
-		user.playsound_local(get_turf(user), 'sound/machines/buzz/buzz-sigh.ogg', 100, vary = FALSE, use_reverb = FALSE)
+		user.playsound_local(get_turf(user), 'sound/machines/buzz-sigh.ogg', 100, vary = FALSE, use_reverb = FALSE)
 
 /obj/item/ctf_flag/dropped(mob/user)
 	..()
@@ -244,29 +268,14 @@
 	anchored = TRUE // Avoid directly assigning to anchored and prefer to use set_anchored() on normal circumstances.
 
 /obj/item/ctf_flag/red
-	name = "red flag"
-	icon_state = "banner-red"
-	inhand_icon_state = "banner-red"
-	desc = "A red banner used to play capture the flag."
-	team = RED_TEAM
-
-/obj/item/ctf_flag/blue
-	name = "blue flag"
-	icon_state = "banner-blue"
-	inhand_icon_state = "banner-blue"
-	desc = "A blue banner used to play capture the flag."
-	team = BLUE_TEAM
-
-
-/obj/item/ctf_flag/red
-	name = "Frontiersmen banner"
+	name = "\improper Frontiersmen banner"
 	icon_state = "banner-frontiersmen"
 	item_state = "banner-frontiersmen"
 	desc = "The proud banner of the New Frontiersmen. Used as an objective in the C-MM's combat training program."
 	team = RED_TEAM
 
 /obj/item/ctf_flag/blue
-	name = "Confederated League banner"
+	name = "\improper Confederated League banner"
 	icon_state = "banner-clip"
 	item_state = "banner-clip"
 	desc = "The proud banner of the Confederated League of Independent Planets. Used as an objective in the C-MM's combat training program."
@@ -287,22 +296,11 @@
 	layer = LOW_ITEM_LAYER
 	var/obj/item/ctf_flag/flag
 
-/obj/item/ctf_flag/flag_reset/Destroy()
+/obj/effect/ctf/flag_reset/Destroy()
 	if(flag)
 		flag.reset = null
 		flag = null
 	return ..()
-
-/proc/toggle_all_ctf(mob/user)
-	var/ctf_enabled = FALSE
-	var/area/A
-	for(var/obj/machinery/capture_the_flag/CTF in GLOB.machines)
-		ctf_enabled = CTF.toggle_ctf()
-		A = get_area(CTF)
-	for(var/obj/machinery/power/emitter/E in A)
-		E.active = ctf_enabled
-	message_admins("[key_name_admin(user)] has [ctf_enabled? "enabled" : "disabled"] CTF!")
-	notify_ghosts("CTF has been [ctf_enabled? "enabled" : "disabled"]!",'sound/effects/ghost2.ogg')
 
 /obj/structure/trap/ctf
 	name = "smart mine"
@@ -314,15 +312,13 @@
 	anchored = TRUE
 	alpha = 255
 
-/obj/structure/trap/ctf/examine(mob/user)
-	return
-
-/obj/structure/trap/ctf/trap_effect(mob/living/L)
-	if(!is_ctf_target(L))
+/obj/structure/trap/ctf/trap_effect(mob/living/living)
+	if(!is_ctf_target(living))
 		return
-	if(!(src.team in L.faction))
-		to_chat(L, span_danger("<B>Stay out of the enemy spawn!</B>"))
-		L.death()
+	if(!(src.team in living.faction))
+		to_chat(living, span_bolddanger("Stay out of the enemy spawn!"))
+		living.investigate_log("has died from entering the enemy spawn in CTF.")
+		living.apply_damage(200) //Damage instead of instant death so we trigger the damage signal.
 
 /obj/structure/trap/ctf/red
 	team = RED_TEAM
@@ -332,21 +328,35 @@
 	team = BLUE_TEAM
 	icon_state = "mine_blue"
 
+///A type of barricade that can be destroyed by CTF weapons and respawns at the end of CTF matches.
 /obj/structure/barricade/security/ctf
 	name = "barrier"
 	desc = "A barrier. Provides cover in fire fights."
-	deploy_time = 0
-	deploy_message = 0
 
 /obj/structure/barricade/security/ctf/make_debris()
 	new /obj/effect/ctf/dead_barricade(get_turf(src))
 
-/obj/effect/ctf
-	density = FALSE
-	anchored = TRUE
-	invisibility = INVISIBILITY_OBSERVER
-	alpha = 100
-	resistance_flags = INDESTRUCTIBLE
+/obj/effect/ctf/dead_barricade
+	name = "dead barrier"
+	desc = "It provided cover in fire fights. And now it's gone."
+	icon = 'icons/obj/structures.dmi'
+	icon_state = "barrier0"
+	var/game_id = CTF_GHOST_CTF_GAME_ID
+	var/datum/ctf_controller/ctf_game
+
+/obj/effect/ctf/dead_barricade/Initialize(mapload)
+	. = ..()
+	ctf_game = GLOB.ctf_games[game_id]
+	ctf_game.barricades += src
+
+/obj/effect/ctf/dead_barricade/Destroy()
+	ctf_game.barricades -= src
+	return ..()
+
+/obj/effect/ctf/dead_barricade/proc/respawn()
+	if(!QDELETED(src))
+		new /obj/structure/barricade/security/ctf(get_turf(src))
+		qdel(src)
 
 /obj/effect/ctf/ammo
 	name = "ammo pickup"
@@ -378,7 +388,7 @@
 /obj/effect/ctf/ammo/proc/reload(mob/living/M)
 	if(!ishuman(M))
 		return
-	for(var/obj/machinery/capture_the_flag/CTF in GLOB.machines)
+	for(var/obj/machinery/ctf/spawner/CTF in GLOB.machines)
 		if(M in CTF.spawned_mobs)
 			var/outfit = CTF.ctf_gear
 			var/datum/outfit/O = new outfit
@@ -390,109 +400,64 @@
 			qdel(src)
 			break
 
-/obj/effect/ctf/dead_barricade
-	name = "dead barrier"
-	desc = "It provided cover in fire fights. And now it's gone."
-	icon = 'icons/obj/objects.dmi'
-	icon_state = "barrier0"
-
-/obj/effect/ctf/dead_barricade/Initialize(mapload)
-	. = ..()
-	for(var/obj/machinery/capture_the_flag/CTF in GLOB.machines)
-		CTF.dead_barricades += src
-
-/obj/effect/ctf/dead_barricade/Destroy()
-	for(var/obj/machinery/capture_the_flag/CTF in GLOB.machines)
-		CTF.dead_barricades -= src
-	return ..()
-
-/obj/effect/ctf/dead_barricade/proc/respawn()
-	if(!QDELETED(src))
-		new /obj/structure/barricade/security/ctf(get_turf(src))
-		qdel(src)
-
-
-//Control Point
-
-/obj/machinery/control_point
+///Control point used for CTF for king of the hill or control point game modes. Teams need to maintain control of the point for a set time to win.
+/obj/machinery/ctf/control_point
 	name = "control point"
-	desc = "You should capture this."
+	desc = "You should capture this"
 	icon = 'icons/obj/machines/dominator.dmi'
 	icon_state = "dominator"
-	resistance_flags = INDESTRUCTIBLE
-	var/obj/machinery/capture_the_flag/controlling
-	var/team = "none"
-	var/point_rate = 0.5
+	///Team that is currently controlling this point.
+	var/controlling_team
+	///Amount of points generated per second by this control point while captured.
+	var/point_rate = 1
 
-/obj/machinery/control_point/process(seconds_per_tick)
-	if(controlling)
-		controlling.control_points += point_rate * seconds_per_tick
-		if(controlling.control_points >= controlling.control_points_to_win)
-			controlling.victory()
+/obj/machinery/ctf/control_point/Initialize(mapload)
+	. = ..()
+	ctf_game.control_points += src
 
-/obj/machinery/control_point/attackby(mob/user, params)
+/obj/machinery/ctf/control_point/Destroy()
+	ctf_game.control_points.Remove(src)
+	return ..()
+
+/obj/machinery/ctf/control_point/process(seconds_per_tick)
+	if(controlling_team)
+		ctf_game.control_point_scoring(controlling_team, point_rate * seconds_per_tick)
+
+	var/scores
+
+	if(ctf_game.ctf_enabled)
+		for(var/team in ctf_game.teams)
+			var/datum/ctf_team/ctf_team = ctf_game.teams[team]
+			scores += UNLINT("<span style='color: [ctf_team.team_color]'>[ctf_team.team_color] - [ctf_team.points]/[ctf_game.points_to_win]</span>\n")
+		balloon_alert_to_viewers(scores)
+
+/obj/machinery/ctf/control_point/attackby(obj/item/item, mob/user, list/modifiers, list/attack_modifiers)
 	capture(user)
 
-/obj/machinery/control_point/attack_hand(mob/user)
+/obj/machinery/ctf/control_point/attack_hand(mob/user, list/modifiers)
 	. = ..()
 	if(.)
 		return
 	capture(user)
 
-/obj/machinery/control_point/proc/capture(mob/user)
-	if(do_after(user, 30, target = src))
-		for(var/obj/machinery/capture_the_flag/CTF in GLOB.machines)
-			if(CTF.ctf_enabled && (user.ckey in CTF.team_members))
-				controlling = CTF
-				icon_state = "dominator-[CTF.team]"
-				for(var/mob/M in GLOB.player_list)
-					var/area/mob_area = get_area(M)
-					if(istype(mob_area, /area/ctf))
-						to_chat(M, span_userdanger("[user.real_name] has captured \the [src], claiming it for [CTF.team]! Go take it back!"))
-				break
+///Proc called when a player interacts with the control point to handle capturing it. Performs a do after and then verifies what team ther capturer belongs to.
+/obj/machinery/ctf/control_point/proc/capture(mob/user)
+	if(do_after(user, 3 SECONDS, target = src))
+		var/datum/component/ctf_player/ctf_player = user.mind.GetComponent(/datum/component/ctf_player)
+		if(isnull(ctf_player))
+			to_chat(user, span_warning("Non-players shouldn't be capturing control points"))
+			return
+		controlling_team = ctf_player.team
+		icon_state = "dominator-[controlling_team]"
+		ctf_game.message_all_teams("<span class='userdanger [ctf_game.teams[controlling_team].team_span]'>[user.real_name] has captured \the [src], claiming it for [controlling_team]! Go take it back!</span>")
 
-#define CTF_LOADING_UNLOADED 0
-#define CTF_LOADING_LOADING 1
-#define CTF_LOADING_LOADED 2
+/obj/machinery/ctf/control_point/proc/clear_point()
+	controlling_team = null
+	icon_state = "dominator"
 
 ///Proc that handles toggling and unloading CTF.
 /proc/toggle_id_ctf(user, activated_id, automated = FALSE, unload = FALSE, area/ctf_area)
-	var/static/loading = CTF_LOADING_UNLOADED
 	var/datum/ctf_controller/ctf_controller = GLOB.ctf_games[activated_id]
-	if(isnull(ctf_controller))
-		ctf_controller = create_ctf_game(activated_id)
-	if(unload == TRUE)
-		log_admin("[key_name_admin(user)] is attempting to unload CTF.")
-		message_admins("[key_name_admin(user)] is attempting to unload CTF.")
-		if(loading == CTF_LOADING_UNLOADED)
-			to_chat(user, span_warning("CTF cannot be unloaded if it was not loaded in the first place!"))
-			return
-		to_chat(user, span_warning("CTF is being unloaded!"))
-		ctf_controller.unload_ctf()
-		log_admin("[key_name_admin(user)] has unloaded CTF.")
-		message_admins("[key_name_admin(user)] has unloaded CTF.")
-		loading = CTF_LOADING_UNLOADED
-		return
-	switch (loading)
-		if (CTF_LOADING_UNLOADED)
-			if (isnull(GLOB.ctf_spawner))
-				to_chat(user, span_boldwarning("Couldn't find a CTF spawner. Call a maintainer!"))
-				return
-
-			to_chat(user, span_notice("Loading CTF..."))
-
-			loading = CTF_LOADING_LOADING
-			if(activated_id == CTF_GHOST_CTF_GAME_ID) //Only ghost CTF supports map loading, if CTF is started by an admin elsewhere the map loader should not be used.
-				if(!GLOB.ctf_spawner.load_map(user))
-					to_chat(user, span_warning("CTF loading was cancelled"))
-					loading = CTF_LOADING_UNLOADED
-					return
-			loading = CTF_LOADING_LOADED
-		if (CTF_LOADING_LOADING)
-			to_chat(user, span_warning("CTF is loading!"))
-
-			return
-
 	var/ctf_enabled = FALSE
 	ctf_enabled = ctf_controller.toggle_ctf()
 	for(var/turf/ctf_turf as anything in get_area_turfs(ctf_area))
@@ -516,10 +481,6 @@
 			header = "CTF [ctf_enabled? "Enabled" : "Disabled"]"
 		)
 
-#undef CTF_LOADING_UNLOADED
-#undef CTF_LOADING_LOADING
-#undef CTF_LOADING_LOADED
-
 ///Proc that identifies if something is a valid target for CTF related checks, checks if an object is a ctf barrier or has ctf component if they are a player.
 /proc/is_ctf_target(atom/target)
 	if(istype(target, /obj/structure/barricade/security/ctf))
@@ -530,6 +491,7 @@
 			return TRUE
 	return FALSE
 
+#undef AMMO_DROP_LIFETIME
 #undef WHITE_TEAM
 #undef RED_TEAM
 #undef BLUE_TEAM

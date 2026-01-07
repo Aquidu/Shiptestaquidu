@@ -55,9 +55,9 @@
 	. = ..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
 	STR.max_items = 6
-/obj/item/storage/belt/military/clip/cm15/PopulateContents()
+/obj/item/storage/belt/military/clip/cm15/ctf/PopulateContents()
 	for(var/i in 1 to 3)
-	new /obj/item/ammo_box/magazine/cm15_12g(src)
+		new /obj/item/ammo_box/magazine/cm15_12g(src)
 	new /obj/item/grenade/flashbang(src)
 	new /obj/item/gun/ballistic/automatic/pistol/cm70(src)
 	new /obj/item/ammo_box/magazine/m9mm_cm70(src)
@@ -69,7 +69,7 @@
 /obj/item/storage/belt/military/clip/alt/ecm6/ctf/PopulateContents()
 	for(var/i in 1 to 3)
 		new /obj/item/stock_parts/cell/gun/kalix(src)
-	new /obj/item/grenade/incendiary(src)
+	new /obj/item/grenade/chem_grenade/incendiary(src)
 	new /obj/item/gun/ballistic/automatic/pistol/cm23(src)
 	new /obj/item/ammo_box/magazine/cm23(src)
 
@@ -87,9 +87,9 @@
 	new /obj/item/gun/ballistic/automatic/pistol/mauler/regular(src)
 	new /obj/item/ammo_box/magazine/m9mm_mauler(src)
 
-/obj/item/storage/belt/security/military/frontiersmen/pounder_ammo/ctf/PopulateContents()
+/obj/item/storage/belt/security/military/frontiersmen/spitter_ammo/ctf/PopulateContents()
 	for(var/i in 1 to 3)
-		new /obj/item/ammo_box/magazine/c22lr_pounder_pan(src)
+		new /obj/item/ammo_box/magazine/spitter_9mm(src)
 	new /obj/item/grenade/barrier(src)
 	new /obj/item/gun/ballistic/automatic/pistol/mauler/regular(src)
 	new /obj/item/ammo_box/magazine/m9mm_mauler(src)
@@ -135,10 +135,6 @@
 	new /obj/item/ammo_box/magazine/m9mm_mauler(src)
 
 
-
-/obj/item/hypospray/mkii/mkiii/combat/ctf
-	start_vial = /obj/item/reagent_containers/glass/bottle/vial/large/preloaded/combat/ctf
-	mode = HYPO_SPRAY ///the hadrakine poisoning you is bad i think
 
 /obj/item/reagent_containers/glass/bottle/vial/large/preloaded/combat/ctf
 	comes_with = list(

@@ -1,5 +1,4 @@
 #define CTF_DEFAULT_RESPAWN 15 SECONDS
-#define CTF_INSTAGIB_RESPAWN 5 SECONDS
 
 ///The CTF controller acts as a manager for an individual CTF game, each CTF game should have its own, the controller should handle all game-wide functionality.
 /datum/ctf_controller
@@ -21,8 +20,6 @@
 	var/victory_rejoin_text = "Teams have been cleared. Click on the machines to vote to begin another round."
 	///When this CTF match ends should it automatically restart.
 	var/auto_restart = FALSE
-	///Weather or not instagib mode has been enabled.
-	var/instagib_mode = FALSE
 
 /datum/ctf_controller/New(game_id)
 	. = ..()
@@ -55,7 +52,6 @@
 
 /datum/ctf_controller/proc/stop_ctf()
 	ctf_enabled = FALSE
-	clear_control_points()
 	respawn_barricades()
 	for(var/team in teams)
 		teams[team].reset_team()
@@ -139,7 +135,6 @@
 ///Ends the current CTF game and informs all players which team won. Restarts CTF if auto_restart is enabled.
 /datum/ctf_controller/proc/victory(winning_team)
 	ctf_enabled = FALSE
-	clear_control_points()
 	respawn_barricades()
 	var/datum/ctf_team/winning_ctf_team = teams[winning_team]
 	for(var/team in teams)
@@ -149,11 +144,6 @@
 		ctf_team.reset_team()
 	if(auto_restart)
 		toggle_id_ctf(null, game_id, TRUE)
-
-///Marks all control points as neutral, called when a CTF match ends.
-/datum/ctf_controller/proc/clear_control_points()
-	for(var/obj/machinery/ctf/control_point/control_point in control_points)
-		control_point.clear_point()
 
 ///Respawns all barricades destroyed during the current CTF game, called when the match ends.
 /datum/ctf_controller/proc/respawn_barricades()
@@ -165,20 +155,6 @@
 /datum/ctf_controller/proc/message_all_teams(message)
 	for(var/team in teams)
 		teams[team].message_team(message)
-
-///Enables and disables instagib mode in this game. During instagib mode respawns are faster, players are faster and people die faster (instant).
-/datum/ctf_controller/proc/toggle_instagib_mode()
-	if(!instagib_mode) // Normal > Instagib
-		for(var/team in teams)
-			var/datum/ctf_team/ctf_team = teams[team]
-			ctf_team.spawner.ctf_gear = ctf_team.spawner.instagib_gear
-			respawn_cooldown = CTF_INSTAGIB_RESPAWN
-	else //Instagib > Normal
-		for(var/team in teams)
-			var/datum/ctf_team/ctf_team = teams[team]
-			ctf_team.spawner.ctf_gear = ctf_team.spawner.default_gear
-			respawn_cooldown = CTF_DEFAULT_RESPAWN
-	instagib_mode = !instagib_mode
 
 ///A datum that holds details about individual CTF teams, any team specific CTF functionality should be implemented here.
 /datum/ctf_team
@@ -232,4 +208,3 @@
 	return CTF
 
 #undef CTF_DEFAULT_RESPAWN
-#undef CTF_INSTAGIB_RESPAWN
