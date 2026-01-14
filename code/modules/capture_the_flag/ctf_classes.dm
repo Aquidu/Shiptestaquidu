@@ -95,7 +95,7 @@
 	gloves = /obj/item/clothing/gloves/color/latex/nitrile
 	accessory = /obj/item/clothing/accessory/armband/medblue
 	icon_state = "medic_clip"
-	class_description = "A CLIP combat medic, equipped with a CM-5 SMG and medical supplies to heal teammates."
+	class_description = "A CLIP combat medic, equipped with a CM-5 SMG and a fast-acting hypospray to heal teammates."
 
 /datum/outfit/ctf/clip/breacher
 	name = "CTF Breacher (Minutemen)"
@@ -148,7 +148,7 @@
 		/obj/item/stack/rods/twentyfive,
 		/obj/item/stack/sheet/mineral/wood/twentyfive)
 	icon_state = "engineer_frontier"
-	class_description = "A Frontiersmen technician, equipped with a Pounder SMG and various engineering supplies such as C4, materials, and a barrier grenade."
+	class_description = "A Frontiersmen technician, equipped with a Spitter SMG and various engineering supplies such as C4, materials, and a barrier grenade."
 
 /datum/outfit/ctf/frontiersmen/marksman
 	name = "CTF Marksman (Frontiersmen)"
@@ -167,7 +167,7 @@
 	gloves = /obj/item/clothing/gloves/color/latex/nitrile
 	accessory = /obj/item/clothing/accessory/armband/medblue
 	icon_state = "medic_frontier"
-	class_description = "A Frontiersmen combat medic, equipped with a Spitter SMG and medical supplies to heal teammates."
+	class_description = "A Frontiersmen combat medic, equipped with a Spitter SMG and a fast-acting hypospray to heal teammates."
 
 /datum/outfit/ctf/frontiersmen/breacher
 	name = "CTF Breacher (Frontiersmen)"

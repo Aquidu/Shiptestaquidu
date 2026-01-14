@@ -46,17 +46,6 @@
 	. = ..()
 	AddComponent(/datum/component/two_handed)
 
-/obj/item/ctf/process(seconds_per_tick)
-	if(is_ctf_player(loc)) //don't reset from someone's hands.
-		return PROCESS_KILL
-	if(world.time > reset_cooldown)
-		forceMove(get_turf(src.reset))
-		for(var/mob/M in GLOB.player_list)
-			var/area/mob_area = get_area(M)
-			if(istype(mob_area, /area/ctf))
-				to_chat(M, span_userdanger("\The [src] has been returned to base!"))
-		STOP_PROCESSING(SSobj, src)
-
 /obj/item/ctf/proc/reset_flag(capture = FALSE)
 	SIGNAL_HANDLER
 
@@ -71,32 +60,6 @@
 				to_chat(M, span_userdanger("[src] has been returned to the base!"))
 	STOP_PROCESSING(SSobj, src)
 	return TRUE //so if called by a signal, it doesn't delete
-
-//working with attack hand feels like taking my brain and putting it through an industrial pill press so i'm gonna be a bit liberal with the comments
-/obj/item/ctf/attack_hand(mob/living/user, list/modifiers)
-	//pre normal check item stuff, this is for our special flag checks
-	if(!is_ctf_player(user) && !anyonecanpickup)
-		to_chat(user, span_warning("Non-players shouldn't be moving the flag!"))
-		return
-	if(team in user.faction)
-		to_chat(user, span_warning("You can't move your own flag!"))
-		return
-	if(loc == user)
-		if(!user.dropItemToGround(src))
-			return
-	anchored = FALSE
-	pickup(user)
-	if(!user.put_in_active_hand(src))
-		dropped(user)
-		return
-	user.set_anchored(TRUE)
-	user.status_flags &= ~CANPUSH
-	for(var/mob/M in GLOB.player_list)
-		var/area/mob_area = get_area(M)
-		if(istype(mob_area, /area/ctf))
-			to_chat(M, span_userdanger("\The [src] has been taken!"))
-	STOP_PROCESSING(SSobj, src)
-	..()
 
 /obj/item/ctf/dropped(mob/user)
 	..()
@@ -503,13 +466,6 @@
 /obj/item/ammo_box/magazine/cm23/ctf/proc/floor_vanish()
 	if(isturf(loc))
 		qdel(src)
-
-/proc/is_ctf_player(atom/target)
-	. = FALSE
-	if(ishuman(target))
-		var/mob/living/carbon/human/H = target
-		if(istype(H.wear_suit, /obj/item/clothing/suit/armor/vest/bulletproof))
-			return TRUE
 
 /obj/structure/trap/ctf/examine(mob/user)
 	return

@@ -36,7 +36,7 @@
 	///The powerup dropped when a player spawned by this controller dies.
 	var/ammo_type = /obj/effect/ctf/ammo
 	// Fast paced gameplay, no real time for burn infections.
-	var/player_traits = list(TRAIT_NEVER_WOUNDED)
+	var/player_traits = list()
 	var/list/spawned_mobs = list()
 
 /obj/machinery/ctf/spawner/Initialize(mapload)
