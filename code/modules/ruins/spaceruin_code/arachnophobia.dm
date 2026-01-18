@@ -45,7 +45,7 @@
 	SAY Sooo, guess I'll use these recordings to entertain myself.
 	DELAY 30
 	SAY What a shitty job.
-	DELAY 40
+	DELAY 30
 	"}
 
 /obj/item/disk/holodisk/ruin/arachnophobia/cargo_two
@@ -87,8 +87,7 @@
 	SAY That, or just help myself to Dr. Cosita's painkillers.
 	DELAY 30
 	SAY Hehehe!
-	SOUND manlaugh2
-	DELAY 40
+	DELAY 20
 	SAY ...If you're watching this, uh, that was a joke.
 	DELAY 50
 	"}
@@ -122,26 +121,115 @@
 	SAY We're holding out for rescue, but we've got no idea when it'll come.
 	DELAY 50
 	SAY ...if at all.
-	DELAY 80
+	DELAY 60
 	SAY -What am I saying? We need optimism now more than ever.
 	DELAY 40
 	SAY So, I'm going to keep watch on the map, ready to greet our next delivery when they get here.
 	DELAY 50
-	SAY So, well...
-	DELAY 40
+	SAY Well...
+	DELAY 30
 	SAY I'll see ya when I see ya!
-	DELAY 100
+	DELAY 50
+	"}
+
+/obj/item/disk/holodisk/ruin/arachnophobia/security_one
+	name = "Rashataktilil - Is job."
+	preset_image_type = /datum/preset_holoimage/arachnophobia_security_officer
+	preset_record_text = {"
+	NAME Rashataktilil
+	DELAY 10
+	SAY -and much excited, khmm?
+	DELAY 20
+	SAY Back in Shoal, is shoot, to live... No pay.
+	DELAY 30
+	SAY Is here? Job is shoot... But not shoot, still pay? Very good, khmm.
+	DELAY 40
+	SAY Rasha good to leave Shoal... Much too busy, too dangerous!
+	DELAY 40
+	SAY Khmm...
+	DELAY 20
+	SAY Job is... protect crew. Is easy, money good.
+	DELAY 30
+	SAY Captain say, very, very important...
+	DELAY 30
+	SAY Rasha say, protect from what? No shooter or thief, like Shoal...
+	DELAY 30
+	SAY Captain laugh. Make Rasha feel silly...
+	DELAY 30
+	SAY Well. Is good.
+	DELAY 40
+	"}
+
+/obj/item/disk/holodisk/ruin/arachnophobia/security_two
+	name = "Rashataktilil - Good drinks."
+	preset_image_type = /datum/preset_holoimage/arachnophobia_security_officer
+	preset_record_text = {"
+	NAME Rashataktilil
+	DELAY 10
+	SAY Find bubble drink, in big machine. Is good, make day good.
+	DELAY 30
+	SAY Job still easy. Get to talk to crew, yaya? Is nice.
+	DELAY 30
+	SAY Engineer-Kipika good chat, nice. Is share drink with.
+	DELAY 30
+	SAY Doctors Neut and Cosida, smart. Cosida is teach Rasha Common.
+	DELAY 40
+	SAY Cargo-Bruce, funny man.
+	DELAY 20
+	SAY Not talk Captain often... He work hard, khmm? Busy, busy, busy...
+	DELAY 40
+	SAY Is talk, sometimes. Of war-big, far from here. Captain worry...
+	DELAY 40
+	SAY Tell Captain, big-war is far, no? No danger...
+	DELAY 40
+	SAY And if! Rasha protect, yaya!
+	DELAY 30
+	SAY Crew... is new family. Rasha will protect, no matter what.
+	DELAY 50
+	SAY Is.
+	DELAY 30
+	SAY Okay. Back to drink.
+	DELAY 40
+	"}
+
+/obj/item/disk/holodisk/ruin/arachnophobia/security_three
+	name = "Rashataktilil - Hard times."
+	preset_image_type = /datum/preset_holoimage/arachnophobia_security_officer
+	preset_record_text = {"
+	NAME Rashataktilil
+	DELAY 10
+	SAY Last disk... Will make message count.
+	DELAY 20
+	SAY Life got hard, past months. War get bigger, we get forgotten. Family is worried...
+	DELAY 40
+	SAY I still have soda, so I happy. Is better in Common, too. Doctor Cosita do good job.
+	DELAY 40
+	SAY Everyone sad, scared. I feel sad, too, because family is sad. I promised to protect...
+	DELAY 40
+	SAY Captain acting... strange, I notice. Jumpy, not like talking. Stay in bridge often... More than past.
+	DELAY 50
+	SAY Working hard to find help...? Khmm... wonders...
+	DELAY 40
+	SAY ...No. Is trust Captain. In shoal, there is saying:
+	DELAY 30
+	SAY SKRIIkrashKRIIRAWWorrIIISHCRAWAWKAcrrr.
+	DELAY 50
+	SAY In Common, mean... "In cold times, stay together for warm."
+	DELAY 50
+	SAY Is trust Captain. Is trust family. We all stay together.
+	DELAY 40
+	SAY Okay. Is good to talk. Goodbye now. Is see soon, hopes.
+	DELAY 50
 	"}
 
 ///OUTFITS///
 
 /obj/item/card/id/ruin/arachnophobia_cargo
-	registered_age = 27
 	registered_name = "Matthew Bruce"
 	job_icon = "cargotechnician"
 
 /datum/outfit/arachnophobia_cargo_tech
-	name = "Arachnophobia - Cargo Tech"
+	name = "Arachnophobia(Ruin) - Cargo Tech"
 	belt = /obj/item/pda/cargo
 	ears = /obj/item/radio/headset/headset_cargo
 	head = /obj/item/clothing/head/nanotrasen/cap/supply
@@ -166,6 +254,40 @@
 	facial_hairstyle = "Shaved"
 	skin_tone = "caucasian1"
 	brute_damage = 200
+
+/obj/item/card/id/ruin/arachnophobia_security_officer
+	registered_name = "Rashataktilil"
+	job_icon = "securityofficer"
+
+/datum/outfit/arachnophobia_security_officer
+	name = "Arachnophobia(Ruin) - Security Officer(holopad)"
+	belt = /obj/item/storage/belt/security
+	ears = /obj/item/radio/headset/alt
+	head = /obj/item/clothing/head/nanotrasen/cap/security
+	neck = /obj/item/clothing/neck/scarf/red
+	uniform = /obj/item/clothing/under/nanotrasen/security
+	back = /obj/item/storage/backpack/satchel/sec
+	gloves = /obj/item/clothing/gloves/color/black
+	shoes = /obj/item/clothing/shoes/combat
+	id = /obj/item/card/id/ruin/arachnophobia_security_officer
+
+/datum/outfit/arachnophobia_security_officer/corpse
+	name = "Arachnophobia(Ruin) - Security Officer(corpse)"
+	suit = /obj/item/clothing/suit/armor/nanotrasen/slim
+	mask = /obj/item/clothing/mask/gas/vigilitas
+	suit_store = /obj/item/gun/energy/sharplite/x12/empty_cell
+
+/datum/preset_holoimage/arachnophobia_security_officer
+	species_type = /datum/species/vox
+	outfit_type = /datum/outfit/arachnophobia_security_officer
+
+/obj/effect/mob_spawn/human/corpse/ruin/arachnophobia/security_officer
+	outfit = /datum/outfit/arachnophobia_security_officer/corpse
+	mob_species = /datum/species/vox
+	mob_gender = MALE
+	mob_name = "Rashataktilil"
+	id_job = "Vigilitas Officer"
+	brute_damage = 94
 
 ///MOBS///
 

@@ -345,6 +345,17 @@
 	new /obj/item/melee/baton/loaded(src)
 	update_appearance()
 
+/obj/item/storage/belt/security/sharplite/PopulateContents()
+	. = ..()
+	for(var/i in 1 to 4)
+		new /obj/item/stock_parts/cell/gun/sharplite(src)
+
+/obj/item/storage/belt/security/sharpliteplus/PopulateContents()
+	. = ..()
+	for(var/i in 1 to 4)
+		new /obj/item/stock_parts/cell/gun/sharplite/plus(src)
+
+
 /obj/item/storage/belt/security/webbing
 	name = "security webbing"
 	desc = "Unique and versatile chest rig, can hold security gear."
