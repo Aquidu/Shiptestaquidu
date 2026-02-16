@@ -658,3 +658,11 @@
 	contains = list(
 		/obj/item/reagent_containers/condiment/tiris_sale
 	)
+
+/datum/supply_pack/food/ingredients_basic/mead
+	name = "Mead Six Pack Crate"
+	desc = "Gezenan Dark Mead in a six-pack. Slightly better value than buying straight from a vendor."
+	cost = 50
+	contains = list(
+		/obj/item/storage/cans/sixbeer
+	)
