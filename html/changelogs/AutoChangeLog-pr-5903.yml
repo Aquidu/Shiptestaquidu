@@ -1,4 +1,0 @@
-author: Ical92
-changes:
-  - {bugfix: glasses of vimukti no longer reference an icon that doesn't exist}
-delete-after: true
