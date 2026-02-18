@@ -1,0 +1,7 @@
+author: SapphicOverload
+changes:
+  - {rscadd: Added ship cloaking devices.}
+  - {rscadd: The Leyak-class Covert Frigate is now equipped with a cloaking 
+      system.}
+  - {rscadd: Hiding in a nebula obscures ships from long-range sensors.}
+delete-after: true
