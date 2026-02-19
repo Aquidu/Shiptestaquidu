@@ -676,6 +676,25 @@ NO_MAG_GUN_HELPER(automatic/marksman/boomslang/indie)
 	max_ammo = 10
 	multiple_sprites = AMMO_BOX_PER_BULLET
 
+/obj/item/ammo_box/magazine/boomslang/update_icon_state()
+	. = ..()
+	if(ammo_count() == 1)
+		icon_state = "[base_icon_state]-1"
+	else if(ammo_count() >= 29)
+		icon_state = "[base_icon_state]-2"
+	else if(ammo_count() >= 4)
+		icon_state = "[base_icon_state]-4"
+	else if(ammo_count() >= 6)
+		icon_state = "[base_icon_state]-6"
+	else if(ammo_count() >= 8)
+		icon_state = "[base_icon_state]-8"
+	else if(ammo_count() >= 9)
+		icon_state = "[base_icon_state]-9"
+	else if(ammo_count() >= 10)
+		icon_state = "[base_icon_state]-10"
+	else
+		icon_state = "[base_icon_state]-0"
+
 /obj/item/ammo_box/magazine/boomslang/empty
 	start_empty = TRUE
 
