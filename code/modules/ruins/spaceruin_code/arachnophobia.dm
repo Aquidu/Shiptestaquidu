@@ -222,8 +222,141 @@
 	DELAY 50
 	"}
 
+/obj/item/disk/holodisk/ruin/arachnophobia/medical_one
+	name = "Dr. Mygala Cosida - A new beginning."
+	preset_image_type = /datum/preset_holoimage/arachnophobia_medical_doctor
+	preset_record_text = {"
+	NAME Dr. Mygala Cosida
+	DELAY 10
+	SAY Good day.
+	DELAY 20
+	SAY This is... Doctor Mygala Cosida, creating my first holo-log.
+	DELAY 30
+	SAY We've been advised by Captain Lydia to create these to track our experiences.
+	DELAY 30
+	SAY ...Although I suppose that it's most important for the others, especially Dr. Neut-Ria.
+	DELAY 40
+	SAY I will mostly be using these logs to track and review any medical conditions the crew has during my tenure.
+	DELAY 50
+	SAY Somewhat of a medical record system, in holodisk form.
+	DELAY 30
+	SAY I suppose then, this will be one of my few chances to express my personal thoughts.
+	DELAY 50
+	SAY What to talk about? I feel as if I have been put on the spot, ahuhuhu.
+	DELAY 40
+	SAY Well, it is certainly a downsize from my previous assignment aboard Montaro Station.
+	DELAY 40
+	SAY Others might be upset by what would appear to be a step back in career progress...
+	DELAY 30
+	SAY ...but frankly, I am relieved to only have to care for +six+ individuals, including myself.
+	DELAY 40
+	SAY I do hope we have a sizable library, or the ability to order more books. I would love to get some reading done.
+	DELAY 50
+	SAY ...ah, our Cargo Technician seems to want something. I suppose that is all the time I will get today.
+	DELAY 40
+	SAY Goodbye for now.
+	DELAY 30
+	"}
+
+/obj/item/disk/holodisk/ruin/arachnophobia/medical_two
+	name = "Dr. Mygala Cosida - Uncertainty."
+	preset_image_type = /datum/preset_holoimage/arachnophobia_medical_doctor
+	preset_record_text = {"
+	NAME Dr. Mygala Cosida
+	DELAY 10
+	SAY Post-care log for Dr. Pho Neut-Ria...
+	DELAY 30
+	SAY Moderate toxin levels in her bloodstream... Likely source of her abdomen pains.
+	DELAY 40
+	SAY Standard dosage of Pancrazine given, patient provided a bottle of charcoal pills. Not many left...
+	DELAY 50
+	SAY Her liver and kidneys show signs of stress... This is the fourth or fifth time I've treated her for toxin recently.
+	DELAY 50
+	SAY Moreover, she only seems to come in when it's reaching criticality. Why won't she come see me earlier?
+	DELAY 40
+	SAY ...That is why this log is special. Normally I would have simply ended it after describing the the treatment...
+	DELAY 40
+	SAY We've not gotten any new orders or shipments from Command for quite some time now. What exactly is she working on?
+	DELAY 50
+	SAY She keeps her laboratory locked tight, I do not believe any of us have been in there in months.
+	DELAY 40
+	SAY Every time she comes in, I cannot seem to find the actual toxin itself, meaning it's already been purged.
+	DELAY 40
+	SAY Moreover, she evades my questions about the source. Does she have no regard for our limited stock?
+	DELAY 40
+	SAY If this continues, I will need to start manufacturing my own medicine from what still have...
+	DELAY 40
+	SAY I believe I will speak to Captain Lydia about this. He has not been taking the silence well.
+	DELAY 40
+	SAY It feels as if my supplies are disappearing into thin air, and not just the anti-toxin.
+	DELAY 40
+	SAY At the very least, Rasha, Kipika, and Matthew seem to be in high spirits.
+	DELAY 40
+	SAY We can certainly use it in times like these.
+	DELAY 30
+	SAY Dr. Mygala Cosida, logging off.
+	DELAY 30
+	"}
+
+/obj/item/disk/holodisk/ruin/arachnophobia/medical_three
+	name = "Dr. Mygala Cosida - Help."
+	preset_image_type = /datum/preset_holoimage/arachnophobia_medical_doctor/ded
+	preset_record_text = {"
+	NAME Dr. Mygala Cosida
+	DELAY 10
+	SAY G-ghh- Th-this is Doctor-
+	DELAY 20
+	SAY Oh, forget it-
+	DELAY 20
+	SAY If you're hearing this- it may already be too late.
+	DELAY 30
+	SAY But- I will use the time I have to relay what has happened.
+	DELAY 40
+	SAY A few minutes ago, I was in the medbay when several gunshots rang out from the laboratory.
+	DELAY 40
+	SAY Rasha and Kipika immediately went to investigate- when the Captain suddenly burst out, holding his revolver.
+	DELAY 50
+	SAY He... didn't even say anything, just ran into the bridge, despite us trying to speak to him.
+	DELAY 40
+	SAY ...Moments later, he enabled the emergency decoupler, stranding us here.
+	DELAY 40
+	SAY Rasha and Kipika went into the laboratory, and-
+	DELAY 30
+	SAY -oh god- I-I can hear them climbing through the vents...!
+	DELAY 30
+	SAY S-Spiders. Gigantic, hairy, g-glowing eyes-
+	DELAY 30
+	SAY Kipika dragged Rasha out, c-covered in bites-
+	DELAY 30
+	SAY I-I tried. I tried my best, but-
+	DELAY 50
+	SAY ...Kipika couldn't hold them off. I... had to abandon Rasha out there.
+	DELAY 40
+	SAY I locked myself in my office, but... I can... hear them outside and in the vents...
+	DELAY 40
+	SAY I... tried my best. I'm sorry, everyone.
+	DELAY 30
+	SAY Please, if you hear this-
+	DELAY 20
+	SAY Find the Captain. Find out the truth.
+	DELAY 20
+	SAY Please.
+	DELAY 20
+	SAY ...please don't leave us here to die-
+	DELAY 30
+	SAY Th-they're here!!
+	DELAY 20
+	SAY NO!! GET BACK!!
+	DELAY 10
+	SAY HELP!!
+	DELAY 10
+	SAY HUNTSMAN, HELP ME!!
+	DELAY 60
+	"}
+
 ///OUTFITS///
 
+//cargo technie
 /obj/item/card/id/ruin/arachnophobia_cargo
 	registered_name = "Matthew Bruce"
 	job_icon = "cargotechnician"
@@ -255,6 +388,7 @@
 	skin_tone = "caucasian1"
 	brute_damage = 200
 
+//secoff
 /obj/item/card/id/ruin/arachnophobia_security_officer
 	registered_name = "Rashataktilil"
 	job_icon = "securityofficer"
@@ -288,6 +422,89 @@
 	mob_name = "Rashataktilil"
 	id_job = "Vigilitas Officer"
 	brute_damage = 94
+
+//doc
+/obj/item/card/id/ruin/arachnophobia_medical
+	registered_name = "Mygala Cosida"
+	job_icon = "medicaldoctor"
+
+/datum/outfit/arachnophobia_medical_doctor
+	name = "Arachnophobia(Ruin) - Medical Doctor(holopad)"
+	belt = /obj/item/storage/belt/medical
+	ears = /obj/item/radio/headset/headset_med
+	head = /obj/item/clothing/head/nanotrasen/cap/medical
+	suit = /obj/item/clothing/suit/toggle/labcoat/nanotrasen
+	neck = /obj/item/clothing/neck/scarf/white
+	uniform = /obj/item/clothing/under/nanotrasen/medical
+	back = /obj/item/storage/backpack/medic
+	gloves = /obj/item/clothing/gloves/color/latex
+	shoes = /obj/item/clothing/shoes/sneakers/white
+	id = /obj/item/card/id/ruin/arachnophobia_medical
+
+/datum/outfit/arachnophobia_medical_doctor/corpse
+	name = "Arachnophobia(Ruin) - Medical Doctor(corpse)"
+	suit = /obj/item/clothing/suit/nanotrasen/medical_smock
+	mask = /obj/item/clothing/mask/surgical
+	head = /obj/item/clothing/head/nanotrasen/surgical
+	gloves = /obj/item/clothing/gloves/color/latex/nitrile
+
+/datum/preset_holoimage/arachnophobia_medical_doctor
+	species_type = /datum/species/lizard
+	outfit_type = /datum/outfit/arachnophobia_medical_doctor
+
+/datum/preset_holoimage/arachnophobia_medical_doctor/ded
+	species_type = /datum/species/lizard
+	outfit_type = /datum/outfit/arachnophobia_medical_doctor/corpse
+
+/obj/effect/mob_spawn/human/corpse/ruin/arachnophobia/medical_doctor
+	outfit = /datum/outfit/arachnophobia_medical_doctor/corpse
+	mob_species = /datum/species/lizard
+	mob_gender = FEMALE
+	mob_name = "Mygala Cosida"
+	id_job = "Medical Doctor"
+	brute_damage = 200
+
+//engi
+/obj/item/card/id/ruin/arachnophobia_engineering
+	registered_name = "Kipika-Matara"
+	job_icon = "stationengineer"
+
+/datum/outfit/arachnophobia_engineer
+	name = "Arachnophobia(Ruin) - Engineer(holopad)"
+	belt = /obj/item/storage/belt/utility/full
+	ears = /obj/item/radio/headset/headset_eng
+	head = /obj/item/clothing/head/hardhat/nanotrasen
+	suit = /obj/item/clothing/suit/nanotrasen/vest
+	neck = /obj/item/clothing/neck/scarf/orange
+	uniform = /obj/item/clothing/under/nanotrasen/engineering
+	back = /obj/item/storage/backpack/satchel/eng
+	gloves = /obj/item/clothing/gloves/color/yellow
+	shoes = /obj/item/clothing/shoes/workboots
+	id = /obj/item/card/id/ruin/arachnophobia_engineer
+
+/datum/outfit/arachnophobia_engineer/corpse
+	name = "Arachnophobia(Ruin) - Engineer(corpse)"
+	suit = /obj/item/clothing/suit/space/eva
+	suit_store = /obj/item/tank/internals/yellow
+	glasses = /obj/item/clothing/glasses/meson/engine
+	head = /obj/item/clothing/head/helmet/space/eva
+
+/datum/preset_holoimage/arachnophobia_engineer
+	species_type = /datum/species/elzuose
+	outfit_type = /datum/outfit/arachnophobia_engineer
+
+/datum/preset_holoimage/arachnophobia_engineer/ded
+	species_type = /datum/species/elzuose
+	outfit_type = /datum/outfit/arachnophobia_engineer/corpse
+
+/obj/effect/mob_spawn/human/corpse/ruin/arachnophobia/engineer
+	outfit = /datum/outfit/arachnophobia_engineer/corpse
+	mob_species = /datum/species/elzuose
+	mob_gender = MALE
+	mob_name = "Kipika-Matara"
+	id_job = "Engineer"
+	brute_damage = 168
+	burn_damage = 32
 
 ///MOBS///
 
