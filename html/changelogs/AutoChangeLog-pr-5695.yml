@@ -1,4 +1,0 @@
-author: KOCMODECAHTHUK
-changes:
-  - {bugfix: Fixes movement keys being stuck}
-delete-after: true
