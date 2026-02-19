@@ -1,0 +1,4 @@
+author: SapphicOverload
+changes:
+  - {rscdel: Removed "Goebbles" from the list of random last names}
+delete-after: true
