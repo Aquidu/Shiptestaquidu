@@ -164,7 +164,7 @@ GLOBAL_LIST_INIT(uncommon_loot, list(//uncommon: useful items
 		/obj/item/restraints/legcuffs/bola = 1,
 		/obj/item/restraints/handcuffs/cable = 1,
 		/obj/item/melee/spear = 1,
-		/obj/item/shield/riot/buckler = 1,
+		/obj/item/shield/buckler = 1,
 		/obj/item/grenade/iedcasing/spawned = 1,
 		/obj/item/melee/baton/cattleprod = 1,
 		/obj/item/throwing_star = 1,
@@ -222,12 +222,12 @@ GLOBAL_LIST_INIT(uncommon_loot, list(//uncommon: useful items
 
 	list(//food
 		/obj/item/food/canned/peaches/maint = 1,
-		/obj/item/storage/box/donkpockets = 1,
-		list(//Donk Varieties
-			/obj/item/storage/box/donkpockets/donkpocketspicy = 1,
-			/obj/item/storage/box/donkpockets/donkpocketteriyaki = 1,
-			/obj/item/storage/box/donkpockets/donkpocketpizza = 1,
-			/obj/item/storage/box/donkpockets/donkpocketberry = 1,
+		/obj/item/storage/box/shoalpockets = 1,
+		list(//Shoalpocket Varieties
+			/obj/item/storage/box/shoalpockets/shoalpocketspicy = 1,
+			/obj/item/storage/box/shoalpockets/shoalpocketteriyaki = 1,
+			/obj/item/storage/box/shoalpockets/shoalpocketpizza = 1,
+			/obj/item/storage/box/shoalpockets/shoalpocketberry = 1,
 			) = 1,
 		/obj/item/food/monkeycube = 1,
 		/obj/effect/spawner/random/food_or_drink/ration = 1,

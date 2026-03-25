@@ -408,10 +408,7 @@
 	pixel_x = 10;
 	pixel_y = 0
 	},
-/obj/item/reagent_containers/food/drinks/beer{
-	pixel_x = -10;
-	pixel_y = 15
-	},
+/obj/item/reagent_containers/food/drinks/mead,
 /turf/open/floor/plasteel/dark/jungleplanet,
 /area/ruin/jungle/cavecrew/dormitories)
 "cn" = (
@@ -2967,8 +2964,8 @@
 /obj/item/pizzabox/margherita,
 /obj/item/pizzabox/meat,
 /obj/item/pizzabox/meat,
-/obj/item/storage/box/donkpockets,
-/obj/item/storage/box/donkpockets,
+/obj/item/storage/box/shoalpockets,
+/obj/item/storage/box/shoalpockets,
 /obj/effect/decal/cleanable/food/tomato_smudge,
 /turf/open/floor/wood/jungleplanet,
 /area/ruin/jungle/cavecrew/dormitories)

@@ -313,9 +313,19 @@
 	list_reagents = list(/datum/reagent/medicine/mannitol = 15)
 	volume = 15
 	amount_per_transfer_from_this = 15
-	icon_state = "morphen"
-	base_icon_state = "morphen"
-	item_state = "morphen"
+	icon_state = "brainpen"
+	base_icon_state = "brainpen"
+	item_state = "brainpen"
+
+/obj/item/reagent_containers/hypospray/medipen/neurine
+	name = "neurine injector"
+	desc = "An injector filled with neurine, a restorative compound that targets brain trauma."
+	list_reagents = list(/datum/reagent/medicine/neurine = 15)
+	volume = 15
+	amount_per_transfer_from_this = 15
+	icon_state = "brainpen"
+	base_icon_state = "brainpen"
+	item_state = "brainpen"
 
 /obj/item/reagent_containers/hypospray/medipen/badstop
 	name = "Stabilizer injector"
@@ -399,7 +409,7 @@
 	name = "hypospray mk.II"
 	icon = 'icons/obj/syringe.dmi'
 	icon_state = "hypo2"
-	desc = "A medical product traditionally manufactured by Nanotrasen and Cybersun, this hypospray takes 30-unit vials as the drug supply for easy swapping."
+	desc = "A class of medical device traditionally manufactured by Matahari Pharmaceutical and Cybersun, this hypospray takes 30-unit vials as the drug supply for easy swapping."
 	w_class = WEIGHT_CLASS_TINY
 	var/list/allowed_containers = list(/obj/item/reagent_containers/glass/bottle/vial/tiny, /obj/item/reagent_containers/glass/bottle/vial/small)
 	var/mode = HYPO_INJECT

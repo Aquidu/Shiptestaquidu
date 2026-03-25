@@ -14,7 +14,7 @@
 
 /datum/supply_pack/sec_supply/seclite
 	name = "Seclite Crate"
-	desc = "Contains a single high power flashlight, complete with the hardware for attachment to standard helmet mounting brackets"
+	desc = "Contains a single high power flashlight, complete with the hardware for attachment to standard helmet mounting brackets."
 	contains = list(/obj/item/flashlight/seclite)
 	cost = 100
 	crate_name = "seclite crate"
@@ -118,18 +118,18 @@
 		Misc. weapons / protection
 */
 
-/datum/supply_pack/sec_supply/riotshields
-	name = "Ballistic Shield Crate"
-	desc = "Contains a ballistic shield, effective at holding back hostile fauna, xenofauna, or large crowds."
-	cost = 1000
-	contains = list(/obj/item/shield/riot)
+/datum/supply_pack/sec_supply/heavyshields
+	name = "Heavy Ballistic Shield Crate"
+	desc = "Contains a heavy ballistic shield, very effective at protecting the user from light arms fire. Can struggle against stronger firepower."
+	cost = 1200
+	contains = list(/obj/item/shield/heavy)
 	crate_name = "riot shield crate"
 
-/datum/supply_pack/sec_supply/teleriotshields
+/datum/supply_pack/sec_supply/telescopicshields
 	name = "Telescopic Riot Shield Crate"
-	desc = "Contains a telescopic riot shield, effective at holding back hostile fauna, xenofauna, or large crowds in tight spaces."
+	desc = "Contains a telescopic riot shield, effective at protecting the user in close quarters combat. Assuming a gun isn't involved of course."
 	cost = 750
-	contains = list(/obj/item/shield/riot/tele)
+	contains = list(/obj/item/shield/tele)
 	crate_name = "riot shield crate"
 
 /datum/supply_pack/sec_supply/survknives
@@ -162,7 +162,7 @@
 	cost = 750
 	contains = list(/obj/item/storage/belt/sabre/suns)
 	crate_name = "student's sabre crate"
-	faction = /datum/faction/syndicate/suns
+	faction = /datum/faction/suns
 	faction_discount = 0
 	faction_locked = TRUE
 
@@ -172,7 +172,7 @@
 	cost = 800
 	contains = list(/obj/item/storage/belt/sabre/suns/cmo)
 	crate_name = "student's sabre crate"
-	faction = /datum/faction/syndicate/suns
+	faction = /datum/faction/suns
 	faction_discount = 0
 	faction_locked = TRUE
 
@@ -182,7 +182,7 @@
 	cost = 600
 	contains = list(/obj/item/melee/sword/sabre/suns/telescopic)
 	crate_name = "telescopic sabre crate"
-	faction = /datum/faction/syndicate/suns
+	faction = /datum/faction/suns
 	faction_discount = 0
 	faction_locked = TRUE
 
@@ -311,3 +311,29 @@
 	faction_discount = 0
 	faction_locked = TRUE
 
+//cybersun
+
+/datum/supply_pack/tools/cybersun_webbing
+	name = "Cybersun Webbing"
+	desc = "Contains a lightweight multichromatic rigging kit for storage of materials on the fly."
+	cost = 500
+	contains = list(/obj/item/storage/belt/military/cybersun)
+	crate_name = "webbing crate"
+	faction = /datum/faction/syndicate/cybersun
+	faction_discount = 0
+	faction_locked = TRUE
+
+//Makosso-Warra
+
+/datum/supply_pack/sec_supply/vigilitas_uniform
+	name = "Vigilitas Security Uniform"
+	desc = "Contains a replacement uniform for Vigilitas Interstellar security staff. Armor set sold separately."
+	cost = 150
+	contains = list(/obj/item/clothing/head/warra/cap/security,
+					/obj/item/clothing/mask/gas/vigilitas,
+					/obj/item/clothing/under/warra/security,
+					/obj/item/clothing/shoes/jackboots,
+					/obj/item/clothing/gloves/color/black)
+	faction = /datum/faction/warra
+	faction_discount = 0
+	faction_locked = TRUE
