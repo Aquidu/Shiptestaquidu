@@ -108,7 +108,7 @@
 	DELAY 30
 	SAY ...Anyway. Things have gotten tougher around here...
 	DELAY 40
-	SAY We heard a while back that Nanotrasen's battle with the Coalition was heating up, so our deliveries would be delayed.
+	SAY We heard a while back that Makosso-Warra's battle with the Coalition was heating up, so our deliveries would be delayed.
 	DELAY 50
 	SAY They've been getting later and later over time... Now they've stopped completely.
 	DELAY 50
@@ -354,6 +354,37 @@
 	DELAY 60
 	"}
 
+/obj/item/disk/holodisk/ruin/arachnophobia_engi_one
+	name = "Kipika-Matara - Middle of Nowhere"
+	preset_image_type = /datum/preset_holoimage/arachnophobia_engineer
+	preset_record_text = {"
+	NAME Kipika-Matara
+	DELAY 10
+	SAY Ahhhhh. Supply Depot Theta Aranae.
+	DELAY 30
+	SAY Who could hate such a |wonderful| station?
+	DELAY 30
+	SAY Oh, ya wanted to work on a ship? Ya wanted somewhere close to civilization?
+	DELAY 40
+	SAY Too bad, sucker! Maintain power on this dinky little station out in the sticks!
+	DELAY 40
+	SAY So much for 18 years of engineering experience, huh?
+	DELAY 30
+	SAY Sigh... At least I get some quiet.
+	DELAY 30
+	SAY Maybe I'll find something neat to fill my time.
+	DELAY 30
+	SAY Welp, guess I oughta get back to work now.
+	DELAY 30
+	SAY Logging off.
+	DELAY 30
+	"}
+
+/obj/item/disk/holodisk/ruin/arachnophobia_engi_two
+	name = "Kipika-Matara - Middle of Nowhere"
+	preset_image_type = /datum/preset_holoimage/arachnophobia_engineer
+	preset_record_text = {"
+
 ///OUTFITS///
 
 //cargo technie
@@ -365,9 +396,9 @@
 	name = "Arachnophobia(Ruin) - Cargo Tech"
 	belt = /obj/item/pda/cargo
 	ears = /obj/item/radio/headset/headset_cargo
-	head = /obj/item/clothing/head/nanotrasen/cap/supply
+	head = /obj/item/clothing/head/warra/cap/supply
 	neck = /obj/item/clothing/neck/scarf/yellow
-	uniform = /obj/item/clothing/under/nanotrasen/supply
+	uniform = /obj/item/clothing/under/warra/supply
 	back = /obj/item/storage/backpack/messenger
 	gloves = /obj/item/clothing/gloves/fingerless
 	shoes = /obj/item/clothing/shoes/sneakers/black
@@ -397,9 +428,9 @@
 	name = "Arachnophobia(Ruin) - Security Officer(holopad)"
 	belt = /obj/item/storage/belt/security
 	ears = /obj/item/radio/headset/alt
-	head = /obj/item/clothing/head/nanotrasen/cap/security
+	head = /obj/item/clothing/head/warra/cap/security
 	neck = /obj/item/clothing/neck/scarf/red
-	uniform = /obj/item/clothing/under/nanotrasen/security
+	uniform = /obj/item/clothing/under/warra/security
 	back = /obj/item/storage/backpack/satchel/sec
 	gloves = /obj/item/clothing/gloves/color/black
 	shoes = /obj/item/clothing/shoes/combat
@@ -407,7 +438,7 @@
 
 /datum/outfit/arachnophobia_security_officer/corpse
 	name = "Arachnophobia(Ruin) - Security Officer(corpse)"
-	suit = /obj/item/clothing/suit/armor/nanotrasen/slim
+	suit = /obj/item/clothing/suit/armor/warra/slim
 	mask = /obj/item/clothing/mask/gas/vigilitas
 	suit_store = /obj/item/gun/energy/sharplite/x12/empty_cell
 
@@ -432,10 +463,10 @@
 	name = "Arachnophobia(Ruin) - Medical Doctor(holopad)"
 	belt = /obj/item/storage/belt/medical
 	ears = /obj/item/radio/headset/headset_med
-	head = /obj/item/clothing/head/nanotrasen/cap/medical
-	suit = /obj/item/clothing/suit/toggle/labcoat/nanotrasen
+	head = /obj/item/clothing/head/warra/cap/medical
+	suit = /obj/item/clothing/suit/toggle/labcoat/warra
 	neck = /obj/item/clothing/neck/scarf/white
-	uniform = /obj/item/clothing/under/nanotrasen/medical
+	uniform = /obj/item/clothing/under/warra/medical
 	back = /obj/item/storage/backpack/medic
 	gloves = /obj/item/clothing/gloves/color/latex
 	shoes = /obj/item/clothing/shoes/sneakers/white
@@ -443,9 +474,9 @@
 
 /datum/outfit/arachnophobia_medical_doctor/corpse
 	name = "Arachnophobia(Ruin) - Medical Doctor(corpse)"
-	suit = /obj/item/clothing/suit/nanotrasen/medical_smock
+	suit = /obj/item/clothing/suit/warra/medical_smock
 	mask = /obj/item/clothing/mask/surgical
-	head = /obj/item/clothing/head/nanotrasen/surgical
+	head = /obj/item/clothing/head/warra/surgical
 	gloves = /obj/item/clothing/gloves/color/latex/nitrile
 
 /datum/preset_holoimage/arachnophobia_medical_doctor
@@ -473,10 +504,10 @@
 	name = "Arachnophobia(Ruin) - Engineer(holopad)"
 	belt = /obj/item/storage/belt/utility/full
 	ears = /obj/item/radio/headset/headset_eng
-	head = /obj/item/clothing/head/hardhat/nanotrasen
+	head = /obj/item/clothing/head/hardhat/warra
 	suit = /obj/item/clothing/suit/nanotrasen/vest
 	neck = /obj/item/clothing/neck/scarf/orange
-	uniform = /obj/item/clothing/under/nanotrasen/engineering
+	uniform = /obj/item/clothing/under/warra/engineering
 	back = /obj/item/storage/backpack/satchel/eng
 	gloves = /obj/item/clothing/gloves/color/yellow
 	shoes = /obj/item/clothing/shoes/workboots
