@@ -51,9 +51,9 @@
 
 /obj/projectile/beam/hitscan/kalix
 	name = "concentrated energy beam"
-	tracer_type = /obj/effect/projectile/tracer/kalix
-	muzzle_type = /obj/effect/projectile/muzzle/kalix
-	impact_type = /obj/effect/projectile/impact/kalix
+	tracer_type = /obj/effect/projectile/tracer/kalix_rifle
+	muzzle_type = /obj/effect/projectile/muzzle/kalix_rifle
+	impact_type = /obj/effect/projectile/impact/kalix_rifle
 	hitscan_light_color_override = LIGHT_COLOR_ELECTRIC_CYAN
 	muzzle_flash_color_override = LIGHT_COLOR_ELECTRIC_CYAN
 	impact_light_color_override = LIGHT_COLOR_ELECTRIC_CYAN
@@ -73,6 +73,12 @@
 
 /obj/projectile/beam/hitscan/kalix/nock
 	name = "concentrated energy beam"
+	tracer_type = /obj/effect/projectile/tracer/nock
+	muzzle_type = /obj/effect/projectile/muzzle/nock
+	impact_type = /obj/effect/projectile/impact/nock
+	hitscan_light_color_override = LIGHT_COLOR_PURPLE
+	muzzle_flash_color_override = LIGHT_COLOR_PURPLE
+	impact_light_color_override = LIGHT_COLOR_PURPLE
 	damage_constant = 0.8
 	damage = 15
 	armour_penetration = -20
@@ -148,6 +154,12 @@
 
 /obj/projectile/beam/hitscan/kalix/pgf/nock
 	name = "concentrated energy beam"
+	tracer_type = /obj/effect/projectile/tracer/nock
+	muzzle_type = /obj/effect/projectile/muzzle/nock
+	impact_type = /obj/effect/projectile/impact/nock
+	hitscan_light_color_override = LIGHT_COLOR_PURPLE
+	muzzle_flash_color_override = LIGHT_COLOR_PURPLE
+	impact_light_color_override = LIGHT_COLOR_PURPLE
 	damage_constant = 0.8
 	damage = 15
 	armour_penetration = -20
@@ -264,9 +276,9 @@
 
 /obj/projectile/beam/hitscan/kalix/pgf
 	name = "concentrated energy beam"
-	tracer_type = /obj/effect/projectile/tracer/pgf
-	muzzle_type = /obj/effect/projectile/muzzle/pgf
-	impact_type = /obj/effect/projectile/impact/pgf
+	tracer_type = /obj/effect/projectile/tracer/pgf/rifle
+	muzzle_type = /obj/effect/projectile/muzzle/pgf/rifle
+	impact_type = /obj/effect/projectile/impact/pgf/rifle
 	hitscan_light_color_override = LIGHT_COLOR_ELECTRIC_GREEN
 	muzzle_flash_color_override = LIGHT_COLOR_ELECTRIC_GREEN
 	impact_light_color_override = LIGHT_COLOR_ELECTRIC_GREEN
@@ -316,6 +328,9 @@
 
 /obj/projectile/beam/hitscan/kalix/pistol
 	name = "concentrated energy beam"
+	tracer_type = /obj/effect/projectile/tracer/kalix
+	muzzle_type = /obj/effect/projectile/muzzle/kalix
+	impact_type = /obj/effect/projectile/impact/kalix
 	damage_constant = 0.7
 	damage = 25
 	armour_penetration = -10
@@ -391,6 +406,9 @@
 
 /obj/projectile/beam/hitscan/kalix/pgf/pdw
 	name = "concentrated energy beam"
+	tracer_type = /obj/effect/projectile/tracer/pgf/pdw
+	muzzle_type = /obj/effect/projectile/muzzle/pgf/pdw
+	impact_type = /obj/effect/projectile/impact/pgf/pdw
 	damage_constant = 0.9
 	damage = 20
 	armour_penetration = 10
@@ -501,33 +519,35 @@
 	)
 
 /obj/item/ammo_casing/energy/pgf/assault
-	select_name  = "AR"
+	select_name  = "medium"
 	projectile_type = /obj/projectile/beam/hitscan/kalix/pgf/assault
 	fire_sound = 'sound/weapons/gun/energy/kalixrifle.ogg'
 	e_cost = 666 //30 shots per cell
 	delay = 1
 
 /obj/projectile/beam/hitscan/kalix/pgf/assault
-	tracer_type = /obj/effect/projectile/tracer/pgf/rifle
-	muzzle_type = /obj/effect/projectile/muzzle/pgf/rifle
-	impact_type = /obj/effect/projectile/impact/pgf/rifle
+	tracer_type = /obj/effect/projectile/tracer/pgf/assault
+	muzzle_type = /obj/effect/projectile/muzzle/pgf/assault
+	impact_type = /obj/effect/projectile/impact/pgf/assault
 	damage = 25 //bar
 	armour_penetration = 20
 	range = 14
 	damage_constant = 0.9
 
 /obj/item/ammo_casing/energy/pgf/sniper
-	select_name  = "DMR"
+	select_name  = "heavy"
 	projectile_type = /obj/projectile/beam/hitscan/kalix/pgf/sniper
 	fire_sound = 'sound/weapons/gun/laser/heavy_laser.ogg'
 	e_cost = 2000 //10 shots per cell
 	delay = 6
 
 /obj/projectile/beam/hitscan/kalix/pgf/sniper
-	tracer_type = /obj/effect/projectile/tracer/laser/emitter
-	muzzle_type = /obj/effect/projectile/muzzle/laser/emitter
-	impact_type = /obj/effect/projectile/impact/laser/emitter
-
+	tracer_type = /obj/effect/projectile/tracer/pgf/sniper
+	muzzle_type = /obj/effect/projectile/muzzle/pgf/sniper
+	impact_type = /obj/effect/projectile/impact/pgf/sniper
+	hitscan_light_color_override = COLOR_RED_LIGHT
+	muzzle_flash_color_override = COLOR_RED_LIGHT
+	impact_light_color_override = COLOR_RED_LIGHT
 	damage = 35
 	armour_penetration = 40
 	range = 20

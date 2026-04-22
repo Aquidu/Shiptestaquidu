@@ -12,7 +12,7 @@
 
 /obj/effect/projectile/impact/disabler
 	name = "disabler impact"
-	icon_state = "impact_omni"
+	icon_state = "impact_disabler"
 
 /obj/effect/projectile/impact/xray
 	name = "\improper X-ray impact"
@@ -41,18 +41,32 @@
 	name = "emitter impact"
 	icon_state = "impact_emitter"
 
-/obj/effect/projectile/impact/kalix
-	name = "beam impact"
-	icon_state = "impact_pgf"
-
-/obj/effect/projectile/impact/pgf
-	name = "beam impact"
-	icon_state = "impact_pgf"
-
-/obj/effect/projectile/impact/pgf/rifle
-	name = "beam impact"
-	icon_state = "impact_pgf_rifle"
-
 /obj/effect/projectile/impact/gauss
 	name = "gauss impact"
 	icon_state = "hc_gauss"
+
+//kalixcian civilian//
+/obj/effect/projectile/impact/kalix
+	icon_state = "beam_kalix"
+
+/obj/effect/projectile/impact/kalix_rifle
+	icon_state = "beam_kalix_rifle"
+
+/obj/effect/projectile/impact/nock
+	icon_state = "beam_kalix_nock"
+
+//pgf military//
+/obj/effect/projectile/impact/pgf ///currently unused, for a theoretical military pistol
+	icon_state = "beam_pgf"
+
+/obj/effect/projectile/impact/pgf/rifle
+	icon_state = "beam_pgf_rifle"
+
+/obj/effect/projectile/impact/pgf/pdw
+	icon_state = "beam_pgf_pdw"
+
+/obj/effect/projectile/impact/pgf/assault
+	icon_state = "beam_pgf_assault"
+
+/obj/effect/projectile/impact/pgf/sniper
+	icon_state = "beam_pgf_sniper"

@@ -13,7 +13,7 @@
 	icon_state = "muzzle_emitter"
 
 /obj/effect/projectile/muzzle/disabler
-	icon_state = "muzzle_omni"
+	icon_state = "muzzle_disabler"
 
 /obj/effect/projectile/muzzle/xray
 	icon_state = "muzzle_xray"
@@ -35,6 +35,9 @@
 
 /obj/effect/projectile/muzzle/kalix
 	icon_state = "muzzle_kalix"
+
+/obj/effect/projectile/muzzle/nock
+	icon_state = "muzzle_nock"
 
 /obj/effect/projectile/muzzle/pgf
 	icon_state = "muzzle_pgf"
