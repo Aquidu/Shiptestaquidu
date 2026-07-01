@@ -1,0 +1,52 @@
+"a" = (/turf/closed/wall/mineral/titanium/nodiagonal,/area/template_noop)
+"c" = (/obj/machinery/power/shuttle/engine/electric,/turf/open/space/basic,/area/template_noop)
+"e" = (/obj/machinery/power/shuttle/engine/fueled/plasma,/turf/open/space/basic,/area/template_noop)
+"j" = (/turf/template_noop,/area/template_noop)
+"n" = (/obj/machinery/power/shuttle/engine/fueled/plasma,/turf/template_noop,/area/template_noop)
+"p" = (/obj/machinery/power/shuttle/engine/electric,/turf/template_noop,/area/template_noop)
+"u" = (/turf/open/floor/engine/hull/reinforced,/area/template_noop)
+"A" = (/obj/structure/chair/plastic{dir = 1},/turf/template_noop,/area/template_noop)
+"G" = (/obj/structure/table/reinforced,/turf/template_noop,/area/template_noop)
+"P" = (/obj/structure/table/reinforced,/turf/open/space/basic,/area/template_noop)
+"U" = (/turf/open/space/basic,/area/template_noop)
+"X" = (/obj/item/chair/plastic{pixel_y = 5; pixel_x = 2},/obj/item/chair/plastic{pixel_y = 6},/obj/structure/rack,/turf/template_noop,/area/template_noop)
+
+(1,1,1) = {"
+jjjjjjjjjjjjjjjUaUUaUjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+jjjjjjjjjjjjjjjaaUjaajjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+jjjjjjjjjjjjjjjaUUjjaUUUjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+jjjjjjjjjjjjjjaajjjjajUaaaaUjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+jUUUUjjjjjjjjjajjjjjaaaajUaaaaUUjjjjjjjjjjjjjjjjjjjjjjjj
+jaaaaajjjjjjjjajjjjjjjjjjjjjjaaaaUUjjjjjjjjjjjjjjjjjjjjj
+UcjjjaaaUjjjjaajjjjjjjjjjjjjjjjjaaaaUUUUjjjjjjjjjjjjjjjj
+jajjjjUaaUjjjajjjjjjjjjjjjjjjjjjjjjaaaaUUUUUjjjjjjjjjjjj
+jpUjjjjjaaaaaajjjjjjjjjjjjjjjjjjjjjjjjauuuUUUUUUUUUUUUUU
+UajUjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjauuuuaaUUUUUUUUUUU
+aajUjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjUaaaaUUjjjjjj
+nUjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjPjUaaaaUjjjj
+aUjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjPjjUjjaaaajj
+eUjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjPjjjjjajjaaa
+aaaaajjjjjjjjjjjjjjjjjjjjjjjjUUUUUUUUUUUUUUUaUjjjjajjjja
+jjjjaaaaajjjjjjjjjjjjjjjjjjjjUUUUUUUUUUUaaaaaUjjjjjjjjja
+jjjjjjjjaajjjjjjjjjjjjjjjjjjjUUUUUUUUUUUUUUUUUUUUUaaaaaa
+jUjjjjjjjajjjjjjjjjjjjaUUUUUUUUUUUUUUUUUUUUaUUUUUaaUUUUU
+jUjjjjjjjajjjjjjjjjjjjaajjjjjjjjjjjjjjjjjjjaaaaaaajjjjjU
+jUjjjjjjjajjjjjjjjjjjjajjjjjjjjjjjjjjUUUUUUaUjjjUaajjjjU
+jjjjjjjjaajjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjUjGGGGjaaaaaa
+jjjjaaaaaUjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjaaaajjjjjjjjjjja
+aaaaajjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjaajAAAjajjjja
+nUjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjUajAjjjajjaaa
+aUjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjUajjjjXaaaajU
+nUjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjaaaajjjjj
+aajjjjjjjjjjUUjjjjjjjjjjjjjjjjjjjjjjjjjjjjjUaaaajjjjjjjj
+jajjjjjjjjjjUUjjjjjjjjjjjjjjjjjjjjjjjjauuuuaajUUUUUUUUUU
+jcjjjjjjaaaaaajjjjjjjjjjjjjjjjjjjjjjjjauuuUUUUUUUUUUUUUU
+jajjjUUaaUjjjaUjjjjjjjjjjjjjjjjjjjjaaaaUUUUUjjjjjjjjjjjj
+jcjUUaaaUjjjjaajjjjjjjjjjjjjjjjjaaaaUUUUjjjjjjjjjjjjjjjj
+jaaaaajjjjjjjjajjjjjjjjjjjjjjaaaaUUjjjjjjjjjjjjjjjjjjjjj
+jUUUUjjjjjjjjjajjjjjaaaajUaaaajjjjjjjjjjjjjjjjjjjjjjjjjj
+jjjjjjjjjjjjjjaajjjjajUaaaajjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+jjjjjjjjjjjjjjjaUUjjaUUjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+jjjjjjjjjjjjjjjaaUjaajjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+jjjjjjjjjjjjjjjUaUUaUjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+"}
