@@ -17,8 +17,8 @@
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 	layer = SAND_TURF_LAYER
-	//smooth_icon = 'icons/turf/floors/wateryrock.dmi'
-	//smoothing_flags = SMOOTH_BITMASK
+	smooth_icon = 'icons/turf/floors/wateryrock.dmi'
+	smoothing_flags = SMOOTH_BITMASK
 	smoothing_groups = list(SMOOTH_GROUP_TURF_OPEN, SMOOTH_GROUP_FLOOR_ASH_ROCKY)
 	canSmoothWith = list(SMOOTH_GROUP_CLOSED_TURFS, SMOOTH_GROUP_FLOOR_ASH_ROCKY)
 	gender = PLURAL

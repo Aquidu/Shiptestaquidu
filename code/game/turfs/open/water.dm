@@ -2,7 +2,7 @@
 	gender = PLURAL
 	name = "water"
 	desc = "Shallow water."
-	icon = 'icons/turf/floors.dmi'
+	icon = 'icons/turf/water.dmi'
 	icon_state = "water"
 	baseturfs = /turf/open/water
 	planetary_atmos = TRUE
