@@ -27,6 +27,9 @@
 
 
 /turf/open/water/stormy_planet_lit
+	name = "thallasic water"
+	desc = "tba"
+	icon_state = "deepwater"
 	color = "#1b364d"
 	light_color = "#09121a"
 	light_range = 2

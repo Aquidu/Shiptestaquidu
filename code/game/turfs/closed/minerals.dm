@@ -803,9 +803,16 @@
 		/obj/item/stack/ore/bluespace_crystal = 10)
 
 /turf/closed/mineral/random/waterplanet
+	name = "waterlogged wall"
+	icon = MAP_SWITCH('icons/turf/walls/aqua_wall.dmi', 'icons/turf/walls/mapping_wall.dmi')
+	smooth_icon = 'icons/turf/walls/aqua_wall.dmi'
+	icon_state = "aqua_wall-0"
+	base_icon_state = "aqua_wall"
+	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
+	smoothing_flags = SMOOTH_BITMASK | SMOOTH_BORDER
+	canSmoothWith = list(SMOOTH_GROUP_CLOSED_TURFS)
 	turf_type = /turf/open/floor/plating/asteroid/waterplanet
 	baseturfs = /turf/open/floor/plating/asteroid/waterplanet
-	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
 	defer_change = 1
 	mineralChance = 10
 	mineralSpawnChanceList = list(
