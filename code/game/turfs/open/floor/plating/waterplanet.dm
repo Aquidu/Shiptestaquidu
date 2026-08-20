@@ -27,10 +27,9 @@
 
 
 /turf/open/water/stormy_planet_lit
-	name = "thallasic water"
-	desc = "tba"
-	icon_state = "deepwater"
-	color = "#1b364d"
+	name = "thalassic water"
+	desc = "Deep, murky blue stretches out into the infinity beneath you."
+	icon_state = "deepwater_aqua"
 	light_color = "#09121a"
 	light_range = 2
 	light_power = 1

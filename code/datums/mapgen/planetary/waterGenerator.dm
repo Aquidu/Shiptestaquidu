@@ -91,7 +91,6 @@
 	mob_spawn_list = list(
 		/mob/living/simple_animal/hostile/carp = 6,
 	)
-	feature_spawn_chance = 0.1
 
 /datum/biome/cave/waterplanet
 	open_turf_types = list(/turf/open/floor/plating/asteroid/waterplanet = 1)
@@ -100,7 +99,8 @@
 	flora_spawn_list = list(/obj/structure/flora/rock/beach = 1, /obj/structure/flora/rock/asteroid = 6)
 	mob_spawn_chance = 1
 	mob_spawn_list = list(
-		/mob/living/basic/bear/cave = 5,
+		/mob/living/simple_animal/hostile/carp = 4,
+		/mob/living/simple_animal/hostile/carp/megacarp = 1,
 		/mob/living/simple_animal/hostile/asteroid/lobstrosity/beach = 1,
 	)
 	feature_spawn_chance = 0.5
@@ -120,7 +120,8 @@
 	open_turf_types = list(/turf/closed/mineral/random/waterplanet = 1, /turf/open/floor/plating/asteroid/waterplanet = 4)
 	flora_spawn_list = list(/obj/structure/flora/rock/beach = 1, /obj/structure/flora/rock/asteroid = 6)
 	mob_spawn_list = list(
-		/mob/living/simple_animal/hostile/carp = 100,
+		/mob/living/simple_animal/hostile/carp = 8,
+		/mob/living/simple_animal/hostile/carp/megacarp = 2
 	)
 
 
@@ -134,5 +135,5 @@
 	)
 
 /datum/biome/cave/waterplanet/fault
-	open_turf_types = list(/turf/open/lava = 5, /turf/open/water/stormy_planet_underground = 1)
+	open_turf_types = list(/turf/open/water/stormy_planet_underground = 1)
 	mob_spawn_chance = 0
