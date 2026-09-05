@@ -2,8 +2,8 @@
 	name = "wet rocky ground"
 	desc = "The ground has water flowing through it."
 
-	icon = 'icons/turf/planetary/jungle.dmi'
-	icon_state = "wateryrock"
+	icon = 'icons/turf/floors/wateryrock.dmi'
+	icon_state = "rock-255"
 	base_icon_state = "rock"
 	gender = PLURAL
 
@@ -33,11 +33,14 @@
 	light_color = "#09121a"
 	light_range = 2
 	light_power = 1
+	immerse_overlay = "immerse_deep"
+	immerse_overlay_alpha = 210
+	is_swimming_tile = TRUE
 	initial_gas_mix = "o2=22;n2=82;TEMP=255.37"
 	baseturfs = /turf/open/water/stormy_planet_lit
 
 /turf/open/water/stormy_planet_underground
-	color = "#1b364d"
+	icon_state = "shallowwater_aqua"
 	light_range = 0
 	initial_gas_mix = "o2=22;n2=82;TEMP=255.37"
 	baseturfs = /turf/open/water/stormy_planet_underground
