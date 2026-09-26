@@ -1,52 +1,165 @@
-"a" = (/turf/closed/wall/mineral/titanium/nodiagonal,/area/template_noop)
-"c" = (/obj/machinery/power/shuttle/engine/electric,/turf/open/space/basic,/area/template_noop)
-"e" = (/obj/machinery/power/shuttle/engine/fueled/plasma,/turf/open/space/basic,/area/template_noop)
-"j" = (/turf/template_noop,/area/template_noop)
-"n" = (/obj/machinery/power/shuttle/engine/fueled/plasma,/turf/template_noop,/area/template_noop)
-"p" = (/obj/machinery/power/shuttle/engine/electric,/turf/template_noop,/area/template_noop)
-"u" = (/turf/open/floor/engine/hull/reinforced,/area/template_noop)
-"A" = (/obj/structure/chair/plastic{dir = 1},/turf/template_noop,/area/template_noop)
-"G" = (/obj/structure/table/reinforced,/turf/template_noop,/area/template_noop)
-"P" = (/obj/structure/table/reinforced,/turf/open/space/basic,/area/template_noop)
-"U" = (/turf/open/space/basic,/area/template_noop)
-"X" = (/obj/item/chair/plastic{pixel_y = 5; pixel_x = 2},/obj/item/chair/plastic{pixel_y = 6},/obj/structure/rack,/turf/template_noop,/area/template_noop)
+"aw" = (/obj/structure/railing/corner{dir = 1},/turf/open/floor/plasteel/dark,/area/template_noop)
+"aA" = (/obj/structure/bed,/obj/structure/extinguisher_cabinet/directional/south,/obj/item/bedsheet/hos,/turf/open/floor/carpet/nanoweave/red,/area/template_noop)
+"bg" = (/turf/open/floor/plasteel/lightgrey,/area/template_noop)
+"bl" = (/turf/open/floor/carpet/nanoweave/orange,/area/template_noop)
+"bm" = (/obj/machinery/door/airlock/command,/turf/open/floor/plasteel/dark,/area/template_noop)
+"bE" = (/turf/open/floor/wood/walnut,/area/template_noop)
+"cf" = (/obj/structure/sign/warra/vigilitas{pixel_x = 32},/turf/open/floor/plasteel,/area/template_noop)
+"cv" = (/obj/structure/grille,/obj/structure/window/reinforced/fulltile/shuttle,/obj/machinery/door/poddoor/shutters{id = eagle_qm_windows; dir = 4},/turf/open/floor/plating,/area/template_noop)
+"cO" = (/obj/effect/turf_decal/siding/wood/maple{dir = 9},/obj/structure/closet/secure_closet/quartermaster{populate = 0; req_access = list(20); name = "\proper supply director's locker"; anchored = 1},/obj/item/clothing/shoes/workboots/mining{pixel_x = -5; pixel_y = -9},/obj/item/clothing/shoes/sneakers/brown{pixel_x = 5; pixel_y = -13},/obj/item/clothing/glasses/sunglasses/big{pixel_y = -5},/obj/item/clothing/suit/warra/vest{pixel_x = 5},/obj/item/storage/backpack/satchel/leather,/obj/item/clothing/glasses/sunglasses,/obj/item/clothing/head/warra/cap/supply{pixel_x = -5; pixel_y = 5},/obj/item/clothing/head/hardhat/warra/white{pixel_x = 5; pixel_y = 5},/obj/item/clothing/suit/toggle/chorejacket/warra{pixel_x = -5},/obj/item/clothing/gloves/color/black{pixel_y = 5},/obj/item/storage/backpack{pixel_y = 5},/obj/item/clothing/under/warra/supply/qm{pixel_x = -5},/obj/item/clothing/gloves/fingerless,/obj/item/megaphone/cargo,/obj/item/radio/weather_monitor{pixel_y = 0},/obj/machinery/light/directional/west,/obj/item/radio/headset/warra/alt,/turf/open/floor/wood/maple,/area/template_noop)
+"dh" = (/obj/structure/window/reinforced/fulltile/shuttle,/turf/open/floor/plating,/area/template_noop)
+"dl" = (/obj/effect/turf_decal/siding/wood/maple{dir = 8},/obj/machinery/power/apc/auto_name/directional/west,/turf/open/floor/wood/maple,/area/template_noop)
+"dG" = (/obj/structure/platform/ship_two{dir = 1; layer = 2.9},/turf/open/floor/plasteel/dark,/area/template_noop)
+"dM" = (/obj/effect/landmark/start/quartermaster,/turf/template_noop,/area/template_noop)
+"er" = (/turf/open/floor/plating,/area/template_noop)
+"gc" = (/obj/structure/railing{layer = 5},/turf/open/floor/plasteel,/area/template_noop)
+"gS" = (/obj/effect/turf_decal/atmos/nitrogen,/turf/open/floor/engine/n2,/area/template_noop)
+"gX" = (/turf/template_noop,/area/template_noop)
+"hQ" = (/obj/structure/railing/corner{dir = 4},/turf/open/floor/plasteel/dark,/area/template_noop)
+"ir" = (/turf/closed/wall/mineral/titanium/nodiagonal,/area/template_noop)
+"iz" = (/turf/open/floor/engine/n2,/area/template_noop)
+"iS" = (/obj/machinery/door/airlock/command,/turf/open/floor/wood/ebony,/area/template_noop)
+"ji" = (/obj/structure/table/wood,/obj/structure/table/wood,/obj/effect/turf_decal/siding/wood/maple{dir = 6},/obj/item/paper_bin{pixel_x = 7; pixel_y = 0},/obj/item/paper_bin/carbon{pixel_x = -7; pixel_y = 0},/obj/item/pen/fourcolor{pixel_x = 6; pixel_y = 1},/obj/item/pen/fountain{pixel_x = -7; pixel_y = 0},/obj/item/hand_labeler{pixel_x = 0; pixel_y = 9},/turf/open/floor/wood/maple,/area/template_noop)
+"jP" = (/obj/machinery/door/airlock/external/glass,/turf/open/floor/plasteel,/area/template_noop)
+"kp" = (/obj/machinery/door/airlock/public,/turf/open/floor/plasteel,/area/template_noop)
+"kQ" = (/turf/open/floor/plasteel,/area/template_noop)
+"lR" = (/turf/open/floor/engine/air,/area/template_noop)
+"lW" = (/obj/effect/turf_decal/siding/wood/walnut{dir = 8},/turf/open/floor/wood/walnut,/area/template_noop)
+"lZ" = (/turf/open/floor/wood/ebony,/area/template_noop)
+"mG" = (/obj/structure/railing,/turf/open/floor/plasteel/dark,/area/template_noop)
+"ne" = (/turf/open/floor/plasteel/patterned/ridged,/area/template_noop)
+"ng" = (/obj/structure/dresser{dir = 4},/obj/machinery/light/small/directional/south,/obj/item/toy/plush/moth/monarch{pixel_x = 4; pixel_y = 8},/turf/open/floor/carpet/nanoweave/orange,/area/template_noop)
+"nM" = (/turf/open/floor/plasteel/freezer,/area/template_noop)
+"oh" = (/obj/effect/turf_decal/siding/wood/maple{dir = 4},/obj/effect/turf_decal/siding/wood/maple{dir = 8},/turf/open/floor/wood/maple,/area/template_noop)
+"ok" = (/obj/structure/bed,/obj/item/bedsheet/qm,/obj/structure/extinguisher_cabinet/directional/north,/turf/open/floor/carpet/nanoweave/orange,/area/template_noop)
+"oP" = (/obj/machinery/power/shieldwallgen/atmos/roundstart{dir = 8; id = "eagle_minerholo"},/turf/open/floor/engine/hull/reinforced,/area/template_noop)
+"oZ" = (/obj/machinery/modular_computer/console/preset/command{dir = 8; icon_state = "computer-left"; layer = 3.08; pixel_x = 7; pixel_y = 0},/obj/structure/railing{dir = 1; layer = 2.7},/turf/open/floor/plasteel/dark,/area/template_noop)
+"qi" = (/obj/machinery/door/airlock/mining,/turf/open/floor/plasteel,/area/template_noop)
+"qy" = (/obj/machinery/computer/security{dir = 8; icon_state = "computer-left"; pixel_x = 7; pixel_y = 0},/turf/open/floor/plasteel/dark,/area/template_noop)
+"qZ" = (/obj/machinery/power/shieldwallgen/atmos/roundstart{dir = 4; id = "eagle_secholo"},/turf/open/floor/engine/hull/reinforced,/area/template_noop)
+"rr" = (/obj/effect/landmark/start/captain,/turf/template_noop,/area/template_noop)
+"rA" = (/turf/open/floor/engine/vacuum,/area/template_noop)
+"sd" = (/obj/structure/fluff/hedge,/turf/open/floor/plasteel/dark,/area/template_noop)
+"sh" = (/obj/structure/railing/corner,/turf/open/floor/plasteel,/area/template_noop)
+"sB" = (/turf/open/floor/engine/o2,/area/template_noop)
+"sL" = (/turf/open/floor/engine/hull/reinforced,/area/template_noop)
+"sN" = (/obj/effect/turf_decal/siding/wood/end/maple,/obj/machinery/suit_storage_unit/inherit/locked{name = "supply director's suit storage unit"},/obj/item/clothing/head/helmet/space/eva,/obj/item/clothing/suit/space/eva,/obj/item/clothing/mask/breath,/obj/item/tank/internals/oxygen/yellow,/obj/machinery/light/small/directional/south,/obj/machinery/firealarm/directional/west{pixel_y = 5},/turf/open/floor/wood/maple,/area/template_noop)
+"tj" = (/obj/effect/turf_decal/siding/wood/walnut{dir = 4},/obj/effect/turf_decal/siding/wood/walnut{dir = 8},/obj/machinery/power/apc/auto_name/directional/west,/turf/open/floor/wood/walnut,/area/template_noop)
+"tu" = (/obj/structure/table/reinforced,/turf/open/floor/plasteel,/area/template_noop)
+"ug" = (/obj/machinery/door/airlock/mining/glass,/turf/open/floor/plasteel/patterned/cargo_one,/area/template_noop)
+"ul" = (/turf/open/floor/plasteel/patterned/cargo_one,/area/template_noop)
+"uM" = (/obj/machinery/power/shieldwallgen/atmos/roundstart{dir = 4; id = "eagle_minerholo"},/turf/open/floor/engine/hull/reinforced,/area/template_noop)
+"uV" = (/turf/open/floor/engine/plasma,/area/template_noop)
+"uW" = (/obj/structure/sign/number/random{color = "Black"},/turf/closed/wall/mineral/titanium/nodiagonal,/area/template_noop)
+"uZ" = (/obj/effect/turf_decal/stairs{color = "#a3a2a0"; dir = 5},/turf/open/floor/plasteel,/area/template_noop)
+"vg" = (/obj/effect/turf_decal/atmos/oxygen,/turf/open/floor/engine/o2,/area/template_noop)
+"vB" = (/obj/machinery/door/airlock/security,/turf/open/floor/plasteel/dark,/area/template_noop)
+"vI" = (/obj/effect/turf_decal/siding/wood/maple{dir = 5},/obj/structure/filingcabinet/double/grey,/obj/item/clipboard,/obj/item/folder/blue,/obj/item/folder/yellow,/obj/item/folder,/obj/item/pen,/obj/item/pen,/obj/machinery/airalarm/directional/east,/turf/open/floor/wood/maple,/area/template_noop)
+"vP" = (/obj/effect/turf_decal/siding/wood/corner/walnut,/obj/structure/chair/comfy/red/corpo/directional/east,/turf/open/floor/wood/walnut,/area/template_noop)
+"wq" = (/turf/open/floor/plasteel/dark,/area/template_noop)
+"xt" = (/obj/machinery/computer/station_alert{dir = 8; icon_state = "computer-right"; pixel_x = 7; pixel_y = 0},/turf/open/floor/plasteel/dark,/area/template_noop)
+"yr" = (/obj/effect/landmark/start/warden,/turf/template_noop,/area/template_noop)
+"yw" = (/obj/machinery/computer/crew{dir = 8; icon_state = "computer-middle"; pixel_x = 7; pixel_y = 0},/turf/open/floor/plasteel/dark,/area/template_noop)
+"zl" = (/obj/effect/turf_decal/siding/wood/walnut{dir = 6},/obj/machinery/light/directional/east,/obj/structure/guncloset{anchored = 1},/obj/item/gun/energy/sharplite/yari/empty_cell,/turf/open/floor/wood/walnut,/area/template_noop)
+"Ah" = (/obj/structure/grille,/obj/structure/window/reinforced/fulltile/shuttle,/obj/machinery/door/poddoor/shutters{id = eagle_qm_windows},/turf/open/floor/plating,/area/template_noop)
+"Ar" = (/turf/open/floor/carpet/nanoweave/red,/area/template_noop)
+"AD" = (/obj/structure/grille,/turf/open/floor/plating,/area/template_noop)
+"AQ" = (/obj/effect/turf_decal/siding/wood/walnut{dir = 5},/obj/structure/table/wood/reinforced,/obj/item/stamp/warra/vigilitas/security{pixel_x = 10; pixel_y = 12},/obj/item/paper_bin{pixel_x = -5; pixel_y = 5},/obj/item/pen/red{pixel_x = -6; pixel_y = 7},/turf/open/floor/wood/walnut,/area/template_noop)
+"Bv" = (/obj/machinery/door/airlock,/turf/open/floor/plasteel,/area/template_noop)
+"BQ" = (/obj/effect/landmark/start/assistant,/turf/template_noop,/area/template_noop)
+"Dv" = (/obj/structure/table/wood,/obj/effect/turf_decal/siding/wood/maple{dir = 5},/obj/item/papercutter{pixel_x = 7; pixel_y = 0},/obj/item/flashlight/lamp{pixel_y = 15; pixel_x = 5},/obj/item/modular_computer/laptop{pixel_x = 0; pixel_y = -11},/obj/item/stamp/warra/ns/supply{pixel_x = -9; pixel_y = 13},/obj/item/radio/intercom/directional/east,/turf/open/floor/wood/maple,/area/template_noop)
+"DN" = (/obj/effect/turf_decal/siding/wood/maple,/turf/open/floor/wood/maple,/area/template_noop)
+"Fi" = (/obj/structure/sign/warra/vigilitas{pixel_y = -32},/turf/open/floor/plasteel,/area/template_noop)
+"Fn" = (/obj/effect/landmark/start/medical_doctor,/turf/template_noop,/area/template_noop)
+"Gn" = (/obj/effect/turf_decal/siding/wood/walnut{dir = 6},/obj/structure/table/wood/reinforced,/obj/machinery/recharger{pixel_x = 10; pixel_y = -6},/obj/item/stock_parts/cell/gun/sharplite/empty{pixel_x = 10; pixel_y = 19},/obj/item/stock_parts/cell/gun/sharplite/plus/empty{pixel_x = 6; pixel_y = 15},/obj/item/attachment/bayonet{pixel_x = 7; pixel_y = 3},/turf/open/floor/wood/walnut,/area/template_noop)
+"Ht" = (/obj/structure/railing,/obj/machinery/computer/transponder{dir = 8; icon_state = "transponder-right"; pixel_x = 7; pixel_y = 0},/turf/open/floor/plasteel/dark,/area/template_noop)
+"Hx" = (/obj/machinery/door/airlock/command,/turf/open/floor/plasteel,/area/template_noop)
+"HI" = (/obj/effect/turf_decal/stairs{color = "#a3a2a0"; dir = 9},/turf/open/floor/plasteel,/area/template_noop)
+"Iq" = (/obj/structure/railing/corner{dir = 8},/turf/open/floor/plasteel,/area/template_noop)
+"Js" = (/obj/effect/turf_decal/siding/wood/corner/maple{dir = 4},/obj/structure/chair/comfy/orange/corpo/directional/east,/turf/open/floor/wood/maple,/area/template_noop)
+"JZ" = (/obj/structure/platform/ship_two{layer = 2.9},/obj/structure/table/reinforced,/turf/open/floor/plasteel/dark,/area/template_noop)
+"KF" = (/obj/effect/turf_decal/siding/wood/walnut{dir = 8},/obj/effect/turf_decal/siding/wood/corner/walnut{dir = 4},/obj/machinery/button/door{id = eagle_secdir_windows; dir = 4; pixel_x = -21; pixel_y = 7; name = "Window Shutters"},/obj/machinery/button/door{id = eagle_secdir_door; name = "Bolt Control"; dir = 4; pixel_x = -21; pixel_y = -7},/obj/machinery/light_switch{dir = 4; pixel_x = -20; pixel_y = 0},/turf/open/floor/wood/walnut,/area/template_noop)
+"KJ" = (/obj/structure/platform/ship_two{dir = 4},/obj/structure/railing{dir = 4},/turf/open/floor/plasteel/dark,/area/template_noop)
+"KK" = (/obj/machinery/door/airlock/security/glass,/turf/open/floor/plasteel/dark,/area/template_noop)
+"KO" = (/obj/effect/landmark/start/security_officer,/turf/template_noop,/area/template_noop)
+"Lm" = (/obj/effect/turf_decal/siding/wood/walnut{dir = 1},/turf/open/floor/wood/walnut,/area/template_noop)
+"MO" = (/obj/structure/sign/warra/ns{pixel_x = 32; pixel_y = 0},/turf/open/floor/plasteel,/area/template_noop)
+"Nv" = (/obj/structure/platform/ship_two{layer = 2.9},/turf/open/floor/plasteel/dark,/area/template_noop)
+"NA" = (/obj/machinery/power/shieldwallgen/atmos/roundstart{dir = 8; id = "eagle_secholo"},/turf/open/floor/engine/hull/reinforced,/area/template_noop)
+"Ob" = (/obj/machinery/computer/monitor{dir = 8; icon_state = "computer-right"; pixel_x = 7; pixel_y = 0},/turf/open/floor/plasteel/dark,/area/template_noop)
+"Oq" = (/obj/machinery/door/airlock/freezer,/turf/open/floor/plasteel,/area/template_noop)
+"Ox" = (/obj/machinery/computer/helm{dir = 8; icon_state = "computer-middle"; pixel_x = 7; pixel_y = 0},/turf/open/floor/plasteel/dark,/area/template_noop)
+"OA" = (/obj/structure/railing/corner{layer = 4.1},/turf/open/floor/plasteel/stairs{dir = 8},/area/template_noop)
+"OB" = (/obj/structure/platform/ship_two/corner{dir = 8},/turf/open/floor/plasteel/dark,/area/template_noop)
+"OJ" = (/obj/machinery/door/airlock/engineering,/turf/open/floor/plasteel/dark,/area/template_noop)
+"Pk" = (/obj/machinery/door/airlock/medical/glass,/turf/open/floor/plasteel,/area/template_noop)
+"Pm" = (/obj/effect/landmark/start/station_engineer,/turf/template_noop,/area/template_noop)
+"Pw" = (/obj/structure/sign/warra/ns{pixel_y = 32},/turf/open/floor/plasteel,/area/template_noop)
+"PG" = (/obj/structure/chair/comfy/shuttle{dir = 4; name = "Communications"; color = "#32426b"},/turf/open/floor/plasteel/dark,/area/template_noop)
+"PT" = (/obj/effect/turf_decal/atmos/plasma,/turf/open/floor/engine/plasma,/area/template_noop)
+"Qx" = (/obj/machinery/door/airlock/external,/turf/template_noop,/area/template_noop)
+"Rs" = (/obj/structure/railing/corner{dir = 4},/turf/open/floor/plasteel/stairs{dir = 8},/area/template_noop)
+"Rz" = (/obj/structure/chair/comfy/shuttle{dir = 4; name = "Communications"; color = "#f97016"},/turf/open/floor/plasteel/dark,/area/template_noop)
+"RT" = (/obj/structure/grille,/obj/structure/window/reinforced/fulltile/shuttle,/obj/machinery/door/poddoor/shutters{id = eagle_secdir_windows; dir = 4},/turf/open/floor/plating,/area/template_noop)
+"RX" = (/obj/structure/railing{dir = 1; layer = 2.7},/turf/open/floor/plasteel/dark,/area/template_noop)
+"Sg" = (/obj/structure/sign/warra/ns{pixel_y = -28},/turf/template_noop,/area/template_noop)
+"SM" = (/obj/effect/turf_decal/stairs{dir = 1; color = "#a3a2a0"},/turf/open/floor/plasteel/dark,/area/template_noop)
+"SP" = (/obj/machinery/power/shuttle/engine/electric,/turf/template_noop,/area/template_noop)
+"Tp" = (/obj/structure/platform/ship_two{dir = 1; layer = 2.9},/obj/structure/table/reinforced{layer = 3.08},/turf/open/floor/plasteel/dark,/area/template_noop)
+"Tw" = (/obj/machinery/suit_storage_unit/inherit/locked{name = "supply director's suit storage unit"},/obj/item/clothing/suit/space/hardsuit/security/hos,/obj/item/clothing/mask/gas/vigilitas,/obj/item/tank/internals/oxygen/red,/obj/effect/turf_decal/siding/wood/end/walnut{dir = 1},/obj/machinery/light/small/directional/north,/turf/open/floor/wood/walnut,/area/template_noop)
+"TJ" = (/obj/machinery/power/shuttle/engine/fueled/plasma,/turf/template_noop,/area/template_noop)
+"TS" = (/obj/structure/table/emptycomputer{dir = 8; icon_state = "emptycomputer-left"; pixel_x = 7; pixel_y = 0},/turf/open/floor/plasteel/dark,/area/template_noop)
+"Vn" = (/obj/effect/turf_decal/siding/wood/walnut{dir = 10},/obj/structure/closet/secure_closet/hos{populate = 0; anchored = 1; name = "security director's locker"},/obj/item/clothing/head/warra/cap/security{pixel_x = -4; pixel_y = 8},/obj/item/clothing/head/warra/beret/security/command{pixel_x = 4; pixel_y = 8},/obj/item/clothing/suit/armor/warra/sec_director{pixel_x = 4},/obj/item/clothing/gloves/color/black{pixel_y = -10},/obj/item/clothing/suit/hooded/wintercoat/security{pixel_x = -4},/obj/item/clothing/under/warra/security/director,/obj/item/storage/backpack/messenger/sec,/obj/item/storage/backpack/satchel/sec,/obj/item/storage/backpack/security,/obj/item/storage/backpack/duffelbag/sec,/obj/item/clothing/shoes/laceup{pixel_x = 6; pixel_y = -13},/obj/item/clothing/shoes/jackboots{pixel_y = -7; pixel_x = -6},/obj/machinery/firealarm/directional/west{pixel_y = 5},/obj/item/megaphone/sec,/obj/item/radio/headset/warra/alt,/obj/item/storage/belt/security/military,/turf/open/floor/wood/walnut,/area/template_noop)
+"VD" = (/obj/machinery/holopad/emergency/cargo,/turf/open/floor/plasteel,/area/template_noop)
+"Wk" = (/obj/effect/turf_decal/atmos/air,/turf/open/floor/engine/air,/area/template_noop)
+"Wr" = (/obj/machinery/computer/cargo{dir = 8; icon_state = "computer-middle"; pixel_x = 7; pixel_y = 0},/turf/open/floor/plasteel/dark,/area/template_noop)
+"WD" = (/obj/structure/chair/comfy/shuttle{dir = 4; name = "Monitoring"; color = "#c92020"},/turf/open/floor/plasteel/dark,/area/template_noop)
+"Xo" = (/obj/structure/dresser{dir = 4},/obj/machinery/light/small/directional/north,/obj/item/toy/plush/moth/redish{pixel_x = 4; pixel_y = 9},/turf/open/floor/carpet/nanoweave/red,/area/template_noop)
+"Xv" = (/obj/machinery/power/shuttle/engine/fueled/plasma,/turf/open/space/basic,/area/template_noop)
+"Xz" = (/obj/structure/grille,/obj/structure/window/reinforced/fulltile/shuttle,/obj/machinery/door/poddoor/shutters{id = eagle_secdir_windows},/turf/open/floor/plating,/area/template_noop)
+"XO" = (/turf/open/floor/plasteel/tech/techmaint,/area/template_noop)
+"Yc" = (/obj/effect/turf_decal/siding/wood/corner/maple,/obj/effect/turf_decal/siding/wood/maple{dir = 8},/obj/machinery/button/door{id = eagle_qm_windows; dir = 4; pixel_x = -21; pixel_y = 7; name = "Window Shutters"},/obj/machinery/button/door{id = eagle_qm_door; name = "Bolt Control"; dir = 4; pixel_x = -21; pixel_y = -7},/obj/machinery/light_switch{dir = 4; pixel_x = -20; pixel_y = 0},/turf/open/floor/wood/maple,/area/template_noop)
+"Yf" = (/obj/machinery/door/firedoor/border_only{dir = 8},/obj/machinery/door/firedoor/border_only{dir = 4},/turf/open/floor/plasteel/patterned/ridged,/area/template_noop)
+"Yr" = (/obj/effect/landmark/start/shaft_miner,/turf/template_noop,/area/template_noop)
 
 (1,1,1) = {"
-jjjjjjjjjjjjjjjUaUUaUjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
-jjjjjjjjjjjjjjjaaUjaajjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
-jjjjjjjjjjjjjjjaUUjjaUUUjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
-jjjjjjjjjjjjjjaajjjjajUaaaaUjjjjjjjjjjjjjjjjjjjjjjjjjjjj
-jUUUUjjjjjjjjjajjjjjaaaajUaaaaUUjjjjjjjjjjjjjjjjjjjjjjjj
-jaaaaajjjjjjjjajjjjjjjjjjjjjjaaaaUUjjjjjjjjjjjjjjjjjjjjj
-UcjjjaaaUjjjjaajjjjjjjjjjjjjjjjjaaaaUUUUjjjjjjjjjjjjjjjj
-jajjjjUaaUjjjajjjjjjjjjjjjjjjjjjjjjaaaaUUUUUjjjjjjjjjjjj
-jpUjjjjjaaaaaajjjjjjjjjjjjjjjjjjjjjjjjauuuUUUUUUUUUUUUUU
-UajUjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjauuuuaaUUUUUUUUUUU
-aajUjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjUaaaaUUjjjjjj
-nUjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjPjUaaaaUjjjj
-aUjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjPjjUjjaaaajj
-eUjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjPjjjjjajjaaa
-aaaaajjjjjjjjjjjjjjjjjjjjjjjjUUUUUUUUUUUUUUUaUjjjjajjjja
-jjjjaaaaajjjjjjjjjjjjjjjjjjjjUUUUUUUUUUUaaaaaUjjjjjjjjja
-jjjjjjjjaajjjjjjjjjjjjjjjjjjjUUUUUUUUUUUUUUUUUUUUUaaaaaa
-jUjjjjjjjajjjjjjjjjjjjaUUUUUUUUUUUUUUUUUUUUaUUUUUaaUUUUU
-jUjjjjjjjajjjjjjjjjjjjaajjjjjjjjjjjjjjjjjjjaaaaaaajjjjjU
-jUjjjjjjjajjjjjjjjjjjjajjjjjjjjjjjjjjUUUUUUaUjjjUaajjjjU
-jjjjjjjjaajjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjUjGGGGjaaaaaa
-jjjjaaaaaUjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjaaaajjjjjjjjjjja
-aaaaajjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjaajAAAjajjjja
-nUjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjUajAjjjajjaaa
-aUjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjUajjjjXaaaajU
-nUjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjaaaajjjjj
-aajjjjjjjjjjUUjjjjjjjjjjjjjjjjjjjjjjjjjjjjjUaaaajjjjjjjj
-jajjjjjjjjjjUUjjjjjjjjjjjjjjjjjjjjjjjjauuuuaajUUUUUUUUUU
-jcjjjjjjaaaaaajjjjjjjjjjjjjjjjjjjjjjjjauuuUUUUUUUUUUUUUU
-jajjjUUaaUjjjaUjjjjjjjjjjjjjjjjjjjjaaaaUUUUUjjjjjjjjjjjj
-jcjUUaaaUjjjjaajjjjjjjjjjjjjjjjjaaaaUUUUjjjjjjjjjjjjjjjj
-jaaaaajjjjjjjjajjjjjjjjjjjjjjaaaaUUjjjjjjjjjjjjjjjjjjjjj
-jUUUUjjjjjjjjjajjjjjaaaajUaaaajjjjjjjjjjjjjjjjjjjjjjjjjj
-jjjjjjjjjjjjjjaajjjjajUaaaajjjjjjjjjjjjjjjjjjjjjjjjjjjjj
-jjjjjjjjjjjjjjjaUUjjaUUjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
-jjjjjjjjjjjjjjjaaUjaajjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
-jjjjjjjjjjjjjjjUaUUaUjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+gXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXQxQxgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXrrgX
+gXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXirneneirgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXdMFnyr
+gXgXgXgXgXgXgXgXgXgXgXgXgXgXgXirirkQkQirirgXgXirererirgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXYrPmKO
+gXgXgXgXgXgXgXgXgXgXgXgXgXgXgXerkQkQkQkQirererirbgbgiriririrgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXYrPmKO
+gXgXgXgXgXgXgXgXgXgXgXgXgXgXirirkQkQkQkQirbgbgbgbgbgirnMnMirererirgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXBQgX
+gXgXgXgXgXgXgXgXgXgXgXgXgXgXerkQkQkQkQkQirbgbgbgbgbgirXOXOirkQkQirererirgXgXSggXgXgXgXgXgXgXgXgXgXgXgXgXgXgXBQgX
+gXirirereririririrgXgXgXgXgXiririrneneirirbgbgbgbgbgirXOXOirkQkQkQkQkQirererirgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgX
+gXSPwqwqwqirgSiziriririrgXirirkQkQjPjPirbgbgbgbgbgbgirXOXOirkQkQkQkQkQkQkQkQirsLsLsLgXSggXgXgXgXgXgXgXgXgXgXgXgX
+gXirwqwqwqirererirvgsBirgXirkQkQkQkQkQirirererirneirirneirirkQkQkQkQqikQkQkQiruMsLsLoPirirgXgXgXgXgXgXgXgXgXgXgX
+gXSPwqwqwqwqwqwqirereriririrkQkQkQkQkQkQkQkQkQkQPkkQkQOqkQirirererirneirererirulululululirererirgXgXgXgXgXgXgXgX
+gXirwqwqwqwqwqwqwqwqwqwqirkQkQkQkQkQkQkQkQshgcgcgcIqkQkQkQkQirululululululululululululultukQkQirererirgXgXgXgXgX
+irirwqwqwqwqwqwqwqwqwqOJwqkQkQkQkQkQkQkQkQHIwqbmwquZkQkQkQkQneugulululululululululululultukQkQkQkQkQirAhAhirgXgX
+TJwqwqwqwqwqwqwqwqwqwqwqirkQkQkQkQkQkQkQkQirirneirirkQkQkQMOirirugulululululululululululirkQkQkQkQkQircOvIirirgX
+irwqwqwqwqwqwqwqirirwqiriririririrneiriririrSMNvSMirdhirkQkQkQirneirululululululululululneqikQVDkQkQirdlJsDvirgX
+XvwqwqwqirerererirwqOJwqwqwqwqirlZiSlZlZirirhQRXawwqTSdhkQkQkQPwkQirirereririrererereririrkQkQkQkQkQirYcDNjiirir
+irirererirlRWklRirwqwqwqwqwqwqirlZlZlZlZlZirwqwqwqRzWririrkQkQkQkQkQkQkQkQkQirwqwqwqwqirkQkQkQkQkQqiYfohblblokcv
+gXgXgXgXiririririrwqwqwqwqwqwqirlZlZlZlZiSnewqwqwqwqObsddhkQkQkQkQkQkQkQkQkQerwqwqwqbmnekQkQkQkQkQkQirsNblblngcv
+gXgXgXgXgXgXgXgXiririrwqwqwqwqirlZlZlZlZlZirwqwqwqwqNvJZdhkQkQkQkQkQkQkQkQkQerwqwqwqwqirirererirereririrAhAhirir
+gXgXgXgXgXgXgXgXirrAerwqwqwqwqirirlZlZlZirirwqwqwqRsRXoZdhkQkQkQkQkQkQkQkQkQirwqwqwqwqerwqwqwqwqwqwqADgXgXgXgXgX
+gXgXgXgXgXgXgXgXirrAerwqwqwqwqwqiririririrwqwqwqwqKJPGOxdhkQkQkQkQkQkQkQkQHxnewqwqwqwqerwqwqwqwqwqwqADgXgXgXgXgX
+gXgXgXgXgXgXgXgXirrAerwqwqwqwqirirkQkQkQirirwqwqwqOAmGHtdhkQkQkQkQkQkQkQkQkQirwqwqwqwqerwqwqwqwqwqwqADgXgXgXgXgX
+gXgXgXgXgXgXgXgXiririrwqwqwqwqirkQkQkQkQkQirwqwqwqOBdGTpdhkQkQkQkQkQkQkQkQkQerwqwqwqwqirwqwqwqwqwqwqirirXzXzirir
+gXgXgXgXiririririrwqwqwqwqwqwqirkQkQkQkQkQirwqwqwqwqqysddhkQkQkQkQkQkQkQkQkQerwqwqwqbmnewqwqwqwqwqwqirTwArArXoRT
+irirereriruVPTuVirwqwqwqwqwqwqirkQkQkQkQkQirwqwqwqWDywirirkQkQkQkQkQkQkQkQkQirwqwqwqwqirwqwqwqwqKKwqirtjArAraART
+TJwqwqwqirerererirwqOJwqwqwqwqirirkQHxkQirirwqwqwqwqxtdhkQkQkQFikQirirereririrererereriririririrneirirKFLmAQirir
+irwqwqwqwqwqwqwqirirwqiririririririrkQiriririrwqwqirdhirkQkQkQirneirwqwqwqwqwqwqwqwqwqwqirwqwqwqwqvBnelWvPGnirgX
+TJwqwqwqwqwqwqwqwqwqwqwqirkQkQkQkQkQkQkQkQkQirdhdhirkQkQkQcfirirKKwqwqwqwqwqwqwqwqwqwqwqnevBwqwqwqwqirVnzlirirgX
+irirwqwqwqwqwqwqwqwqwqOJwqkQkQkQkQkQkQkQkQkQkQkQkQkQkQkQkQkQneKKwqwqwqwqwqwqwqwqwqwqwqwqirwqwqwqwqwqirXzXzirgXgX
+gXirwqwqwqwqwqwqwqwqwqwqirkQkQkQkQkQkQkQkQkQkQkQkQkQkQkQkQkQirwqwqwqwqwqwqwqwqwqwqwqwqwqirwqwqirererirgXgXgXgXgX
+gXSPwqwqwqwqwqwqirerereririrkQkQkQkQkQkQkQkQkpkQkQkQkQBvkQirirererirneirererirwqwqwqwqwqirererirgXgXgXgXgXgXgXgX
+gXirwqwqwqwqwqirirgXgXgXgXirkQkQkQkQkQkQirirneiriririrneirirwqwqwqwqvBwqwqwqirqZsLsLNAirirgXgXgXgXgXgXgXgXgXgXgX
+gXSPwqwqwqirerirgXgXgXgXgXirirkQkQjPjPkQirkQkQkQirbEbEbEbEirwqwqwqwqwqwqwqwqirsLsLsLgXgXgXgXgXgXgXgXgXgXgXgXgXgX
+gXirirererirgXgXgXgXgXgXgXgXiririrneneirirkQkQkQirbEbEbEbEirwqwqwqwqwqirererirgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgX
+gXgXgXgXgXgXgXgXgXgXgXgXgXgXerkQkQkQkQkQirkQkQkQirbEbEbEbEirwqwqirererirgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgX
+gXgXgXgXgXgXgXgXgXgXgXgXgXgXirirkQkQkQkQirkQkQkQirbEbEbEbEirererirgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgX
+gXgXgXgXgXgXgXgXgXgXgXgXgXgXgXerkQkQkQkQirereririrbEirererirgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgX
+gXgXgXgXgXgXgXgXgXgXgXgXgXgXgXirirkQkQirirgXgXuWuWuWuWgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgX
+gXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXirneneirgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgX
+gXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXQxQxgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgX
 "}
