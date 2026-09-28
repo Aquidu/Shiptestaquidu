@@ -12,6 +12,7 @@
 "dG" = (/obj/structure/platform/ship_two{dir = 1; layer = 2.9},/turf/open/floor/plasteel/dark,/area/template_noop)
 "dM" = (/obj/effect/landmark/start/quartermaster,/turf/template_noop,/area/template_noop)
 "er" = (/turf/open/floor/plating,/area/template_noop)
+"fi" = (/obj/machinery/telecomms/relay{freq_listening = list(1351); id = "Makosso-Warra Relay"; name = "Makosso-Warra relay"; network = "warra_commnet"},/turf/open/floor/plasteel/dark,/area/template_noop)
 "gc" = (/obj/structure/railing{layer = 5},/turf/open/floor/plasteel,/area/template_noop)
 "gS" = (/obj/effect/turf_decal/atmos/nitrogen,/turf/open/floor/engine/n2,/area/template_noop)
 "gX" = (/turf/template_noop,/area/template_noop)
@@ -20,6 +21,7 @@
 "iz" = (/turf/open/floor/engine/n2,/area/template_noop)
 "iS" = (/obj/machinery/door/airlock/command,/turf/open/floor/wood/ebony,/area/template_noop)
 "ji" = (/obj/structure/table/wood,/obj/structure/table/wood,/obj/effect/turf_decal/siding/wood/maple{dir = 6},/obj/item/paper_bin{pixel_x = 7; pixel_y = 0},/obj/item/paper_bin/carbon{pixel_x = -7; pixel_y = 0},/obj/item/pen/fourcolor{pixel_x = 6; pixel_y = 1},/obj/item/pen/fountain{pixel_x = -7; pixel_y = 0},/obj/item/hand_labeler{pixel_x = 0; pixel_y = 9},/turf/open/floor/wood/maple,/area/template_noop)
+"jk" = (/obj/machinery/power/ship_gravity,/turf/open/floor/plasteel/dark,/area/template_noop)
 "jP" = (/obj/machinery/door/airlock/external/glass,/turf/open/floor/plasteel,/area/template_noop)
 "kp" = (/obj/machinery/door/airlock/public,/turf/open/floor/plasteel,/area/template_noop)
 "kQ" = (/turf/open/floor/plasteel,/area/template_noop)
@@ -33,7 +35,7 @@
 "oh" = (/obj/effect/turf_decal/siding/wood/maple{dir = 4},/obj/effect/turf_decal/siding/wood/maple{dir = 8},/turf/open/floor/wood/maple,/area/template_noop)
 "ok" = (/obj/structure/bed,/obj/item/bedsheet/qm,/obj/structure/extinguisher_cabinet/directional/north,/turf/open/floor/carpet/nanoweave/orange,/area/template_noop)
 "oP" = (/obj/machinery/power/shieldwallgen/atmos/roundstart{dir = 8; id = "eagle_minerholo"},/turf/open/floor/engine/hull/reinforced,/area/template_noop)
-"oZ" = (/obj/machinery/modular_computer/console/preset/command{dir = 8; icon_state = "computer-left"; layer = 3.08; pixel_x = 7; pixel_y = 0},/obj/structure/railing{dir = 1; layer = 2.7},/turf/open/floor/plasteel/dark,/area/template_noop)
+"oZ" = (/obj/machinery/modular_computer/console/preset/command{dir = 8; icon_state = "computer-left"; layer = 3.08; pixel_x = 7; pixel_y = 0},/obj/structure/railing{dir = 1; layer = 2.7},/obj/machinery/button/door{dir = 8; layer = 3.09; pixel_x = 0; pixel_y = -12},/obj/machinery/button/door{dir = 8; layer = 3.09; pixel_x = 8; pixel_y = -8},/turf/open/floor/plasteel/dark,/area/template_noop)
 "qi" = (/obj/machinery/door/airlock/mining,/turf/open/floor/plasteel,/area/template_noop)
 "qy" = (/obj/machinery/computer/security{dir = 8; icon_state = "computer-left"; pixel_x = 7; pixel_y = 0},/turf/open/floor/plasteel/dark,/area/template_noop)
 "qZ" = (/obj/machinery/power/shieldwallgen/atmos/roundstart{dir = 4; id = "eagle_secholo"},/turf/open/floor/engine/hull/reinforced,/area/template_noop)
@@ -48,6 +50,7 @@
 "tu" = (/obj/structure/table/reinforced,/turf/open/floor/plasteel,/area/template_noop)
 "ug" = (/obj/machinery/door/airlock/mining/glass,/turf/open/floor/plasteel/patterned/cargo_one,/area/template_noop)
 "ul" = (/turf/open/floor/plasteel/patterned/cargo_one,/area/template_noop)
+"uE" = (/obj/machinery/computer/atmos_alert{dir = 8; icon_state = "computer-right"; pixel_x = 7; pixel_y = 0},/turf/open/floor/plasteel/dark,/area/template_noop)
 "uM" = (/obj/machinery/power/shieldwallgen/atmos/roundstart{dir = 4; id = "eagle_minerholo"},/turf/open/floor/engine/hull/reinforced,/area/template_noop)
 "uV" = (/turf/open/floor/engine/plasma,/area/template_noop)
 "uW" = (/obj/structure/sign/number/random{color = "Black"},/turf/closed/wall/mineral/titanium/nodiagonal,/area/template_noop)
@@ -55,24 +58,33 @@
 "vg" = (/obj/effect/turf_decal/atmos/oxygen,/turf/open/floor/engine/o2,/area/template_noop)
 "vB" = (/obj/machinery/door/airlock/security,/turf/open/floor/plasteel/dark,/area/template_noop)
 "vI" = (/obj/effect/turf_decal/siding/wood/maple{dir = 5},/obj/structure/filingcabinet/double/grey,/obj/item/clipboard,/obj/item/folder/blue,/obj/item/folder/yellow,/obj/item/folder,/obj/item/pen,/obj/item/pen,/obj/machinery/airalarm/directional/east,/turf/open/floor/wood/maple,/area/template_noop)
+"vJ" = (/obj/machinery/computer/monitor{dir = 8; icon_state = "computer-left"; pixel_x = 7; pixel_y = 0},/turf/open/floor/plasteel/dark,/area/template_noop)
 "vP" = (/obj/effect/turf_decal/siding/wood/corner/walnut,/obj/structure/chair/comfy/red/corpo/directional/east,/turf/open/floor/wood/walnut,/area/template_noop)
 "wq" = (/turf/open/floor/plasteel/dark,/area/template_noop)
+"wP" = (/obj/structure/closet/secure_closet/wall/directional/north{icon_door = "engi_wall"; icon_state = "engi_wall"; name = "tool locker"; req_access_txt = "10"},/turf/open/floor/plasteel/dark,/area/template_noop)
+"xn" = (/obj/machinery/door/airlock/engineering,/turf/open/floor/plating,/area/template_noop)
 "xt" = (/obj/machinery/computer/station_alert{dir = 8; icon_state = "computer-right"; pixel_x = 7; pixel_y = 0},/turf/open/floor/plasteel/dark,/area/template_noop)
+"ye" = (/obj/machinery/portable_atmospherics/pump,/turf/open/floor/plasteel/dark,/area/template_noop)
 "yr" = (/obj/effect/landmark/start/warden,/turf/template_noop,/area/template_noop)
 "yw" = (/obj/machinery/computer/crew{dir = 8; icon_state = "computer-middle"; pixel_x = 7; pixel_y = 0},/turf/open/floor/plasteel/dark,/area/template_noop)
+"yN" = (/obj/machinery/power/generator{dir = 4},/turf/open/floor/plasteel/dark,/area/template_noop)
 "zl" = (/obj/effect/turf_decal/siding/wood/walnut{dir = 6},/obj/machinery/light/directional/east,/obj/structure/guncloset{anchored = 1},/obj/item/gun/energy/sharplite/yari/empty_cell,/turf/open/floor/wood/walnut,/area/template_noop)
 "Ah" = (/obj/structure/grille,/obj/structure/window/reinforced/fulltile/shuttle,/obj/machinery/door/poddoor/shutters{id = eagle_qm_windows},/turf/open/floor/plating,/area/template_noop)
 "Ar" = (/turf/open/floor/carpet/nanoweave/red,/area/template_noop)
 "AD" = (/obj/structure/grille,/turf/open/floor/plating,/area/template_noop)
+"AE" = (/obj/machinery/atmospherics/components/binary/circulator,/turf/open/floor/plasteel/dark,/area/template_noop)
 "AQ" = (/obj/effect/turf_decal/siding/wood/walnut{dir = 5},/obj/structure/table/wood/reinforced,/obj/item/stamp/warra/vigilitas/security{pixel_x = 10; pixel_y = 12},/obj/item/paper_bin{pixel_x = -5; pixel_y = 5},/obj/item/pen/red{pixel_x = -6; pixel_y = 7},/turf/open/floor/wood/walnut,/area/template_noop)
 "Bv" = (/obj/machinery/door/airlock,/turf/open/floor/plasteel,/area/template_noop)
+"BO" = (/obj/structure/table/reinforced,/obj/structure/noticeboard/directional/south,/turf/open/floor/plasteel/dark,/area/template_noop)
 "BQ" = (/obj/effect/landmark/start/assistant,/turf/template_noop,/area/template_noop)
 "Dv" = (/obj/structure/table/wood,/obj/effect/turf_decal/siding/wood/maple{dir = 5},/obj/item/papercutter{pixel_x = 7; pixel_y = 0},/obj/item/flashlight/lamp{pixel_y = 15; pixel_x = 5},/obj/item/modular_computer/laptop{pixel_x = 0; pixel_y = -11},/obj/item/stamp/warra/ns/supply{pixel_x = -9; pixel_y = 13},/obj/item/radio/intercom/directional/east,/turf/open/floor/wood/maple,/area/template_noop)
 "DN" = (/obj/effect/turf_decal/siding/wood/maple,/turf/open/floor/wood/maple,/area/template_noop)
+"EU" = (/obj/machinery/atmospherics/components/binary/circulator/cold,/turf/open/floor/plasteel/dark,/area/template_noop)
+"Ff" = (/obj/structure/table/reinforced,/turf/open/floor/plasteel/dark,/area/template_noop)
 "Fi" = (/obj/structure/sign/warra/vigilitas{pixel_y = -32},/turf/open/floor/plasteel,/area/template_noop)
 "Fn" = (/obj/effect/landmark/start/medical_doctor,/turf/template_noop,/area/template_noop)
 "Gn" = (/obj/effect/turf_decal/siding/wood/walnut{dir = 6},/obj/structure/table/wood/reinforced,/obj/machinery/recharger{pixel_x = 10; pixel_y = -6},/obj/item/stock_parts/cell/gun/sharplite/empty{pixel_x = 10; pixel_y = 19},/obj/item/stock_parts/cell/gun/sharplite/plus/empty{pixel_x = 6; pixel_y = 15},/obj/item/attachment/bayonet{pixel_x = 7; pixel_y = 3},/turf/open/floor/wood/walnut,/area/template_noop)
-"Ht" = (/obj/structure/railing,/obj/machinery/computer/transponder{dir = 8; icon_state = "transponder-right"; pixel_x = 7; pixel_y = 0},/turf/open/floor/plasteel/dark,/area/template_noop)
+"Ht" = (/obj/structure/railing,/obj/machinery/computer/transponder{dir = 8; icon_state = "transponder-right"; pixel_x = 7; pixel_y = 0},/obj/machinery/button/shieldwallgen{dir = 8; pixel_x = 0; pixel_y = -3},/obj/machinery/button/door{dir = 8; layer = 3.09; pixel_x = 0; pixel_y = 12},/obj/machinery/button/door{dir = 8; layer = 3.09; pixel_x = 0; pixel_y = 5},/turf/open/floor/plasteel/dark,/area/template_noop)
 "Hx" = (/obj/machinery/door/airlock/command,/turf/open/floor/plasteel,/area/template_noop)
 "HI" = (/obj/effect/turf_decal/stairs{color = "#a3a2a0"; dir = 9},/turf/open/floor/plasteel,/area/template_noop)
 "Iq" = (/obj/structure/railing/corner{dir = 8},/turf/open/floor/plasteel,/area/template_noop)
@@ -84,11 +96,13 @@
 "KO" = (/obj/effect/landmark/start/security_officer,/turf/template_noop,/area/template_noop)
 "Lm" = (/obj/effect/turf_decal/siding/wood/walnut{dir = 1},/turf/open/floor/wood/walnut,/area/template_noop)
 "MO" = (/obj/structure/sign/warra/ns{pixel_x = 32; pixel_y = 0},/turf/open/floor/plasteel,/area/template_noop)
+"Ng" = (/obj/machinery/portable_atmospherics/scrubber,/turf/open/floor/plasteel/dark,/area/template_noop)
 "Nv" = (/obj/structure/platform/ship_two{layer = 2.9},/turf/open/floor/plasteel/dark,/area/template_noop)
 "NA" = (/obj/machinery/power/shieldwallgen/atmos/roundstart{dir = 8; id = "eagle_secholo"},/turf/open/floor/engine/hull/reinforced,/area/template_noop)
 "Ob" = (/obj/machinery/computer/monitor{dir = 8; icon_state = "computer-right"; pixel_x = 7; pixel_y = 0},/turf/open/floor/plasteel/dark,/area/template_noop)
+"Oo" = (/obj/machinery/suit_storage_unit/inherit/industrial/locked{name = "engineer's industrial suit storage unit"; req_access_txt = "10"},/turf/open/floor/plasteel/dark,/area/template_noop)
 "Oq" = (/obj/machinery/door/airlock/freezer,/turf/open/floor/plasteel,/area/template_noop)
-"Ox" = (/obj/machinery/computer/helm{dir = 8; icon_state = "computer-middle"; pixel_x = 7; pixel_y = 0},/turf/open/floor/plasteel/dark,/area/template_noop)
+"Ox" = (/obj/machinery/computer/helm{dir = 8; icon_state = "computer-middle"; pixel_x = 7; pixel_y = 0},/obj/machinery/button/door{dir = 8; layer = 3.09; pixel_x = 0; pixel_y = 13},/obj/machinery/button/door{dir = 8; layer = 3.09; pixel_x = 0; pixel_y = -13},/obj/machinery/button/door{dir = 8; layer = 3.09; pixel_x = 8; pixel_y = 17},/obj/machinery/button/door{dir = 8; layer = 3.09; pixel_x = 8; pixel_y = -9},/obj/machinery/button/door{dir = 8; layer = 3.09; pixel_x = 8; pixel_y = -16},/turf/open/floor/plasteel/dark,/area/template_noop)
 "OA" = (/obj/structure/railing/corner{layer = 4.1},/turf/open/floor/plasteel/stairs{dir = 8},/area/template_noop)
 "OB" = (/obj/structure/platform/ship_two/corner{dir = 8},/turf/open/floor/plasteel/dark,/area/template_noop)
 "OJ" = (/obj/machinery/door/airlock/engineering,/turf/open/floor/plasteel/dark,/area/template_noop)
@@ -121,6 +135,8 @@
 "Yc" = (/obj/effect/turf_decal/siding/wood/corner/maple,/obj/effect/turf_decal/siding/wood/maple{dir = 8},/obj/machinery/button/door{id = eagle_qm_windows; dir = 4; pixel_x = -21; pixel_y = 7; name = "Window Shutters"},/obj/machinery/button/door{id = eagle_qm_door; name = "Bolt Control"; dir = 4; pixel_x = -21; pixel_y = -7},/obj/machinery/light_switch{dir = 4; pixel_x = -20; pixel_y = 0},/turf/open/floor/wood/maple,/area/template_noop)
 "Yf" = (/obj/machinery/door/firedoor/border_only{dir = 8},/obj/machinery/door/firedoor/border_only{dir = 4},/turf/open/floor/plasteel/patterned/ridged,/area/template_noop)
 "Yr" = (/obj/effect/landmark/start/shaft_miner,/turf/template_noop,/area/template_noop)
+"Yt" = (/obj/structure/closet/secure_closet/engineering_personal{anchored = 1; populate = 0},/turf/open/floor/plasteel/dark,/area/template_noop)
+"YL" = (/obj/machinery/power/smes/engineering,/turf/open/floor/plasteel/dark,/area/template_noop)
 
 (1,1,1) = {"
 gXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXQxQxgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXgXrrgX
@@ -136,19 +152,19 @@ gXSPwqwqwqwqwqwqirereriririrkQkQkQkQkQkQkQkQkQkQPkkQkQOqkQirirererirneirererirul
 gXirwqwqwqwqwqwqwqwqwqwqirkQkQkQkQkQkQkQkQshgcgcgcIqkQkQkQkQirululululululululululululultukQkQirererirgXgXgXgXgX
 irirwqwqwqwqwqwqwqwqwqOJwqkQkQkQkQkQkQkQkQHIwqbmwquZkQkQkQkQneugulululululululululululultukQkQkQkQkQirAhAhirgXgX
 TJwqwqwqwqwqwqwqwqwqwqwqirkQkQkQkQkQkQkQkQirirneirirkQkQkQMOirirugulululululululululululirkQkQkQkQkQircOvIirirgX
-irwqwqwqwqwqwqwqirirwqiriririririrneiriririrSMNvSMirdhirkQkQkQirneirululululululululululneqikQVDkQkQirdlJsDvirgX
-XvwqwqwqirerererirwqOJwqwqwqwqirlZiSlZlZirirhQRXawwqTSdhkQkQkQPwkQirirereririrererereririrkQkQkQkQkQirYcDNjiirir
-irirererirlRWklRirwqwqwqwqwqwqirlZlZlZlZlZirwqwqwqRzWririrkQkQkQkQkQkQkQkQkQirwqwqwqwqirkQkQkQkQkQqiYfohblblokcv
-gXgXgXgXiririririrwqwqwqwqwqwqirlZlZlZlZiSnewqwqwqwqObsddhkQkQkQkQkQkQkQkQkQerwqwqwqbmnekQkQkQkQkQkQirsNblblngcv
-gXgXgXgXgXgXgXgXiririrwqwqwqwqirlZlZlZlZlZirwqwqwqwqNvJZdhkQkQkQkQkQkQkQkQkQerwqwqwqwqirirererirereririrAhAhirir
-gXgXgXgXgXgXgXgXirrAerwqwqwqwqirirlZlZlZirirwqwqwqRsRXoZdhkQkQkQkQkQkQkQkQkQirwqwqwqwqerwqwqwqwqwqwqADgXgXgXgXgX
-gXgXgXgXgXgXgXgXirrAerwqwqwqwqwqiririririrwqwqwqwqKJPGOxdhkQkQkQkQkQkQkQkQHxnewqwqwqwqerwqwqwqwqwqwqADgXgXgXgXgX
-gXgXgXgXgXgXgXgXirrAerwqwqwqwqirirkQkQkQirirwqwqwqOAmGHtdhkQkQkQkQkQkQkQkQkQirwqwqwqwqerwqwqwqwqwqwqADgXgXgXgXgX
-gXgXgXgXgXgXgXgXiririrwqwqwqwqirkQkQkQkQkQirwqwqwqOBdGTpdhkQkQkQkQkQkQkQkQkQerwqwqwqwqirwqwqwqwqwqwqirirXzXzirir
-gXgXgXgXiririririrwqwqwqwqwqwqirkQkQkQkQkQirwqwqwqwqqysddhkQkQkQkQkQkQkQkQkQerwqwqwqbmnewqwqwqwqwqwqirTwArArXoRT
-irirereriruVPTuVirwqwqwqwqwqwqirkQkQkQkQkQirwqwqwqWDywirirkQkQkQkQkQkQkQkQkQirwqwqwqwqirwqwqwqwqKKwqirtjArAraART
-TJwqwqwqirerererirwqOJwqwqwqwqirirkQHxkQirirwqwqwqwqxtdhkQkQkQFikQirirereririrererereriririririrneirirKFLmAQirir
-irwqwqwqwqwqwqwqirirwqiririririririrkQiriririrwqwqirdhirkQkQkQirneirwqwqwqwqwqwqwqwqwqwqirwqwqwqwqvBnelWvPGnirgX
+irwqwqwqwqwqwqwqirireririririririrneiriririrSMNvSMirdhirkQkQkQirneirululululululululululneqikQVDkQkQirdlJsDvirgX
+XvwqwqwqirerererirOoxnwqwPYLYLirlZiSlZlZirirhQRXawwqTSdhkQkQkQPwkQirirereririrererereririrkQkQkQkQkQirYcDNjiirir
+irirererirlRWklRirOoerwqwqwqwqirlZlZlZlZlZirwqwqwqRzWririrkQkQkQkQkQkQkQkQkQirwqwqwqwqirkQkQkQkQkQqiYfohblblokcv
+gXgXgXgXiririririrNgerwqwqwqvJirlZlZlZlZiSnewqwqwqwqObsddhkQkQkQkQkQkQkQkQkQerwqwqwqbmnekQkQkQkQkQkQirsNblblngcv
+gXgXgXgXgXgXgXiririrwqwqwqwquEirlZlZlZlZlZirwqwqwqwqNvJZdhkQkQkQkQkQkQkQkQkQerwqwqwqwqirirererirereririrAhAhirir
+gXgXgXgXgXgXgXirrAerwqwqAEwqjkirirlZlZlZirirwqwqwqRsRXoZdhkQkQkQkQkQkQkQkQkQirwqwqwqwqerwqwqwqwqwqwqADgXgXgXgXgX
+gXgXgXgXgXgXgXirrAerwqwqyNwqwqfiiririririrwqwqwqwqKJPGOxdhkQkQkQkQkQkQkQkQHxnewqwqwqwqerwqwqwqwqwqwqADgXgXgXgXgX
+gXgXgXgXgXgXgXirrAerwqwqEUwqwqirirkQkQkQirirwqwqwqOAmGHtdhkQkQkQkQkQkQkQkQkQirwqwqwqwqerwqwqwqwqwqwqADgXgXgXgXgX
+gXgXgXgXgXgXgXiririrwqwqwqwqwqirkQkQkQkQkQirwqwqwqOBdGTpdhkQkQkQkQkQkQkQkQkQerwqwqwqwqirwqwqwqwqwqwqirirXzXzirir
+gXgXgXgXiririririryeerwqwqwqwqirkQkQkQkQkQirwqwqwqwqqysddhkQkQkQkQkQkQkQkQkQerwqwqwqbmnewqwqwqwqwqwqirTwArArXoRT
+irirereriruVPTuVirYterwqwqwqwqirkQkQkQkQkQirwqwqwqWDywirirkQkQkQkQkQkQkQkQkQirwqwqwqwqirwqwqwqwqKKwqirtjArAraART
+TJwqwqwqirerererirYtxnwqBOFfFfirirkQHxkQirirwqwqwqwqxtdhkQkQkQFikQirirereririrererereriririririrneirirKFLmAQirir
+irwqwqwqwqwqwqwqirireriririririririrkQiriririrwqwqirdhirkQkQkQirneirwqwqwqwqwqwqwqwqwqwqirwqwqwqwqvBnelWvPGnirgX
 TJwqwqwqwqwqwqwqwqwqwqwqirkQkQkQkQkQkQkQkQkQirdhdhirkQkQkQcfirirKKwqwqwqwqwqwqwqwqwqwqwqnevBwqwqwqwqirVnzlirirgX
 irirwqwqwqwqwqwqwqwqwqOJwqkQkQkQkQkQkQkQkQkQkQkQkQkQkQkQkQkQneKKwqwqwqwqwqwqwqwqwqwqwqwqirwqwqwqwqwqirXzXzirgXgX
 gXirwqwqwqwqwqwqwqwqwqwqirkQkQkQkQkQkQkQkQkQkQkQkQkQkQkQkQkQirwqwqwqwqwqwqwqwqwqwqwqwqwqirwqwqirererirgXgXgXgXgX
